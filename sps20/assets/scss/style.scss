@@ -152,7 +152,7 @@ ul {
     }
 
     h1::before {
-        color: $primary-color;
+        color: #c0c0c0;
         content: '•';
         left: -1.5ex;
         position: absolute;
@@ -168,7 +168,9 @@ ul {
         }
 
         &.map {
-            margin-top: -1rem;
+            margin-bottom: .5rem;
+            position: relative;
+            top: -1rem;
         }
     }
 }
