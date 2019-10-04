@@ -9,15 +9,25 @@ $html-font-size: 20px;
 $spsa-blue-dark: #182834;
 $spsa-blue: #1f7ac6;
 $spsa-blue-light: #4b8bbe;
-$spsa-blue-pastel: #c6dae9;
+$spsa-blue-pastel: #dbeef2;
+
+$spsa-orange-dark: #a74d19;
+$spsa-orange: #f76d1e;
+$spsa-orange-light: #ff9a60;
+$spsa-orange-pastel: #ffe3d3;
 
 $primary-color: $spsa-blue;
-$primary-color-light: lighten($primary-color, 20%);
+$secondar-color: $spsa-orange;
 
 $navigation-fg: #fff;
 $navigation-bg: rgba(50, 50, 50, .5);
 $max-line-width: 67ex;
 $smooth-borders: 3px;
+
+$note-pastel: #f5f5f5;
+$info-pastel: #dcf2e6;
+$tip-pastel: $spsa-blue-pastel;
+$warning-pastel: $spsa-orange-pastel;
 
 // minimal requirements
 @import 'spectre/variables';
@@ -113,7 +123,7 @@ h6,
             color: $navigation-fg;
 
             &:hover {
-                color: $primary-color-light;
+                color: $spsa-blue-light;
             }
         }
     }
@@ -127,6 +137,10 @@ h6,
 
     p {
         max-width: $max-line-width;
+
+        img {
+            width: 125%;
+        }
     }
 
     h1 {
@@ -136,8 +150,39 @@ h6,
     h1::before {
         color: $primary-color;
         content: '•';
-        position: absolute;
         left: -1.5ex;
+        position: absolute;
+    }
+}
+
+/*
+    Admonitions
+*/
+
+.admonition {
+    border-radius: $smooth-borders;
+    margin: 0 0 1rem;
+    max-width: $max-line-width;
+    padding: .8rem 1rem;
+
+    p {
+        margin: 0;
+    }
+
+    &.admonition-note {
+        background: $note-pastel;
+    }
+
+    &.admonition-info {
+        background: $info-pastel;
+    }
+
+    &.admonition-tip {
+        background: $tip-pastel;
+    }
+
+    &.admonition-warning {
+        background: $warning-pastel;
     }
 }
 
