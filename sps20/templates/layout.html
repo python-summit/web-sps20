@@ -4,6 +4,8 @@
     <link rel="stylesheet" href="{{ '/css/style.css'|url }}">
 
     <title>{% block title %}Welcome{% endblock %} — Swiss Python Summit</title>
+
+    <link href='https://api.mapbox.com/mapbox-gl-js/v1.3.2/mapbox-gl.css' rel='stylesheet' />
 </head>
 <body>
     <div class="cover">
@@ -25,4 +27,26 @@
             {% block body %}{% endblock %}
         </div>
     </div>
+
+    <script src='https://api.mapbox.com/mapbox-gl-js/v1.3.2/mapbox-gl.js'></script>
+    <script>
+        mapboxgl.accessToken = 'pk.eyJ1Ijoic3RhY2t0cmFjZSIsImEiOiJjaWh2cGI3aDkwMjlqdXNrb2l2eDl5dGgyIn0.96Y4mk2kaLNPoQb0URVi8g';
+        document.querySelectorAll('.map').forEach(function(map) {
+            var coordinates = [
+                map.getAttribute('data-lon'),
+                map.getAttribute('data-lat')
+            ];
+
+            var instance = new mapboxgl.Map({
+                container: map,
+                style: 'mapbox://styles/mapbox/streets-v11',
+                center: coordinates,
+                zoom: map.getAttribute('data-zoom')
+            });
+
+            var marker = new mapboxgl.Marker()
+                .setLngLat(coordinates)
+                .addTo(instance);
+        });
+    </script>
 </body>

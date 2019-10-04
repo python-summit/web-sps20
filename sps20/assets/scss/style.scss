@@ -42,7 +42,16 @@ $warning-pastel: $spsa-orange-pastel;
 @import 'spectre/layout';
 @import 'spectre/media';
 @import 'spectre/navbar';
-@import 'spectre/hero';
+@import 'spectre/chips';
+
+// utilities
+@mixin prefix ($prop, $val) {
+    // sass-lint:disable-block property-sort-order
+    -webkit-#{$prop}: #{$val};
+    -moz-#{$prop}: #{$val};
+    -ms-#{$prop}: #{$val};
+    #{$prop}: #{$val};
+}
 
 // adjusted headings
 h1,
@@ -81,25 +90,12 @@ h6,
     font-weight: 600;
 }
 
-// utilities
-@mixin prefix ($prop, $val) {
-    // sass-lint:disable-block property-sort-order
-    -webkit-#{$prop}: #{$val};
-    -moz-#{$prop}: #{$val};
-    -ms-#{$prop}: #{$val};
-    #{$prop}: #{$val};
-}
-
-/*
-    Logos
-*/
+// logos
 .logo-small {
     width: 32px;
 }
 
-/*
-    Header
-*/
+// header
 .cover {
     border-radius: $smooth-borders;
     margin-top: -10rem;
@@ -129,9 +125,13 @@ h6,
     }
 }
 
-/*
-    Page
-*/
+// lists
+ul {
+    list-style: disc;
+    margin-left: 0;
+}
+
+// page
 .page {
     padding: 1rem;
 
@@ -141,6 +141,10 @@ h6,
         img {
             width: 125%;
         }
+    }
+
+    li {
+        max-width: $max-line-width;
     }
 
     h1 {
@@ -153,12 +157,23 @@ h6,
         left: -1.5ex;
         position: absolute;
     }
+
+    .media {
+        margin: 0 0 1.5rem;
+        max-width: 80%;
+
+        img {
+            margin-bottom: -.5rem;
+            width: 100%;
+        }
+
+        &.map {
+            margin-top: -1rem;
+        }
+    }
 }
 
-/*
-    Admonitions
-*/
-
+// admonitions
 .admonition {
     border-radius: $smooth-borders;
     margin: 0 0 1rem;
@@ -186,24 +201,12 @@ h6,
     }
 }
 
-/*
-    Maps
-*/
-div.map {
+// maps
+.map {
     min-height: 500px;
-    width: 100%;
 }
 
-/*
-    Venue
-*/
-img.aula {
-    border: 0;
-    display: block;
-    height: auto;
-    margin-bottom: 45px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 45px;
-    width: 100%;
+.mapbox-improve-map,
+.mapboxgl-ctrl-logo {
+    display: none !important;
 }

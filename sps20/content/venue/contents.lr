@@ -6,13 +6,15 @@ body:
 
 The Swiss Python Summit is held at [HSR University of Applied Sciences](https://www.hsr.ch/) in [Rapperswil](https://www.instagram.com/visitrapperswil/).
 
-# Map
+# Location
 
-<div class="map" data-lat="47.223307" data-lon="8.816796" data-zoom="15" data-title="HSR University of Applied Sciences">&nbsp;</div>
+<div class="media map" data-lat="47.223307" data-lon="8.816796" data-zoom="15" data-title="HSR University of Applied Sciences">&nbsp;</div>
 
 # Room
 
-<img src="aula.jpg" alt="Aula" class="aula"/>
+<div class="media">
+    <img src="aula.jpg" alt="Aula" class="aula"/>
+</div>
 
 The conference will take place in the Aula (building 4). As you enter building 4 head upstairs.
 
