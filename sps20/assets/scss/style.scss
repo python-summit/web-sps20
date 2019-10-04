@@ -16,6 +16,9 @@ $spsa-orange: #f76d1e;
 $spsa-orange-light: #ff9a60;
 $spsa-orange-pastel: #ffe3d3;
 
+$header-bullet-color: $spsa-orange;
+$actual-bullet-color: $spsa-blue;
+
 $primary-color: $spsa-blue;
 $secondar-color: $spsa-orange;
 
@@ -127,8 +130,23 @@ h6,
 
 // lists
 ul {
-    list-style: disc;
+    list-style: none;
     margin-left: 0;
+    position: relative;
+}
+
+// bullets
+li::before,
+h1::before {
+    color: $header-bullet-color;
+    content: '•';
+    left: -1.5ex;
+    margin-top: -1px;
+    position: absolute;
+}
+
+li::before {
+    color: $actual-bullet-color;
 }
 
 // page
@@ -149,13 +167,6 @@ ul {
 
     h1 {
         position: relative;
-    }
-
-    h1::before {
-        color: #c0c0c0;
-        content: '•';
-        left: -1.5ex;
-        position: absolute;
     }
 
     .media {
