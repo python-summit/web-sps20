@@ -4,6 +4,8 @@
 */
 
 // customizations
+$html-font-size: 20px;
+
 $spsa-blue-dark: #182834;
 $spsa-blue: #1f7ac6;
 $spsa-blue-light: #4b8bbe;
@@ -31,6 +33,43 @@ $smooth-borders: 3px;
 @import 'spectre/media';
 @import 'spectre/navbar';
 @import 'spectre/hero';
+
+// adjusted headings
+h1,
+.h1 {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+h2,
+.h2 {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+h3,
+.h3 {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+h4,
+.h4 {
+    font-size: .9rem;
+    font-weight: 600;
+}
+
+h5,
+.h5 {
+    font-size: .8rem;
+    font-weight: 600;
+}
+
+h6,
+.h6 {
+    font-size: .7rem;
+    font-weight: 600;
+}
 
 // utilities
 @mixin prefix ($prop, $val) {
@@ -88,6 +127,17 @@ $smooth-borders: 3px;
 
     p {
         max-width: $max-line-width;
+    }
+
+    h1 {
+        position: relative;
+    }
+
+    h1::before {
+        color: $primary-color;
+        content: '•';
+        position: absolute;
+        left: -1.5ex;
     }
 }
 
