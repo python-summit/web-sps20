@@ -2,28 +2,27 @@
 <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="{{ '/css/style.css'|url }}">
-    <title>{% block title %}Welcome{% endblock %} — Swiss Python Summit 2020</title>
-    {% block header %}{% endblock %}
+
+    <title>{% block title %}Welcome{% endblock %} — Swiss Python Summit</title>
 </head>
 <body>
-    <header>
-        <a href="{{ site.get_root()|url }}"><h1>Swiss Python Summit 2020</h1></a>
-        <nav>
-            <ul class="children">
-                {% for page in site.root.children %}
-                <li {% if this == page %}class="active"{% endif %}>
-                    <a href="{{ page|url }}">{{ page.menu_title or page.title }}</a>
-                </li>
-                {% endfor %}
-            </ul>
-        </nav>
-    </header>
-
-    <div class="page">
-        {% block body %}{% endblock %}
+    <div class="cover">
+        <img src="{{ '/hero.jpg'|url }}" class="img-responsive img-fit-cover" alt="Areal shot of Rapperswil">
     </div>
+    <div class="container grid-lg">
+        <header class="navbar">
+            <section class="navbar-section">
+                <img src="{{ '/logo.svg'|url }}" class="logo-small mr-2" alt="Logo">
+                <a href="{{ site.root|url }}" class="text-bold mr-2">Swiss Python Summit</a>
 
-    <footer>
-        &copy; Copyright 2019 by EVM.
-    </footer>
+                {% for page in site.root.children %}
+                <a href="{{ page|url }}" class="btn btn-link">{{ page.title }}</a>
+                {% endfor %}
+            </section>
+        </header>
+
+        <div class="page">
+            {% block body %}{% endblock %}
+        </div>
+    </div>
 </body>

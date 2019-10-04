@@ -1,59 +1,114 @@
-body {
-    font-family: 'Verdana', sans-serif;
-    margin: 50px 25px;
+/*
+    python-summit.ch builds uses the Spectre as it's base:
+    https://picturepan2.github.io/spectre/
+*/
+
+// customizations
+$spsa-blue-dark: #182834;
+$spsa-blue: #1f7ac6;
+$spsa-blue-light: #4b8bbe;
+$spsa-blue-pastel: #c6dae9;
+
+$primary-color: $spsa-blue;
+$primary-color-light: lighten($primary-color, 20%);
+
+$navigation-fg: #fff;
+$navigation-bg: rgba(50, 50, 50, .5);
+$max-line-width: 67ex;
+$smooth-borders: 3px;
+
+// minimal requirements
+@import 'spectre/variables';
+@import 'spectre/mixins';
+@import 'spectre/normalize';
+@import 'spectre/base';
+@import 'spectre/utilities';
+
+// selected components
+@import 'spectre/typography';
+@import 'spectre/buttons';
+@import 'spectre/layout';
+@import 'spectre/media';
+@import 'spectre/navbar';
+@import 'spectre/hero';
+
+// utilities
+@mixin prefix ($prop, $val) {
+    // sass-lint:disable-block property-sort-order
+    -webkit-#{$prop}: #{$val};
+    -moz-#{$prop}: #{$val};
+    -ms-#{$prop}: #{$val};
+    #{$prop}: #{$val};
 }
 
-a {
-    color: #2a99b6;
+/*
+    Logos
+*/
+.logo-small {
+    width: 32px;
 }
 
-a:hover {
-    color: #33bbdf;
+/*
+    Header
+*/
+.cover {
+    border-radius: $smooth-borders;
+    margin-top: -10rem;
+    max-height: 20rem;
+    overflow: hidden;
 }
 
-header, footer, div.page {
-    width: 760px;
-    margin: 0 auto;
-    background: #daeef3;
-    padding: 20px 30px;
+.navbar {
+    height: 2rem;
+    margin-top: -2rem;
+
+    .navbar-section {
+        @include prefix(backdrop-filter, blur(2px));
+
+        background: $navigation-bg;
+        border-radius: $smooth-borders $smooth-borders 0 0;
+        padding-left: 1ex;
+
+        a,
+        a.btn {
+            color: $navigation-fg;
+
+            &:hover {
+                color: $primary-color-light;
+            }
+        }
+    }
 }
 
-header h1 {
-    color: #169bbd;
-    margin: 0;
-    font-weight: normal;
-    font-size: 42px;
+/*
+    Page
+*/
+.page {
+    padding: 1rem;
+
+    p {
+        max-width: $max-line-width;
+    }
 }
 
-header nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-header nav ul li {
-    display: inline;
-    margin: 0 8px 0 0;
-    padding: 0;
-}
-
-div.page {
-    background: #f1fbfe;
-}
-
-/* Maps */
+/*
+    Maps
+*/
 div.map {
-    width: 100%;
     min-height: 500px;
+    width: 100%;
 }
 
+/*
+    Venue
+*/
 img.aula {
     border: 0;
     display: block;
-    width: 100%;
     height: auto;
+    margin-bottom: 45px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 45px;
-    margin-bottom: 45px;
+    width: 100%;
 }
