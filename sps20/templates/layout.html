@@ -1,6 +1,7 @@
 <!doctype html>
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="{{ '/css/style.css'|url }}">
 
     <title>{% block title %}Welcome{% endblock %} — Swiss Python Summit</title>
@@ -14,11 +15,13 @@
     <div class="container grid-lg">
         <header class="navbar">
             <section class="navbar-section">
-                <img src="{{ '/logo.svg'|url }}" class="logo-small mr-2" alt="Logo">
-                <a href="{{ site.root|url }}" class="text-bold mr-2">Swiss Python Summit</a>
+                <span class="logo {{ site.root == this and 'active' or ''}}">
+                    <img src="{{ '/logo.svg'|url }}" class="logo-small mr-2" alt="Logo">
+                    <a href="{{ site.root|url }}" class="text-bold mr-2">Swiss Python Summit</a>
+                </span>
 
                 {% for page in site.root.children %}
-                <a href="{{ page|url }}" class="btn btn-link">{{ page.title }}</a>
+                <a href="{{ page|url }}" class="btn btn-link {{ page == this and 'active' or ''}}">{{ page.title }}</a>
                 {% endfor %}
             </section>
         </header>

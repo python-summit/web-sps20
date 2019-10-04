@@ -106,9 +106,19 @@ h6,
     overflow: hidden;
 }
 
+.logo {
+    display: flex;
+    justify-content: center;
+
+    > * {
+        height: 2.5rem;
+        line-height: 2.5rem;
+    }
+}
+
 .navbar {
-    height: 2rem;
-    margin-top: -2rem;
+    height: 2.5rem;
+    margin-top: -2.5rem;
 
     .navbar-section {
         @include prefix(backdrop-filter, blur(2px));
@@ -124,6 +134,22 @@ h6,
             &:hover {
                 color: $spsa-blue-light;
             }
+        }
+    }
+}
+
+@media (max-width: $size-md) {
+    .cover {
+        margin-top: 0;
+    }
+
+    .navbar .navbar-section {
+        display: block;
+        margin-top: -6rem;
+
+        > a {
+            display: block;
+            width: 100%;
         }
     }
 }
