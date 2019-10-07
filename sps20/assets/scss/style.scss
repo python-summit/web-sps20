@@ -17,7 +17,7 @@ $spsa-orange-light: #ff9a60;
 $spsa-orange-pastel: #ffe3d3;
 
 $header-bullet-color: $spsa-orange;
-$actual-bullet-color: $spsa-blue;
+$actual-bullet-color: $spsa-blue-dark;
 
 $primary-color: $spsa-blue;
 $secondar-color: $spsa-orange;
@@ -256,4 +256,8 @@ li::before {
 .mapbox-improve-map,
 .mapboxgl-ctrl-logo {
     display: none !important;
+}
+
+.mapboxgl-ctrl-attrib-inner {
+    font-size: 9px;
 }
