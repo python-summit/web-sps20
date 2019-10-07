@@ -120,6 +120,10 @@ h6,
     height: 2.5rem;
     margin-top: -2.5rem;
 
+    .active {
+        font-weight: bold;
+    }
+
     .navbar-section {
         @include prefix(backdrop-filter, blur(2px));
 
@@ -129,6 +133,8 @@ h6,
 
         a,
         a.btn {
+            @include prefix(transition, none);
+
             color: $navigation-fg;
 
             &:hover {
