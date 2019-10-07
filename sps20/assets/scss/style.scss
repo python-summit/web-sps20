@@ -180,6 +180,8 @@ li::before {
     padding: 1rem;
 
     p {
+        @include prefix(hyphens, auto);
+
         max-width: $max-line-width;
 
         img {
