@@ -210,6 +210,12 @@ li::before {
             top: -1rem;
         }
     }
+
+    @media (max-width: $size-md) {
+        .media {
+            max-width: 100%;
+        }
+    }
 }
 
 // admonitions
