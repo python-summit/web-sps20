@@ -179,6 +179,10 @@ li::before {
 .page {
     padding: 1rem;
 
+    a {
+        font-weight: 700;
+    }
+
     p {
         @include prefix(hyphens, auto);
 
