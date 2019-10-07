@@ -108,3 +108,6 @@ venv.bak/
 
 # Generated scss files
 **/assets/css/style.css
+
+# Build output
+sps20/build
