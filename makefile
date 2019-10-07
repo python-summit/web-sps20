@@ -2,7 +2,7 @@ usage:
 	@echo "Make targets: install, serve"
 
 install: in_virtual_env
-	pip install lektor
+	pip install -r requirements.txt
 
 serve: in_virtual_env
 	cd sps20 && lektor server -f scss --browse
