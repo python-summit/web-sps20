@@ -218,6 +218,10 @@ li::before {
         img {
             width: 125%;
         }
+
+        &:last-child {
+            margin-bottom: .75rem;
+        }
     }
 
     li {
@@ -291,4 +295,9 @@ li::before {
 
 .mapboxgl-ctrl-attrib-inner {
     font-size: 9px;
+}
+
+// recordings
+.recordings h2 {
+    margin-top: 1rem !important;
 }
