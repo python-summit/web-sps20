@@ -26,10 +26,26 @@
             </section>
         </header>
 
-        <div class="page">
+        <main class="page">
             {% block body %}{% endblock %}
-        </div>
+        </main>
     </div>
+
+    <footer>
+        <div class="container grid-lg">
+            <div class="page">
+                <p>
+                    The Swiss Python Summit is organized by the Swiss Python Summit Association.
+                </p>
+                <p>
+                    We are a non-profit volunteer organization, open to anyone independent of race, color, gender, sexual orientation, creed, religion, nationality, ethnic or social origin.
+                </p>
+                <p>
+                    Contact us via <a href="mailto:info@python-summit.ch">info@python-summit.ch</a> or follow us <a href="https://twitter.com/pythonsummit">@pythonsummit</a>.
+                </p>
+            </div>
+        </div>
+    </footer>
 
     <script src='https://api.mapbox.com/mapbox-gl-js/v1.3.2/mapbox-gl.js'></script>
     <script>
