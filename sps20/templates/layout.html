@@ -1,69 +1,72 @@
 <!doctype html>
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="{{ '/css/style.css'|url }}">
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="{{ '/css/style.css'|url }}">
 
-    <title>{% block title %}Welcome{% endblock %} — Swiss Python Summit</title>
+        <title>{% block title %}Welcome{% endblock %} — Swiss Python Summit</title>
 
-    <link href='https://api.mapbox.com/mapbox-gl-js/v1.3.2/mapbox-gl.css' rel='stylesheet' />
-</head>
-<body>
-    <div class="cover">
-        <header class="navbar">
-            <section class="navbar-section">
-                <span class="logo {{ site.root == this and 'active' or ''}}">
-                    <img src="{{ '/logo.svg'|url }}" class="logo-small mr-2" alt="Logo">
-                    <a href="{{ site.root|url }}" class="mr-2">Swiss Python Summit</a>
-                </span>
+        <link href='https://api.mapbox.com/mapbox-gl-js/v1.3.2/mapbox-gl.css' rel='preload' as='style' onlad="this.onload=null;this.rel='stylesheet'"  />
+        <noscript><link href='https://api.mapbox.com/mapbox-gl-js/v1.3.2/mapbox-gl.css' rel='stylesheet' /></noscript>
+    </head>
+    <body>
+        <div class="cover">
+            <header class="navbar">
+                <section class="navbar-section">
+                    <span class="logo {{ site.root == this and 'active' or ''}}">
+                        <img src="{{ '/logo.svg'|url }}" class="logo-small mr-2" alt="Logo">
+                        <a href="{{ site.root|url }}" class="mr-2">Swiss Python Summit</a>
+                    </span>
 
-                {% for page in site.root.children %}
-                <a href="{{ page|url }}" class="btn btn-link {{ page == this and 'active' or ''}}">{{ page.title }}</a>
-                {% endfor %}
-            </section>
-        </header>
-    </div>
-    <div class="container grid-lg">
-        <main class="page">
-            {% block body %}{% endblock %}
-        </main>
-    </div>
-
-    <footer>
-        <div class="container grid-lg">
-            <div class="page">
-                <p>
-                    The Swiss Python Summit is organized by the Swiss Python Summit Association.
-                </p>
-                <p>
-                    We are a non-profit volunteer organization, open to anyone independent of race, color, gender, sexual orientation, creed, religion, nationality, ethnic or social origin.
-                </p>
-                <p>
-                    Contact us via <a href="mailto:info@python-summit.ch">info@python-summit.ch</a> or follow us <a href="https://twitter.com/pythonsummit">@pythonsummit</a>.
-                </p>
-            </div>
+                    {% for page in site.root.children %}
+                    <a href="{{ page|url }}" class="btn btn-link {{ page == this and 'active' or ''}}">{{ page.title }}</a>
+                    {% endfor %}
+                </section>
+            </header>
         </div>
-    </footer>
+        <div class="container grid-lg">
+            <main class="page">
+                {% block body %}{% endblock %}
+            </main>
+        </div>
 
-    <script src='https://api.mapbox.com/mapbox-gl-js/v1.3.2/mapbox-gl.js'></script>
-    <script>
-        mapboxgl.accessToken = 'pk.eyJ1Ijoic3RhY2t0cmFjZSIsImEiOiJjaWh2cGI3aDkwMjlqdXNrb2l2eDl5dGgyIn0.96Y4mk2kaLNPoQb0URVi8g';
-        document.querySelectorAll('.map').forEach(function(map) {
-            var coordinates = [
-                map.getAttribute('data-lon'),
-                map.getAttribute('data-lat')
-            ];
+        <footer>
+            <div class="container grid-lg">
+                <div class="page">
+                    <p>
+                        The Swiss Python Summit is organized by the Swiss Python Summit Association.
+                    </p>
+                    <p>
+                        We are a non-profit volunteer organization, open to anyone independent of race, color, gender, sexual orientation, creed, religion, nationality, ethnic or social origin.
+                    </p>
+                    <p>
+                        Contact us via <a href="mailto:info@python-summit.ch">info@python-summit.ch</a> or follow us <a href="https://twitter.com/pythonsummit">@pythonsummit</a>.
+                    </p>
+                </div>
+            </div>
+        </footer>
 
-            var instance = new mapboxgl.Map({
-                container: map,
-                style: 'mapbox://styles/mapbox/streets-v11',
-                center: coordinates,
-                zoom: map.getAttribute('data-zoom')
+        <script src='https://api.mapbox.com/mapbox-gl-js/v1.3.2/mapbox-gl.js'></script>
+        <script>
+            mapboxgl.accessToken = 'pk.eyJ1Ijoic3RhY2t0cmFjZSIsImEiOiJjaWh2cGI3aDkwMjlqdXNrb2l2eDl5dGgyIn0.96Y4mk2kaLNPoQb0URVi8g';
+            document.querySelectorAll('.map').forEach(function(map) {
+                var coordinates = [
+                    map.getAttribute('data-lon'),
+                    map.getAttribute('data-lat')
+                ];
+
+                var instance = new mapboxgl.Map({
+                    container: map,
+                    style: 'mapbox://styles/mapbox/streets-v11',
+                    center: coordinates,
+                    zoom: map.getAttribute('data-zoom')
+                });
+
+                var marker = new mapboxgl.Marker()
+                    .setLngLat(coordinates)
+                    .addTo(instance);
             });
-
-            var marker = new mapboxgl.Marker()
-                .setLngLat(coordinates)
-                .addTo(instance);
-        });
-    </script>
-</body>
+        </script>
+    </body>
+</html>
