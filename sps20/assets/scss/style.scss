@@ -218,10 +218,10 @@ li::before {
         img {
             width: 125%;
         }
+    }
 
-        &:last-child {
-            margin-bottom: .75rem;
-        }
+    > p:last-child {
+        margin-bottom: .75rem;
     }
 
     li {
