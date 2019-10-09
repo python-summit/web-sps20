@@ -301,13 +301,26 @@ li::before {
     min-height: 500px;
 }
 
+.mapboxgl-canvas {
+    box-shadow: none;
+    outline: none;
+}
+
 .mapbox-improve-map,
 .mapboxgl-ctrl-logo {
     display: none !important;
 }
 
+.mapboxgl-ctrl-attrib {
+    border-radius: $smooth-borders 0 0;
+}
+
 .mapboxgl-ctrl-attrib-inner {
     font-size: 9px;
+
+    * {
+        font-weight: normal !important;
+    }
 }
 
 // recordings

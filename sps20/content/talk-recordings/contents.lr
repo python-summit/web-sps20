@@ -2,6 +2,8 @@ _model: page
 ---
 title: Talk Recordings
 ---
+ordering: 2
+---
 body: We record all the talks at our conference. You can find the recordings as well as the talk slides on this page!
 ---
 _template: recordings.html

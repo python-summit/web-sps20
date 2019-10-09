@@ -6,9 +6,6 @@
         <link rel="stylesheet" href="{{ '/css/style.css'|url }}">
 
         <title>{% block title %}Welcome{% endblock %} — Swiss Python Summit</title>
-
-        <link href='https://api.mapbox.com/mapbox-gl-js/v1.3.2/mapbox-gl.css' rel='preload' as='style' onlad="this.onload=null;this.rel='stylesheet'"  />
-        <noscript><link href='https://api.mapbox.com/mapbox-gl-js/v1.3.2/mapbox-gl.css' rel='stylesheet' /></noscript>
     </head>
     <body>
         <div class="cover">
@@ -19,7 +16,7 @@
                     </span>
                     <a href="{{ site.root|url }}" class="btn btn-link {{ site.root == this and 'active' or ''}}">Swiss Python Summit</a>
 
-                    {% for page in site.root.children %}
+                    {% for page in site.root.children | sort(attribute="ordering") %}
                     <a href="{{ page|url }}" class="btn btn-link {{ page == this and 'active' or ''}}">{{ page.title }}</a>
                     {% endfor %}
                 </section>
@@ -49,8 +46,20 @@
 
         <script src='https://api.mapbox.com/mapbox-gl-js/v1.3.2/mapbox-gl.js'></script>
         <script>
+            var styled = false;            
+
             mapboxgl.accessToken = 'pk.eyJ1Ijoic3RhY2t0cmFjZSIsImEiOiJjaWh2cGI3aDkwMjlqdXNrb2l2eDl5dGgyIn0.96Y4mk2kaLNPoQb0URVi8g';
             document.querySelectorAll('.map').forEach(function(map) {
+                if (!styled) {
+                    var link = document.createElement("link");
+
+                    link.type = "text/css";
+                    link.rel = "stylesheet";
+                    link.href = "https://api.mapbox.com/mapbox-gl-js/v1.3.2/mapbox-gl.css";
+
+                    document.head.appendChild(link);
+                }
+
                 var coordinates = [
                     map.getAttribute('data-lon'),
                     map.getAttribute('data-lat')
