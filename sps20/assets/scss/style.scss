@@ -323,6 +323,10 @@ li::before {
     }
 }
 
+div.mapboxgl-canvas-container > div > svg > g > g:nth-child(2) {
+    fill: $spsa-blue !important;
+}
+
 // recordings
 .recordings h2 {
     margin-top: 1rem !important;
