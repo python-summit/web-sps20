@@ -10,9 +10,6 @@
 </head>
 <body>
     <div class="cover">
-        <img src="{{ '/hero.jpg'|url }}" class="img-responsive img-fit-cover" alt="Areal shot of Rapperswil">
-    </div>
-    <div class="container grid-lg">
         <header class="navbar">
             <section class="navbar-section">
                 <span class="logo {{ site.root == this and 'active' or ''}}">
@@ -25,7 +22,8 @@
                 {% endfor %}
             </section>
         </header>
-
+    </div>
+    <div class="container grid-lg">
         <main class="page">
             {% block body %}{% endblock %}
         </main>

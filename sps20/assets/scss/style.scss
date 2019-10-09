@@ -103,10 +103,14 @@ h6,
 
 // header
 .cover {
-    border-radius: $smooth-borders;
-    margin-top: -10rem;
-    max-height: 25rem;
-    overflow: hidden;
+    background: url('/hero.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 0 0 $smooth-borders $smooth-borders;
+    display: flex;
+    justify-content: center;
+    min-height: 13rem;
 }
 
 .logo {
@@ -120,19 +124,21 @@ h6,
 }
 
 .navbar {
-    height: 2.5rem;
-    margin-top: -2.5rem;
+    align-self: flex-end;
+    bottom: 0;
+    margin-top: 5rem;
+    min-width: $size-lg;
 
     .active {
         font-weight: bold;
     }
 
     .navbar-section {
-        @include prefix(backdrop-filter, blur(2px));
+        // @include prefix(backdrop-filter, blur(2px));
 
         background: $navigation-bg;
         border-radius: $smooth-borders $smooth-borders 0 0;
-        padding-left: 1ex;
+        padding: 0 2ex;
 
         a,
         a.btn {
@@ -149,15 +155,18 @@ h6,
 
 @media (max-width: $size-md) {
     .cover {
-        margin-top: 0;
+        padding: 1rem 1rem 0;
+    }
+
+    .navbar {
+        min-width: 0;
     }
 
     .navbar .navbar-section {
-        display: block;
-        margin-top: -6rem;
+        flex-wrap: wrap;
+        padding: 1ex 0 1ex;
 
-        > a {
-            display: block;
+        > * {
             width: 100%;
         }
     }
