@@ -1,6 +1,8 @@
 _model: page
 ---
-title: Talk Recordings
+title: Recordings
+---
+description: Recordings of talks held at past summits.
 ---
 ordering: 2
 ---

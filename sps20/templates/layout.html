@@ -3,6 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="{{ this.description }}">
         <link rel="stylesheet" href="{{ '/css/style.css'|url }}">
 
         <title>{% block title %}Welcome{% endblock %} — Swiss Python Summit</title>
@@ -46,7 +47,7 @@
 
         <script src='https://api.mapbox.com/mapbox-gl-js/v1.3.2/mapbox-gl.js'></script>
         <script>
-            var styled = false;            
+            var styled = false;
 
             mapboxgl.accessToken = 'pk.eyJ1Ijoic3RhY2t0cmFjZSIsImEiOiJjaWh2cGI3aDkwMjlqdXNrb2l2eDl5dGgyIn0.96Y4mk2kaLNPoQb0URVi8g';
             document.querySelectorAll('.map').forEach(function(map) {

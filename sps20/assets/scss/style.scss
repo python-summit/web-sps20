@@ -26,7 +26,7 @@ $primary-color: $spsa-blue;
 $secondar-color: $spsa-orange;
 
 $navigation-fg: #fff;
-$navigation-bg: rgba(50, 50, 50, .5);
+$navigation-bg: rgba(40, 40, 45, .55);
 $max-line-width: 67ex;
 $smooth-borders: 3px;
 
@@ -133,7 +133,7 @@ h6,
     }
 
     .navbar-section {
-        // @include prefix(backdrop-filter, blur(2px));
+        @include prefix(backdrop-filter, blur(2px));
 
         background: $navigation-bg;
         border-radius: $smooth-borders $smooth-borders 0 0;

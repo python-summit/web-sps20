@@ -1,33 +1,31 @@
 ---
 title: Venue
 ---
+description: A guide to the venue where the summit is held.
+---
 ordering: 1
 ---
 body:
 
 # Venue
-
 The Swiss Python Summit is held at **[HSR University of Applied Sciences](https://www.hsr.ch/)** in **[Rapperswil](https://www.instagram.com/visitrapperswil/)**.
 
 ## Location
-
 <div class="media map" data-lat="47.223307" data-lon="8.816796" data-zoom="9" data-title="HSR University of Applied Sciences">&nbsp;</div>
 
 ## Room
-
 <div class="media">
     <img src="aula.jpg" alt="Aula" class="aula"/>
 </div>
 
 The conference will take place in the Aula (building 4). As you enter building 4 head upstairs.
 
-## Arrival
-### By Train
+## By Train
 Rapperswil is a 40 minutes train ride from Zürich main station. HSR is _very_ close to Rapperswil train station. If you follow the southern exit you end up right on campus.
 
 For this reason we recommend the use of public transport. It's the easiest and possibly cheapest option.
 
-### By Car
+## By Car
 Parking is available at HSR for the whole day. The rates are rather pricey though, so be warned. You do not get any discounts or free parking by attending the conference.
 
 There are many other parking possibilities in the area though. You can find more information in [this PDF](parking.pdf). The best option is probably to get a [P+Rail day card](https://www.sbb.ch/en/station-services/auto-velo/parking-at-the-station.html) and to park next to the train station (P10 on the map). An alternative would be next to the zoo (called "Südquartier, Lido", P7 on the map).
