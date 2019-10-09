@@ -117,9 +117,8 @@ h6,
     display: flex;
     justify-content: center;
 
-    > * {
+    img {
         height: 2.5rem;
-        line-height: 2.5rem;
     }
 }
 
@@ -149,6 +148,11 @@ h6,
             &:hover {
                 color: $spsa-blue-light;
             }
+
+            &:focus {
+                box-shadow: none;
+                outline: 2px solid #fff;
+            }
         }
     }
 }
@@ -164,7 +168,7 @@ h6,
 
     .navbar .navbar-section {
         flex-wrap: wrap;
-        padding: 1ex 0 1ex;
+        padding: 1ex 0;
 
         > * {
             width: 100%;
