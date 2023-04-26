@@ -6,7 +6,10 @@ description: Recordings of talks held at past summits.
 ---
 ordering: 5
 ---
-body: We record all the talks at our conference. You can find the recordings as well as the talk slides on this page!
+body:
+
+Here you can find recorded talks of the last summits. The presentation slides are also linked. Like and Share!<p><p>
+**Once again a big thank you to all our speaker!!! **
 ---
 _template: recordings.html
 ---
