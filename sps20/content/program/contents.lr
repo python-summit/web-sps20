@@ -8,6 +8,345 @@ body:
 
 # Program 2023
 
-A draft schedule will be published after the [Call for Proposals](/cfp) around August 2023. Stay tuned and follow us on [Twitter](https://twitter.com/pythonsummit) and [LinkedIn](https://www.linkedin.com/company/swiss-python-summit) for news!
+We are happy to announce the schedule for this year's conference!  
+Please note that changes may occur.
 
-!! As long as our program is not yet defined, you can register for an **early bird ticket for a reduced price**. [So don't miss the opportunity!](/register)
+<table id="program" class="table table-hover table-striped">
+    <thead>
+        <tr>
+            <th class="col-time">Time</th>
+            <th class="col-content">Content</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="col-time">08:00 – 09:00</td>
+            <td class="meta">Registration</td>
+        </tr>
+        <tr>
+            <td class="col-time">09:00 – 09:10</td>
+            <td class="meta">Welcome</td>
+        </tr>
+        <tr>
+            <td class="col-time">09:15 – 09:45</td>
+            <td>
+                <div class="accordion">
+                    <input type="checkbox" id="accordion-1" name="accordion-checkbox" hidden>
+                    <label class="accordion-header" for="accordion-1">
+                        Proving Python code correct with Nagini
+                    </label>
+                    <div class="accordion-body">
+                        With the introduction of PEP 484 type annotations, Python has made a big step towards making
+                        programs safer by statically ruling out type errors. But what if we go five steps further and
+                        prove that our programs don't crash for any reason at all and, moreover, do what we want them to
+                        do?
+                        <br><br>
+                        In this talk, I will give an informal overview about formal verification, what it is and what it
+                        can (and can't) do. I'll show how to use the automated verifier Nagini to express what a program
+                        is supposed to do and prove that it does.
+                        <p class="bio">
+                            Marco Eilers is a postdoctoral researcher at ETH Zurich working on formal verification.
+                        </p>
+                        <br>
+                    </div>
+                </div>
+                Marco Eilers
+            </td>
+        </tr>
+        <tr>
+            <td class="col-time">09:50 – 10:20</td>
+            <td>
+                <div class="accordion">
+                    <input type="checkbox" id="accordion-2" name="accordion-checkbox" hidden>
+                    <label class="accordion-header" for="accordion-2">
+                        Did you know Matplotlib could do that?
+                    </label>
+                    <div class="accordion-body">
+                        In this talk, I am going to expand on my NormConf Lightning Talk “How to stop crying when using
+                        Matplotlib” https://youtu.be/vjQIaepijbE . Matplotlib is my tool of choice for custom data
+                        visualizations and I have been teaching it for the last 2 years in a dedicated course at HSLU.
+                        It is an extremely popular data visualization library among the Python data science community
+                        and often the only one that can produce fully customized, complex visualizations. However, due
+                        to its long history, API changes and lack of good educational resources, many people struggle to
+                        harness all its capabilities, ending up frustrated, dissatisfied and with an ugly chart as an
+                        output.
+                        <br><br>
+                        I’m going to explain why Matplotlib works the way it works and how to work with it instead of
+                        against it. I will also show some tips and tricks for writing sustainable code and and share a
+                        few recipes for making beautiful, complex data visualizations.
+                        <p class="bio">
+                            I am a senior data scientist at the ETH Zurich/ETH Library and a data science freelancer
+                            with Xurce AG. I am teaching Data Visualization for ML and AI at HSLU as an external
+                            lecturer. My focus is on advanced analytics, data storytelling and data product design. My
+                            websites: a crude blog http://www.pythonviz.blog/ and a personal website
+                            http://www.teresa-kubacka.com/
+                        </p>
+                        <br>
+                    </div>
+                </div>
+                Teresa Kubacka
+            </td>
+        </tr>
+        <tr>
+            <td class="col-time">10:20 - 11:00</td>
+            <td class="meta">Coffee break</td>
+        </tr>
+        <tr>
+            <td class="col-time">11:00 - 11:30</td>
+            <td>
+                <div class="accordion">
+                    <input type="checkbox" id="accordion-3" name="accordion-checkbox" hidden>
+                    <label class="accordion-header" for="accordion-3">
+                        Kivy: Cross-platform App development for Pythonistas
+                    </label>
+                    <div class="accordion-body">
+                        &quot;Kivy makes Pythonistas happier&quot;. Why?
+                        <br><br>
+                        Cause with Kivy you’ll drop any non-pythonic way to develop mobile and desktop apps, or it’ll
+                        help you to start a new career in app development, with Python.
+                        <br><br>
+                        We will talk about GUI apps development with Kivy while keeping a focus on all the tools in the
+                        Kivy ecosystem which are making it possible to create, build and distribute fully-featured apps
+                        on all the supported platforms (Android, iOS, Linux, macOS, and Windows).
+                        <br><br>
+                        After the talk, you’ll know how to:
+                        <ul>
+                            <li>&ndash; Persuade your boss (or yourself) to drop non-pythonic ways to develop Apps</li>
+                            <li>&ndash; Access Java classes from Python (yeah, sometimes it happens)</li>
+                            <li>&ndash; Access Objective-C classes from Python (is not that bad, but we love Python)</li>
+                            <li>&ndash; Package Kivy apps for Android, iOS, Linux, macOS, and Windows.</li>
+                            <li>&ndash; Architect Python cross-platform apps, and the mistakes to avoid</li>
+                            <li>&ndash; Drive the future of Python on mobile platforms."</li>
+                        </ul>
+                        This talk will go through some common pitfalls of running machine learning in production
+                        settings. We will start with the requirements and work through the data acquisition and
+                        model-building phase. We explore beyond the current MLOps hype and try to understand what it
+                        takes to run a successful project that is ready to ripe like a fine wine rather than old milk.
+                        <p class="bio">
+                            Before being a Software Developer, I have been (not so secretly) tech-addicted, especially
+                            when it came to computers. Now, a few years later, during the week I code everything (more
+                            happily if it comes to Python), and during weekends I help to maintain Kivy as I’m proudly
+                            part of the Kivy Core Developers team. When I’m not in front of my laptop screen, you can
+                            find me traveling (hopefully more, in future). I love to listen to EDM music while stuck in
+                            traffic or during open-air festivals.
+                        </p>
+                        <br>
+                    </div>
+                </div>
+                Mirko Galimberti
+            </td>
+        </tr>
+        <tr>
+            <td class="col-time">11:35 - 12:05</td>
+            <td>
+                <div class="accordion">
+                    <input type="checkbox" id="accordion-4" name="accordion-checkbox" hidden>
+                    <label class="accordion-header" for="accordion-4">
+                        A walk with CPython
+                    </label>
+                    <div class="accordion-body">
+                        Did you know that Python has a compiler even though it’s an interpreted language?
+                        <br><br>
+                        In this talk, we will embark on a step-by-step exploration of a simple program, unraveling the
+                        inner workings of CPython—the default reference implementation of Python. We’ll begin with the
+                        compiler, which performs the task of converting Python code into OPCODES. Next, we’ll explore
+                        the famous interpreter. We’ll uncover how it works with the generated OPCODES, executing the
+                        program line by line and talk about an example of optimisations it does along the way. We’ll
+                        explore how Python manages variables, function calls, and exceptions. Additionally, we’ll touch
+                        upon object creation and destruction.
+                        <br><br>
+                        The primary aim of this talk is to provide a concise yet comprehensive overview of the
+                        components involved in executing a simple program within CPython. Through precise references to
+                        the CPython code base, attendees will be equipped to explore further on their own."
+                        <p class="bio">
+                            Sadhana is a math graduate from BITS, Pilani with a keen interest in programming. She
+                            pursued a career as a data scientist, focusing on accelerating clinical trials and recently
+                            delving into modeling the impact of companies on the climate. With 10 years of Python
+                            experience, she has spent the past 2-3 years exploring CPython. Passionate about her work
+                            and CPython, Sadhana enjoys sharing insights about her projects.
+                        </p>
+                        <br>
+                    </div>
+                </div>
+                Sadhana Srinivasan
+            </td>
+        </tr>
+        <tr>
+            <td class="col-time">12:10 – 12:40</td>
+            <td>
+                <div class="accordion">
+                    <input type="checkbox" id="accordion-5" name="accordion-checkbox" hidden>
+                    <label class="accordion-header" for="accordion-5">
+                        Documenting Python Code
+                    </label>
+                    <div class="accordion-body">
+                        Yes, folks, software documentation is important! So far, you’ve benefited from well-documented
+                        Python libraries, so it’s only natural to document your own code in order to keep your software
+                        usable and maintainable.
+                        <br><br>
+                        However, the first step is often the most difficult. Therefore, this talk will provide an
+                        introduction to documenting Python code effectively. You will learn about the basic concepts of
+                        Docstrings, the Sphinx documentation generator, and the standard lightweight markup language
+                        reStructuredText. You will also learn about the benefits of a docs-as-code approach in general,
+                        and find an answer to the question of whether Python can also be documented using other markup
+                        languages.
+                        <p class="bio">
+                            Christian Heitzmann is a Java-, Python- and Spring-certified software developer with a CAS
+                            in Machine Learning and owner of SimplexaCode in Lucerne. He has been developing software
+                            for over 20 years and has been teaching and lecturing for over 12 years in the areas of Java
+                            and Python programming, mathematics, and algorithms, among others. Today, as a Technical
+                            Writer, he documents software architectures for companies and regularly writes articles for
+                            IT journals.
+                        </p>
+                        <br>
+                    </div>
+                </div>
+                Christian Heitzmann
+            </td>
+        </tr>
+        <tr>
+            <td class="col-time">12:40 – 14:00</td>
+            <td class="meta">Lunch Break</td>
+        </tr>
+        <tr>
+            <td class="col-time">14:00 – 14:30</td>
+            <td>
+                <div class="accordion">
+                    <input type="checkbox" id="accordion-6" name="accordion-checkbox" hidden>
+                    <label class="accordion-header" for="accordion-6">
+                        Voice Control in Action: A Python-Based Approach for Operating a Quadrupedal Robot
+                    </label>
+                    <div class="accordion-body">
+                        In an era where autonomous robots, such as Boston Dynamics' quadrupedal robot, Spot, are
+                        capable of navigating complex environments, it is crucial to ensure the safety of an operator.
+                        Traditional control mechanisms, such as a remote control, may not be feasible or safe in harsh
+                        or hazardous conditions.
+                        Addressing this, we present a novel Python-based voice control module for Spot.
+                        <br><br>
+                        Our module enables hands-free operation of the robot, allowing it to execute verbally issued
+                        commands.
+                        To enhance the interaction between an operator and a robot, we've integrated an additional
+                        text-to-speech synthesizer, establishing a two-way communication channel.
+                        <br><br>
+                        Our solution leverages state-of-the-art Python libraries for speech-to-text translation and
+                        lightweight command extraction, which significantly extends the possibilities of interaction.
+                        As a result, Spot can perform basic tasks such as standing up or navigating to specific
+                        coordinates using only voice commands.
+                        <br><br>
+                        This novel approach, promotes safety and efficiency in operating autonomous robots, opening up
+                        new possibilities for their use in challenging environments.
+                        <p class="bio">
+                            Finished my BSc in Mechanical engineering at OST. Currently pursuing my master's degree in
+                            Mechatronics and Automation. The talk is a slight modification of my first Focus Thesis.
+                        </p>
+                        <br>
+                    </div>
+                </div>
+                Robin Ehrensperger
+            </td>
+        </tr>
+        <tr>
+            <td class="col-time">14:35 – 15:05</td>
+            <td>
+                <div class="accordion">
+                    <input type="checkbox" id="accordion-7" name="accordion-checkbox" hidden>
+                    <label class="accordion-header" for="accordion-7">
+                        A Short History of Python Web Frameworks
+                    </label>
+                    <div class="accordion-body">
+                        Python is currently a powerhouse when it comes to web development. But, how did it all start? We
+                        explore Python's humble web development beginnings, from CGI to WSGI and the eventual rise of
+                        large frameworks like Django, and smaller ones like Flask and FastAPI.
+                        <p class="bio">
+                            Nafiul Islam is a Software Engineer, Speaker and Author. With more than a decade of
+                            development experience, Nafiul loves talking about developer experience and how to make it
+                            better. Nafiul currently works at Sonar as the Developer Advocate for Python. Previously, he
+                            worked at JetBrains and Microsoft.
+                        </p>
+                        <br>
+                    </div>
+                </div>
+                Quazi Nafiul Islam
+            </td>
+        </tr>
+        <tr>
+            <td class="col-time">15:05 – 15:45</td>
+            <td class="meta">Coffee break</td>
+        </tr>
+        <tr>
+            <td class="col-time">15:45 – 16:15</td>
+            <td>
+                <div class="accordion">
+                    <input type="checkbox" id="accordion-8" name="accordion-checkbox" hidden>
+                    <label class="accordion-header" for="accordion-8">
+                        Building Dainty Dashboards in Plotly Dash for health data science
+                    </label>
+                    <div class="accordion-body">
+                        Data science projects are often characterized by visualizations which enhances the creative
+                        storytelling process and allow us to derive actionable insights from data. This is enabled
+                        through the use of good visualization tools/libraries which enable us to present data in a
+                        manner that is interactive and is easily understandable. Often, the action in itself tends to be
+                        more significantly remembered by the audience in comparison to static insights. This inturn
+                        calls for the need for using interactive dashboards as a way to present the data.
+                        <br><br>
+                        Currently, the plethora of tools available for this purpose often makes it a tedious task to
+                        decide which is the best fit. Often the choice oscillates between learning to use explicit
+                        dashboarding tools or using existing python libraries which may allow visualizations but not
+                        necessarily dashboarding.
+                        <br><br>
+                        Apart from the cost associated with some of these explicit dashboarding tools, there might also
+                        be a learning curve associated with it.
+                        <br><br>
+                        Therefore, in this talk, I would like to take you through a simple pythonic approach of building
+                        dainty dashboards using Plotly Dash in python to ease the process of data exploration and allow
+                        for interactive visualizations that enable creative storytelling.
+                        <p class="bio">
+                        </p>
+                        <br>
+                    </div>
+                </div>
+                Avneet Kaur
+            </td>
+        </tr>
+        <tr>
+            <td class="col-time">16:20 – 16:50</td>
+            <td>
+                <div class="accordion">
+                    <input type="checkbox" id="accordion-9" name="accordion-checkbox" hidden>
+                    <label class="accordion-header" for="accordion-9">
+                        Asynchronous Multiprocess Large Model Training on PyTorch for Synthetic Cities Generation
+                    </label>
+                    <div class="accordion-body">
+                        With the increasing popularity of large machine learning models capable of solving complicated
+                        tasks in the sphere of natural language processing, computer vision, etc., the need for
+                        distributed computation has rocketed significantly. We would like to provide the &quot;surgery&quot; of
+                        parallelization methods from one of the most popular deep learning frameworks - PyTorch.
+                        Particularly, we would like to demonstrate two main approaches: data parallelization (when the
+                        single module is trained asynchronically in streams) and model parallelization (both horizontal
+                        &ndash; with several models trained simultaneously, and vertical &ndash; when the model parameters are split
+                        into groups). Moreover, we will guide through the cases of different resources availability,
+                        i.e. what could be done when having only CPUs, a single GPU, or multiple GPUs.
+                        <br><br>
+                        Our showing is to be done on an example of urban planning problem solution, where we are
+                        creating synthetic cities with deep convolutional generative adversarial neural networks. These
+                        models have complicated architecture and billions of parameters when generating images starting
+                        from mid-resolution like 256x256, which makes them perfect instances for distributed computation
+                        demonstration.
+                        <br>
+                    </div>
+                </div>
+                Furio Valerio Sordini, Pavel Sulimov
+            </td>
+        </tr>
+        <tr>
+            <td class="col-time">16:50 – 17:00</td>
+            <td class="meta">Closing</td>
+        </tr>
+        <tr>
+            <td class="col-time">17:00 – 20:00</td>
+            <td>Social Event / Apéro</td>
+        </tr>
+    </tbody>
+</table>
+<br>
+
