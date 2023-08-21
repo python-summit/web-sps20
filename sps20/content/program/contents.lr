@@ -279,7 +279,7 @@ Please note that changes may occur
                 <div class="accordion">
                     <input type="checkbox" id="accordion-8" name="accordion-checkbox" hidden>
                     <label class="accordion-header" for="accordion-8">
-                        Building Dainty Dashboards in Plotly Dash for health data science.
+                        Building Dainty Dashboards in Plotly Dash for health data science
                     </label>
                     <div class="accordion-body">
                         Data science projects are often characterized by visualizations which enhances the creative
@@ -316,7 +316,7 @@ Please note that changes may occur
                     <label class="accordion-header" for="accordion-9">
                         Asynchronous Multiprocess Large Model Training on PyTorch for Synthetic Cities Generation
                     </label>
-                        <div class="accordion-body">
+                    <div class="accordion-body">
                         With the increasing popularity of large machine learning models capable of solving complicated
                         tasks in the sphere of natural language processing, computer vision, etc., the need for
                         distributed computation has rocketed significantly. We would like to provide the &quot;surgery&quot; of
@@ -332,8 +332,8 @@ Please note that changes may occur
                         models have complicated architecture and billions of parameters when generating images starting
                         from mid-resolution like 256x256, which makes them perfect instances for distributed computation
                         demonstration.
+                        <br>
                     </div>
-                    <br>
                 </div>
                 Furio Valerio Sordini, Pavel Sulimov
             </td>
