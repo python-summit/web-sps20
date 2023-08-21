@@ -123,12 +123,12 @@ Please note that changes may occur
                         model-building phase. We explore beyond the current MLOps hype and try to understand what it
                         takes to run a successful project that is ready to ripe like a fine wine rather than old milk.
                         <p class="bio">
-                            "Before being a Software Developer, I have been (not so secretly) tech-addicted, especially
+                            Before being a Software Developer, I have been (not so secretly) tech-addicted, especially
                             when it came to computers. Now, a few years later, during the week I code everything (more
                             happily if it comes to Python), and during weekends I help to maintain Kivy as I’m proudly
                             part of the Kivy Core Developers team. When I’m not in front of my laptop screen, you can
                             find me traveling (hopefully more, in future). I love to listen to EDM music while stuck in
-                            traffic or during open-air festivals."
+                            traffic or during open-air festivals.
                         </p>
                         <br>
                     </div>
@@ -145,7 +145,7 @@ Please note that changes may occur
                         A walk with CPython
                     </label>
                     <div class="accordion-body">
-                        "Did you know that Python has a compiler even though it’s an interpreted language?
+                        Did you know that Python has a compiler even though it’s an interpreted language?
                         <br><br>
                         In this talk, we will embark on a step-by-step exploration of a simple program, unraveling the
                         inner workings of CPython—the default reference implementation of Python. We’ll begin with the
@@ -180,7 +180,7 @@ Please note that changes may occur
                         Documenting Python Code
                     </label>
                     <div class="accordion-body">
-                        "Yes, folks, software documentation is important! So far, you’ve benefited from well-documented
+                        Yes, folks, software documentation is important! So far, you’ve benefited from well-documented
                         Python libraries, so it’s only natural to document your own code in order to keep your software
                         usable and maintainable.
                         <br><br>
@@ -189,7 +189,7 @@ Please note that changes may occur
                         Docstrings, the Sphinx documentation generator, and the standard lightweight markup language
                         reStructuredText. You will also learn about the benefits of a docs-as-code approach in general,
                         and find an answer to the question of whether Python can also be documented using other markup
-                        languages."
+                        languages.
                         <p class="bio">
                             Christian Heitzmann is a Java-, Python- and Spring-certified software developer with a CAS
                             in Machine Learning and owner of SimplexaCode in Lucerne. He has been developing software
