@@ -1,6 +1,6 @@
 title: Help us
 ---
-description: Join us as a Helper on the Day of the Conference.
+description: This is a non-profit conference
 ---
 ordering: 5
 ---
@@ -8,7 +8,9 @@ body:
 
 ## Donate
 
-You can also help us financially by donating to the Swiss Python Summit
+This is a non-profit conference that is funded entirely by its participants and donators.
+
+You can help us financially by donating to the Swiss Python Summit
 Association.
 
 <script type="text/javascript"
