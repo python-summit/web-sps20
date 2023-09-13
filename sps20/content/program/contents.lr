@@ -277,8 +277,8 @@ Please note that changes may occur.
             <td class="col-time">15:45 – 16:15</td>
             <td>
                 <div class="accordion">
-                    <input type="checkbox" id="accordion-9" name="accordion-checkbox" hidden>
-                    <label class="accordion-header" for="accordion-9">
+                    <input type="checkbox" id="accordion-8" name="accordion-checkbox" hidden>
+                    <label class="accordion-header" for="accordion-8">
                         Asynchronous Multiprocess Large Model Training on PyTorch for Synthetic Cities Generation
                     </label>
                     <div class="accordion-body">
@@ -317,11 +317,20 @@ Please note that changes may occur.
                         ⚡ Lightning Talks ⚡
                     </label>
                     <div class="accordion-body">
-                        <!-- TODO -->
+                        We are happy to introduce Lightning Talks to this year's conference! They are open to everyone 😊
+                        <br><br>
+                        If you are interested, please note the following:
                         <br>
+                        <ul>
+                            <li>&ndash; Any proposal is welcome, as long as your talk is about Python and respects our <a href="/coc">Code of Conduct</a>. We reserve the right to reject talks!</li>
+                            <li>&ndash; You can register at the conference. First come, first served.</li>
+                            <li>&ndash; Talk time is limited to 5 minutes.</li>
+                            <li>&ndash; Please submit your slides as PDF via email at least 30 minutes before Lightning Talks start. We will provide a laptop with all slides. To keep turnaround times short, you will not be able to plug in your own device.</li>
+                            <li>&ndash; By registering, you accept that your talk may be recorded, published and streamed live (audio & video).</li>                                                                                                                                         
+                        </ul>
                     </div>
                 </div>
-                More info comming soon...
+                We are happy to introduce Lightning Talks to this year's conference! Click above for more information
             </td>
         </tr>
         <tr>
