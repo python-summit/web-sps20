@@ -277,8 +277,8 @@ Please note that changes may occur.
             <td class="col-time">15:45 – 16:15</td>
             <td>
                 <div class="accordion">
-                    <input type="checkbox" id="accordion-9" name="accordion-checkbox" hidden>
-                    <label class="accordion-header" for="accordion-9">
+                    <input type="checkbox" id="accordion-8" name="accordion-checkbox" hidden>
+                    <label class="accordion-header" for="accordion-8">
                         Asynchronous Multiprocess Large Model Training on PyTorch for Synthetic Cities Generation
                     </label>
                     <div class="accordion-body">
