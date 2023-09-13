@@ -321,7 +321,7 @@ Please note that changes may occur.
                         <br>
                         If you are interested, please note the following:
                         <ul>
-                            <li>Any proposal is welcome, as long as your talk is about Python and respects our [Code of Conduct](/coc). We reserve the right to reject talks!</li>
+                            <li>Any proposal is welcome, as long as your talk is about Python and respects our <a href="/coc">Code of Conduct</a>. We reserve the right to reject talks!</li>
                             <li>You can register at the conference. First come, first served.</li>
                             <li>Talk time is limited to 5 minutes.</li>
                             <li>Please submit your slides as PDF via email at least 30 minutes before Lightning Talks start. We will provide a laptop with all slides. To keep turnaround times short, you will not be able to plug in your own device.</li>
