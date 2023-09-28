@@ -15,6 +15,14 @@ Here you can find recorded talks of the last summits. The presentation slides ar
 
 Please find the slides already below. We are currently working on this year's recodings..
 
+- **proving python code correct with nagini [[slides](sps23_marco_eilers_proving_python_code_correct_with_nagini.pdf)]**<br>marco eilers
+- **kivy cross-platform app development for pythonistas [[slides](sps23_mirko_galimberti_kivy_cross-platform_app_development_for_pythonistas.pdf)]**<br>mirko galimberti
+- **a short history of python web frameworks [[slides](sps23_nafiul_islam_a_short_history_of_python_web_frameworks.pdf)]**<br>nafiul islam
+- **asynchronous multiprocess large model training on pytorch [[slides](sps23_pavel_sulimov_asynchronous_multiprocess_large_model_training_on_pytorch.pdf)]**<br>pavel sulimov
+- **voice control python for operating a quadrupedal robot [[slides](sps23_robin_ehrensperger_voice_control_python_for_operating_a_quadrupedal_robot.pdf)]**<br>robin ehrensperger
+- **a walk with cpython [[slides](sps23_sadhana_srinivasan_a_walk_with_cpython.pdf)]**<br>sadhana srinivasan
+- **did you know matplotlib could do that [[slides](sps23_teresa_kubacka_did_you_know_matplotlib_could_do_that.pdf)]**<br>teresa kubacka
+
 - **Proving Python code correct with Nagini [[slides](SPS23_Marco_Eilers_Proving_Python_code_correct_with_Nagini.pdf)]**  
 Marco Eilers
 - **Did you know Matplotlib could do that [[slides](SPS23_Teresa_Kubacka_Did_you_know_Matplotlib_could_do_that.pdf)]**  
