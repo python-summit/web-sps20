@@ -8,21 +8,20 @@ ordering: 5
 ---
 body:
 
-Here you can find recorded talks of the last summits. The presentation slides are also linked. Like and Share!<p><p>
-**Once again a big thank you to all our speaker!!! **
+Here you can find recorded talks and slides of the past summits.
 
 ## **2023**
 
 Please find the slides already below. We are currently working on this year's recodings..
 
-- **Proving Python code correct with nagini [[slides](sps23_marco_eilers_proving_python_code_correct_with_nagini.pdf)]**<br>marco eilers
-- **Did you know Matplotlib could do that [[slides](sps23_teresa_kubacka_did_you_know_matplotlib_could_do_that.pdf)]**<br>teresa kubacka
-- **Kivy cross-platform app development for pythonistas [[slides](sps23_mirko_galimberti_kivy_cross-platform_app_development_for_pythonistas.pdf)]**<br>mirko galimberti
-- **A walk with Cpython [[slides](sps23_sadhana_srinivasan_a_walk_with_cpython.pdf)]**<br>sadhana srinivasan
-- **Documenting Python Code [[slides (extern)](https://link.simplexacode.ch/jwh6)]**<br>Christian Heitzmann
-- **A short history of python web frameworks [[slides](sps23_nafiul_islam_a_short_history_of_python_web_frameworks.pdf)]**<br>nafiul islam
-- **Voice control python for operating a quadrupedal robot [[slides](sps23_robin_ehrensperger_voice_control_python_for_operating_a_quadrupedal_robot.pdf)]**<br>robin ehrensperger
-- **Asynchronous multiprocess large model training on Pytorch [[slides](sps23_pavel_sulimov_asynchronous_multiprocess_large_model_training_on_pytorch.pdf)]**<br>pavel sulimov
+- **Proving Python Code Correct with Nagini [[slides](sps23_marco_eilers_proving_python_code_correct_with_nagini.pdf)]**<br>Dr. Marco Eilers
+- **Did you know Matplotlib could do that? [[slides](sps23_teresa_kubacka_did_you_know_matplotlib_could_do_that.pdf)]**<br>Dr. Teresa Kubacka
+- **Kivy: Cross-platform App Development for Pythonistas [[slides](sps23_mirko_galimberti_kivy_cross-platform_app_development_for_pythonistas.pdf)]**<br>Mirko Galimberti
+- **A Walk with CPython [[slides](sps23_sadhana_srinivasan_a_walk_with_cpython.pdf)]**<br>Sadhana Srinivasan
+- **Documenting Python Code [[slides (external link)](https://link.simplexacode.ch/jwh6)]**<br>Christian Heitzmann
+- **A Short History of Python Web Frameworks [[slides](sps23_nafiul_islam_a_short_history_of_python_web_frameworks.pdf)]**<br>Quazi Nafiul Islam
+- **Voice Control in Action: A Python-Based Approach for Operating a Quadrupedal Robot [[slides](sps23_robin_ehrensperger_voice_control_python_for_operating_a_quadrupedal_robot.pdf)]**<br>Robin Ehrensperger
+- **Asynchronous multiprocess large model training on Pytorch for synthetic cities generation [[slides](sps23_pavel_sulimov_asynchronous_multiprocess_large_model_training_on_pytorch.pdf)]**<br>Dr. Pavel Sulimov
 
 ---
 _template: recordings.html
