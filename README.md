@@ -1,6 +1,10 @@
-# Static Website for the 2022 Swiss Summit
+# Static Website for the Swiss Python Summit
+
+See [www.python-summit.ch](https://www.python-summit.ch/)
 
 A [Lektor](https://www.getlektor.com/) powered project.
+
+## Development
 
 To run the website:
 
@@ -10,7 +14,7 @@ To run the website:
 
 After that the website should be available on port 5000.
 
-## How to add a talk recording
+### How to add a talk recording
 
 - Go to http://localhost:5000/admin/root:talk-recordings/edit
 - Click "Add Page"
