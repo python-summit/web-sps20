@@ -11,10 +11,10 @@
         <h2><strong>{{ year }}</strong></h2>
 
         {% if bag("playlists", "ccc", year|string) %}
-            <a href="{{ bag("playlists", "ccc", year|string) }}" class="btn btn-sm btn-primary">media.ccc.de Playlist</a>
+            <a href="{{ bag("playlists", "ccc", year|string) }}" class="btn btn-sm btn-primary">full media.ccc.de playlist</a>
         {% endif %}
         {% if bag("playlists", "youtube", year|string) %}
-            <a href="{{ bag("playlists", "youtube", year|string) }}" class="btn btn-sm btn-primary">YouTube Playlist</a>
+            <a href="{{ bag("playlists", "youtube", year|string) }}" class="btn btn-sm btn-primary">full YouTube playlist</a>
         {% endif %}
 
         <ul>
