@@ -10,24 +10,31 @@
     {% for year in this.children|map(attribute="year")|sort(reverse=True)|unique %}
         <h2><strong>{{ year }}</strong></h2>
 
-        {% if bag("playlists", "ccc", year|string) %}
-            <a href="{{ bag("playlists", "ccc", year|string) }}" class="btn btn-sm btn-primary">media.ccc.de</a>
-        {% endif %}
         {% if bag("playlists", "youtube", year|string) %}
-            <a href="{{ bag("playlists", "youtube", year|string) }}" class="btn btn-sm btn-primary">YouTube</a>
+            <a href="{{ bag("playlists", "youtube", year|string) }}" class="btn btn-sm btn-primary">full YouTube playlist</a>
+        {% endif %}
+        {% if bag("playlists", "ccc", year|string) %}
+            <a href="{{ bag("playlists", "ccc", year|string) }}" class="btn btn-sm btn-primary">full media.ccc.de playlist</a>
         {% endif %}
 
         <ul>
         {% for talk in this.children|selectattr("year", "eq", year)|sort(attribute="ordering") %}
             {% set slides=talk.attachments|selectattr("type", "eq", "slides")|list %}
             <li>
+                {% if talk.video_url %}
                 <strong><a href="{{ talk.video_url }}">{{ talk.title }}</a></strong>
+                {% else %}
+                <strong>{{ talk.title }}</strong>
+                {% endif %}
                 {% if slides %}
                     [
                     {%- for slide in slides -%}
                     <a href="{{ slide|url }}">slides</a>{% if not loop.last %}, {% endif %}
                     {%- endfor -%}
                     ]
+                {% endif %}
+                {% if talk.external_slide_url %}
+                    [<a href="{{ talk.external_slide_url }}">slides (external link)</a>]
                 {% endif %}
                 <div>{{ talk.speaker }}</div>
             </li>
