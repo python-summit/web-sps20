@@ -2,19 +2,15 @@ _model: page
 ---
 title: Ticket
 ---
-ordering: 2
+ordering: 4
 ---
 description: Get your ticket now!
 ---
 body:
 
-# Tickets
+# Tickets 2024
 
-Get your ticket now. We are looking forward to seeing you at conference!
-
-! <p style="text-align:center;"><a href="https://ti.to/swiss-python-summit-association/sps23">👉 Get your ticket here 👈</a></p>
-
-The ticketing is handled by ti.to.
+Ticket sales are not yet open. We expect tickets to go on sale at the end of April. Stay tuned and follow us on social media for updates!
 
 ---
-_hidden: yes
+_hidden: no
