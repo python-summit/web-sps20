@@ -6,30 +6,45 @@ body:
 
 # Call for Proposals 2024
 
-We are delighted to announce the call for proposals for our conference is open.
+We are delighted to announce the call for proposals for our conference is **open**.
 
-Any topic is welcome as long as it has something to do with Python. This year, we will have a special day dedicated to all Data Science related topics.
+## Submission
+Please **[use this form](https://pretalx.sifs0005.infs.ch/swiss-python-summit-2024/cfp)** to submit your proposal.
 
-**Please [use this form](https://pretalx.sifs0005.infs.ch/swiss-python-summit-2024/cfp) to submit your proposal.** If you encounter any problems or have any questions during the process, please contact us.
+## Deadline
+The deadline for submitting proposals is **30 June 2024, 23:59 CEST**.
 
-The deadline for sending proposals is June 30. A draft schedule will be published in August. 
+## Decision
+The results will be communicated to all applicants via email by **end of July**.
+
+## Topics
+Any topic is welcome as long as it is **related to Python**.
+
+This year, in addition to the **general Python topics** on the first day of the conference, the second day is dedicated to all **Data Science** related topics.
+
 
 ## Guidelines
 
-- Talks will be conducted in English.
-- Speaking time is 30 minutes (including Q&A).
-- Speakers will receive free admission to the conference and a complimentary lunch.
+- Talks will be conducted in **English**.
+- Speaking time is **30 minutes** (including Q&A).
+- Speakers will receive **free admission** to the conference and a **complimentary lunch**.
 - You may submit several proposals.
 - You can edit your proposal while the CfP remains open.
 
 ## Speaker Infrastructure
 
-If you are having a talk at the summit you can expect the following hardware:
+If you are giving a talk at the summit you can expect the following hardware:
 
-* You'll get a wireless headset for recording and amplification.
-* The projector has an HDMI connector. Please inform us if you need a adapter for other connections.
+* You will get a wireless headset for recording and amplification.
+* The projector has an **HDMI** connector. If you require an adapter for connections other than HDMI, please inform us in advance.
 * Your presentation will be shown with a resolution of 1920x1080 (16:9).
-* If you are planning an audio output, please provide it via a 3.5 mm audio jack and let us know in advance, as we will need to integrate this into our recording. 
+* If you are planning an audio output, please provide it via a **3.5 mm audio jack** and let us know in advance, as this is necessary for our recording setup.
+
+## Schedule
+A draft schedule will be published in August. 
+
+## Contact
+If you encounter any problems or have any questions during the process, please contact us by [email](mailto:info@python-summit.ch).
 
 ---
 _hidden: no
