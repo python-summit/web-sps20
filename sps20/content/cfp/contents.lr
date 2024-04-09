@@ -1,23 +1,37 @@
 title: Call for Proposals
 ---
-ordering: 4
+ordering: 2
 ---
 body:
 
-# Call for Proposals 2023
+# Call for Proposals 2024
 
-## The CfP is closed
+We are delighted to announce the call for proposals for our conference is open.
 
-I hope we will still see you at the conference or receive your proposal next year.
+Any topic is welcome as long as it has something to do with Python. This year, in addition to the **general Python topics** on the first day of the conference, the second day is dedicated to all **Data Science** related topics.
+
+Please **[use this form](https://pretalx.sifs0005.infs.ch/swiss-python-summit-2024/cfp) to submit your proposal.** If you encounter any problems or have any questions during the process, please contact us by [email](mailto:info@python-summit.ch).
+
+The deadline for sending proposals is **June 30**. A draft schedule will be published in August. 
+
+## Guidelines
+
+- Talks will be conducted in English.
+- Speaking time is 30 minutes (including Q&A).
+- Speakers will receive free admission to the conference and a complimentary lunch.
+- You may submit several proposals.
+- You can edit your proposal while the CfP remains open.
+
+(More information about the entire process in the form)
 
 ## Speaker Infrastructure
 
-If you are having a talk at the summit you can expect the following hardware:
+If you are giving a talk at the summit, you can expect the following hardware:
 
-* You'll get a wireless headset for recording and amplification.
-* The projector has a HDMI connector. Please inform us if you need a adapter for other connections.
+* You will get a wireless headset for recording and amplification.
+* The projector has an HDMI connector. If you need an adapter for connections other than HDMI, please bring your own or inform us in advance.
 * Your presentation will be shown with a resolution of 1920x1080 (16:9).
-* If you plan to have output audio of any kind, do let us know beforehand as we have to integrate that into our recording.
+* If you are planning an audio output, please provide it via a 3.5 mm audio jack and let us know in advance, as we will need to integrate this into our recording. 
 
 ---
-_hidden: yes
+_hidden: no
