@@ -2,17 +2,32 @@
 
 See [www.python-summit.ch](https://www.python-summit.ch/)
 
-A [Lektor](https://www.getlektor.com/) powered project.
-
 ## Development
 
-To run the website:
+### General
 
-* Clone the repository
+* This project is made with [Lektor](https://www.getlektor.com/).
+* Lektor is a static content management and pages can be easy written in Markdown
+
+### Run website for local development
+
+* Clone the repository or open in GitHub Codespace
+* Make a virtual environment and activate it (for some reason, the lektor CLI works only in venv)
 * Install requirements with `make install`
 * Run Lektor server with `make serve`
+* After that the website should be available on port 5000 with hot-reload
 
-After that the website should be available on port 5000.
+### Deployment
+
+* The **main** branch is automatically live deployed with Netlify, so be careful what you push here!
+* You can see a preview for reviews in a pull requests:
+![preview](./doc/preview.png)
+
+### Branch and merge rules
+
+Please follow these rules to keep the repo clean:
+
+* Name branches with prefix `spsYY-` e.g. `sps24-open-cfp`
 
 ### How to add a talk recording
 
