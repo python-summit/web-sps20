@@ -2,7 +2,7 @@
 name = Swiss Python Summit 2024
 
 [packages]
-lektor-scss = 1.3.3
+lektor-scss = 1.5.0
 lektor-markdown-admonition = 0.3.1
 lektor-markdown-header-anchors = 0.3.1
 
