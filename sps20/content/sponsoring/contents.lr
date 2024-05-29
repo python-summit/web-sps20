@@ -1,8 +1,3 @@
-%%html
-<style>
-table {float:left}
-</style>
-
 title: Sponsoring
 ---
 ordering: 7
@@ -24,7 +19,7 @@ Sponsorship opportunities are on a first-paid, first-served basis.
 ## Sponsorship Categories & Benefits
 
 | Feature                                   | Gold | Silver | Bronze |
-|-------------------------------------------|------|--------|--------|
+|:------------------------------------------|:-----|:-------|:-------|
 | Price (CHF)                               | 3000 | 1500   | 500    |
 | Total available                           |  1   | 2      | 4      |
 | Still available                           |  1   | 2      | 4      |
