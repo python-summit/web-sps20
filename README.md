@@ -6,8 +6,8 @@ See [www.python-summit.ch](https://www.python-summit.ch/)
 
 ### General
 
-* This project is made with [Lektor](https://www.getlektor.com/).
-* Lektor is a static content management and pages can be easy written in Markdown
+* This project is made with [Lektor](https://www.getlektor.com/). Lektor is a static content management and pages can be easy written in Markdown
+* The design uses [Spectre](https://picturepan2.github.io/spectre/index.html) as its base. Spectre is a lightweight CSS framework with a lot of components you can use.
 
 ### Run website for local development
 
