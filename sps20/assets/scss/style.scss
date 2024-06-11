@@ -250,8 +250,8 @@ li::before
 
         max-width: $max-line-width;
 
-        img {
-            width: 125%;
+        img{
+            width: 100%;
         }
     }
 
@@ -280,6 +280,8 @@ li::before
             margin-bottom: .5rem;
             position: relative;
             top: -1rem;
+            width: 100%;
+            max-width: 100%;
         }
     }
 
