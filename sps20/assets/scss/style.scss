@@ -269,11 +269,12 @@ li::before
 
     .media {
         margin: 0 0 1.5rem;
-        max-width: 80%;
+        max-width: 100%;
 
         img {
             margin-bottom: -.5rem;
             width: 100%;
+            max-width: $max-line-width;
         }
 
         &.map {
@@ -281,7 +282,8 @@ li::before
             position: relative;
             top: -1rem;
             width: 100%;
-            max-width: 100%;
+            max-width: $max-line-width;
+            height: 268px;
         }
     }
 
@@ -321,10 +323,6 @@ li::before
 }
 
 // maps
-.map {
-    min-height: 500px;
-}
-
 .mapboxgl-canvas {
     box-shadow: none;
     outline: none;
