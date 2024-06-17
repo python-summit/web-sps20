@@ -213,7 +213,7 @@ footer {
 // lists
 ul {
     list-style: none;
-    margin-left: 0;
+    margin-left: 1.5 ex;
     position: relative;
 
     li {
@@ -222,18 +222,14 @@ ul {
 }
 
 // bullets
-li::before,
-h1::before {
-    color: $header-bullet-color;
+li::before
+{
+    color: $actual-bullet-color;
     content: '•';
     font-weight: 700;
     left: -1.5ex;
     margin-top: -1px;
     position: absolute;
-}
-
-li::before {
-    color: $actual-bullet-color;
 }
 
 // page
