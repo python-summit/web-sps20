@@ -11,9 +11,17 @@ body:
 - Day 1: Thursday 17th October: Python, the programming language you love
 - Day 2: Friday 18th October: Data Science & more
 
-<script type="text/javascript" src="https://www.python-summit.ch/swiss-python-summit-2024/widgets/schedule.js"></script>
+TODO:
+- Satz hier Änderungen
+- Startseite Link
 
-<pretalx-schedule event-url="https://pretalx.sifs0005.infs.ch/swiss-python-summit-2024/" locale="en" format="grid" style="--pretalx-clr-primary: #91867E"></pretalx-schedule>
+
+<script type="text/javascript" src="https://pretalx.sifs0005.infs.ch/swiss-python-summit-2024/widgets/schedule.js"></script>        <script type="text/javascript" src="https://pretalx.sifs0005.infs.ch/swiss-python-summit-2024/widgets/schedule.js"></script>
+
+<div style="height: 200px; width: 50%; background-color: powderblue;">
+    <pretalx-schedule event-url="https://pretalx.sifs0005.infs.ch/swiss-python-summit-2024" locale="en" format="grid" style="--pretalx-clr-primary: #91867E"></pretalx-schedule>
+</div>
+
 <noscript>
    <div class="pretalx-widget">
         <div class="pretalx-widget-info-message">
