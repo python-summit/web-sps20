@@ -33,3 +33,8 @@
 
   [headers.values]
     Cache-Control = "public, max-age=900"
+
+[[redirects]]
+from = "/swiss-python-summit-2024/schedule"
+to = "https://pretalx.sifs0005.infs.ch/swiss-python-summit-2024/schedule/"
+status = 302
