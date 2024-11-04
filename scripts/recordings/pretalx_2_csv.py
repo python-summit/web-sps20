@@ -23,22 +23,27 @@ def get_talks_data(schedule_path = PRETALX_SCHEDULE_PATH):
             names, bios = zip(*[(d["public_name"], d["biography"]) for d in talk["persons"]])
             talk_data = dict(
                 day = day_idx,
+                date = talk["date"],
                 title = talk["title"],
+                type = talk["type"],
+                names_raw = names,
+                biographies_raw = bios,
                 abstract = talk["abstract"],
-                names = names,
-                biographies = bios
             )
             talks.append(talk_data)
     return talks
 
 def enrich(talks):
     for talk in talks:
-        named_title = f'{", ".join(talk["names"])} - {talk["title"]}'
+        names = ", ".join(talk["names_raw"])
+        talk["names_combined"] = names
+        named_title = f'{names} - {talk["title"]}'
         talk["named_title"] = named_title
         talk["video_title"] = f"{named_title} - {CONF_SHORT}"
         filename = clean_filename(f"{CONF_SHORT}_{named_title}")
         talk["filename"] = filename
-        # combinded_bio = 
+        talk["video_url"] = "<TODO>"
+        talk["biographies_combined"] = "<TODO>"
     return talks
 
 def clean_filename(filename, max_length=70):
@@ -66,6 +71,9 @@ def main():
     data = enrich(data)
     df = pd.DataFrame(data)
     df.to_csv(CSV_PATH)
+    short_csv_path = CSV_PATH.parent / (CSV_PATH.stem + "_notext" + CSV_PATH.suffix)
+    print(short_csv_path)
+    df.drop(["abstract","biographies_raw"], axis=1).to_csv(short_csv_path)
 
 if __name__ == "__main__":
     main()
