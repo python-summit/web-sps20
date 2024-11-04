@@ -1,0 +1,830 @@
+{
+    "$schema": "https://c3voc.de/schedule/schema.json",
+    "generator": {
+        "name": "pretalx",
+        "version": "2024.2.1"
+    },
+    "schedule": {
+        "url": "https://www.python-summit.ch/swiss-python-summit-2024/schedule/",
+        "version": "0.9",
+        "base_url": "https://pretalx.sifs0005.infs.ch",
+        "conference": {
+            "acronym": "swiss-python-summit-2024",
+            "title": "Swiss Python Summit 2024",
+            "start": "2024-10-17",
+            "end": "2024-10-18",
+            "daysCount": 2,
+            "timeslot_duration": "00:05",
+            "time_zone_name": "Europe/Zurich",
+            "colors": {
+                "primary": "#91867E"
+            },
+            "rooms": [
+                {
+                    "name": "Aula 4.101",
+                    "guid": "f553381f-dfc8-5272-b4a6-98edffa28d09",
+                    "description": "Our main meeting place",
+                    "capacity": 500
+                }
+            ],
+            "tracks": [
+                {
+                    "name": "Day 1 - Python, the programming language you love",
+                    "color": "#0A9529"
+                },
+                {
+                    "name": "Day 2 - Data Science & More",
+                    "color": "#083A9C"
+                }
+            ],
+            "days": [
+                {
+                    "index": 1,
+                    "date": "2024-10-17",
+                    "day_start": "2024-10-17T04:00:00+02:00",
+                    "day_end": "2024-10-18T03:59:00+02:00",
+                    "rooms": {
+                        "Aula 4.101": [
+                            {
+                                "url": "https://www.python-summit.ch/swiss-python-summit-2024/talk/UX7SGC/",
+                                "id": 84,
+                                "guid": "72d690f4-738e-5d62-84ea-2c0efd443b48",
+                                "date": "2024-10-17T09:00:00+02:00",
+                                "start": "09:00",
+                                "logo": null,
+                                "duration": "00:05",
+                                "room": "Aula 4.101",
+                                "slug": "swiss-python-summit-2024-84-welcome",
+                                "title": "Welcome",
+                                "subtitle": "",
+                                "track": "Day 1 - Python, the programming language you love",
+                                "type": "Opening/Closing",
+                                "language": "en",
+                                "abstract": "Welcome to the Python Summit!",
+                                "description": null,
+                                "recording_license": "",
+                                "do_not_record": false,
+                                "persons": [
+                                    {
+                                        "guid": "f553f82e-eff0-5e7b-97b1-5c43b6cbfdf1",
+                                        "id": 80,
+                                        "code": "VEWLUY",
+                                        "public_name": "Orga",
+                                        "avatar": null,
+                                        "biography": null,
+                                        "answers": []
+                                    }
+                                ],
+                                "links": [],
+                                "attachments": [],
+                                "answers": []
+                            },
+                            {
+                                "url": "https://www.python-summit.ch/swiss-python-summit-2024/talk/RBKRUQ/",
+                                "id": 82,
+                                "guid": "14fe80a8-d284-58e1-adda-884fa77f9bf9",
+                                "date": "2024-10-17T09:10:00+02:00",
+                                "start": "09:10",
+                                "logo": null,
+                                "duration": "00:20",
+                                "room": "Aula 4.101",
+                                "slug": "swiss-python-summit-2024-82-empowering-independence-robot-assisted-shopping-for-the-visually-impaired-with-product-recognition",
+                                "title": "Empowering Independence: Robot-Assisted Shopping for the Visually Impaired with Product Recognition",
+                                "subtitle": "",
+                                "track": "Day 1 - Python, the programming language you love",
+                                "type": "Keynote",
+                                "language": "en",
+                                "abstract": "Shopping independently presents significant challenges for the visually impaired. I address these obstacles with a Python-based shopping assistance system that combines product and hand detection with speech recognition.\r\n\r\nIn this talk, we\u2019ll explore how computer vision technology, leveraging a camera and pre-trained models, enables visually impaired users to navigate supermarkets and select products autonomously. By recognizing items and providing acoustic guidance for hand positioning, a self-driving system empowers users to shop without external help. Additionally, attendees will learn how voice commands, processed through speech recognition, create a user-friendly interface.",
+                                "description": null,
+                                "recording_license": "",
+                                "do_not_record": false,
+                                "persons": [
+                                    {
+                                        "guid": "a8224a10-3086-558f-b5e2-cb4f8bb6dee5",
+                                        "id": 77,
+                                        "code": "9L7QQN",
+                                        "public_name": "Chantal Keller",
+                                        "avatar": null,
+                                        "biography": "Throughout my studies in electrical engineering, I focused on projects with a societal impact, especially in the medical field, where I often used Python for development. After completing my master\u2019s degree this year, I now work at the Eastern Switzerland University of Applied Sciences, where I am eager to embrace new challenges that drive social change. Motivated by the potential of technology to improve lives, I am always excited to collaborate on projects that combine innovation with purpose.",
+                                        "answers": []
+                                    }
+                                ],
+                                "links": [],
+                                "attachments": [],
+                                "answers": []
+                            },
+                            {
+                                "url": "https://www.python-summit.ch/swiss-python-summit-2024/talk/D3FKJN/",
+                                "id": 59,
+                                "guid": "b417a960-9e78-5bba-b8e0-bd8e2da053e3",
+                                "date": "2024-10-17T09:35:00+02:00",
+                                "start": "09:35",
+                                "logo": null,
+                                "duration": "00:30",
+                                "room": "Aula 4.101",
+                                "slug": "swiss-python-summit-2024-59-automate-your-network-in-5-easy-steps-with-python-and-netmiko",
+                                "title": "Automate your network in 5 easy steps with Python and Netmiko",
+                                "subtitle": "",
+                                "track": "Day 1 - Python, the programming language you love",
+                                "type": "Talk",
+                                "language": "en",
+                                "abstract": "Network automation is important for efficient and reliable network management. In simple terms it means using software to automate tasks like configuring or testing network devices like routers or switches. This increases the speed of deploying new configurations while reducing human error - a win-win situation for everyone!\r\n\r\nThis talk introduces Netmiko, a powerful yet simple Python library for network automation. Netmiko provides an easy-to-use interface for SSH-based interactions with network devices. The syntax of Netmiko is easy to understand and it's vendor agnostic approach let's you automate all kinds of network devices.\r\n\r\nI'll show you how Netmiko works, starting with building your inventory of devices and connecting to them. Then we'll move on to sending config commands and configuring the devices. Finally, we'll verify if the config was applied successfully.\r\n\r\nBy the end of this talk, you will be able to use Netmiko to automate your own network devices!",
+                                "description": null,
+                                "recording_license": "",
+                                "do_not_record": false,
+                                "persons": [
+                                    {
+                                        "guid": "20b5b711-307b-54df-8c8c-0236446893dd",
+                                        "id": 51,
+                                        "code": "E7VMVA",
+                                        "public_name": "Luca Gubler",
+                                        "avatar": null,
+                                        "biography": "Hi, I'm Luca, a systems engineer at onway. A lot of my job revolves around automating things. I work on everything from our mobile routers, which we use to operate complete vehicle fleets in the public transport sector, to our own internal infrastructure.\r\n\r\nI love network automation. It's pretty amazing if you can set up a complete network across multiple different systems with the click of a button. Not many people know about network automation, so I'd like to show you more about it.",
+                                        "answers": []
+                                    }
+                                ],
+                                "links": [],
+                                "attachments": [],
+                                "answers": []
+                            },
+                            {
+                                "url": "https://www.python-summit.ch/swiss-python-summit-2024/talk/Z8ME7K/",
+                                "id": 20,
+                                "guid": "7b8ad241-8476-5b06-b070-ff14ab26482a",
+                                "date": "2024-10-17T10:10:00+02:00",
+                                "start": "10:10",
+                                "logo": null,
+                                "duration": "00:30",
+                                "room": "Aula 4.101",
+                                "slug": "swiss-python-summit-2024-20-code-makeover-mastering-the-art-of-python-refactoring",
+                                "title": "Code Makeover: Mastering the Art of Python Refactoring",
+                                "subtitle": "",
+                                "track": "Day 1 - Python, the programming language you love",
+                                "type": "Talk",
+                                "language": "en",
+                                "abstract": "\"Code Makeover: Mastering the Art of Python Refactoring\" is your guide to transforming cluttered Python scripts into models of efficiency and readability. \r\n\r\nDiscover the art of refining your code without losing your mind in the process. \r\n\r\nFrom recognizing the need for a makeover to applying the finishing touches, this talk will equip you with the strategies, best practices, and cautionary tales to ensure your code not only works beautifully but is also a joy to read and maintain.",
+                                "description": null,
+                                "recording_license": "",
+                                "do_not_record": false,
+                                "persons": [
+                                    {
+                                        "guid": "d85022b4-f2d8-5aa5-8682-d3f2df0dcd64",
+                                        "id": 18,
+                                        "code": "BQHFBG",
+                                        "public_name": "Bojan Miletic",
+                                        "avatar": null,
+                                        "biography": "Hi, I help AI/ML companies and their AI/data scientists turn ML models from the data lab into PoCs, MVPs, or fully functional products that convincingly prove their value to investors and other important decision-makers.\r\n\r\nBy using #Python and #AWS as superpowers, I help people get real business value from their ML algorithms.",
+                                        "answers": []
+                                    }
+                                ],
+                                "links": [],
+                                "attachments": [],
+                                "answers": []
+                            },
+                            {
+                                "url": "https://www.python-summit.ch/swiss-python-summit-2024/talk/3APSKJ/",
+                                "id": 55,
+                                "guid": "43cd9691-8cc1-5464-bcf1-0741de9044fd",
+                                "date": "2024-10-17T11:25:00+02:00",
+                                "start": "11:25",
+                                "logo": null,
+                                "duration": "00:30",
+                                "room": "Aula 4.101",
+                                "slug": "swiss-python-summit-2024-55-the-hitchhiker-s-guide-to-asyncio",
+                                "title": "The hitchhiker's guide to asyncio",
+                                "subtitle": "",
+                                "track": "Day 1 - Python, the programming language you love",
+                                "type": "Talk",
+                                "language": "en",
+                                "abstract": "asyncio is the de-facto standard for asynchronous programming in Python and enables concurrent operations without using threads or processes.\r\n\r\nIn this talk, we will delve into the technical details of asyncio and show how it can be used to improve the performance of Python applications. We will start by discussing the difference between threading, multiprocessing and async programming. Then, we will introduce the basic building blocks of asyncio: Event loops and Coroutines. We will dive deep into the way Coroutines work, discussing their origins and how they are linked to Generators.\r\n\r\nNext, we will look at Tasks, which are a higher-level abstraction built on top of Coroutines. Tasks make it easy to schedule and manage the execution of Coroutines. We will cover how to create and manage Tasks and how they can be used to write concurrent code.\r\n\r\nFinally, we will also cover some more advanced topics such as Async Loops and Context Managers, and how to handle errors and cancellations in asyncio. \r\n\r\nWhether you are new to asyncio or have experience with it, this talk will provide valuable insights and tips for leveraging its full potential. By the end of this talk, you will have a better understanding of how asyncio works, and how to use it to create efficient, high-performing Python applications.",
+                                "description": null,
+                                "recording_license": "",
+                                "do_not_record": false,
+                                "persons": [
+                                    {
+                                        "guid": "c296f2b6-fd5d-5c56-8de9-22854fda30ff",
+                                        "id": 46,
+                                        "code": "UHMTNM",
+                                        "public_name": "Emanuele Fabbiani",
+                                        "avatar": null,
+                                        "biography": "Engineer, researcher, entrepreneur. Emanuele earned his PhD in AI by researching time series forecasting. He was a guest researcher at EPFL Lausanne, and he's now the Head of AI at xtream. He published 8 papers in international journals, presented and organized tracks and workshops at international conferences, including AMLD Lausanne, ODSC London, WeAreDevelopers Berlin, PyData Berlin and Paris, PyCon Florence, and lectured in Italy, Switzerland, and Poland.",
+                                        "answers": []
+                                    }
+                                ],
+                                "links": [],
+                                "attachments": [],
+                                "answers": []
+                            },
+                            {
+                                "url": "https://www.python-summit.ch/swiss-python-summit-2024/talk/ZGFAEK/",
+                                "id": 50,
+                                "guid": "983d92d3-5745-5111-b286-841123078d2a",
+                                "date": "2024-10-17T12:00:00+02:00",
+                                "start": "12:00",
+                                "logo": null,
+                                "duration": "00:30",
+                                "room": "Aula 4.101",
+                                "slug": "swiss-python-summit-2024-50-float-everything-you-wanted-to-know-about",
+                                "title": "Float - Everything You Wanted to Know About",
+                                "subtitle": "",
+                                "track": "Day 1 - Python, the programming language you love",
+                                "type": "Talk",
+                                "language": "en",
+                                "abstract": "It is common knowledge that floating point numbers (`float`) are tricky. When misused, floats may lead to construction disaster - I will mention some notable accidents. But mainly, I will dig the topic from Python interface and rounding methods (`int` vs `round`, `divmod`, `math` library), via special symbols (`NaN`, `Inf`, `-0.0`, \u2026), invoking different processor modes (`FLT_ROUNDS`), down to the bits of IEEE 754 standard.",
+                                "description": null,
+                                "recording_license": "",
+                                "do_not_record": false,
+                                "persons": [
+                                    {
+                                        "guid": "e265781d-6ee5-5f85-b860-0df3be76f8f5",
+                                        "id": 43,
+                                        "code": "UPXTD3",
+                                        "public_name": "Konrad Gawda",
+                                        "avatar": null,
+                                        "biography": "Cloud Evangelist, Python trainer and programmer (since 2008). Warsaw Python community member. Author of patents in Orange Labs. Linux and Open Source proponent.",
+                                        "answers": []
+                                    }
+                                ],
+                                "links": [],
+                                "attachments": [],
+                                "answers": []
+                            },
+                            {
+                                "url": "https://www.python-summit.ch/swiss-python-summit-2024/talk/MN3HQN/",
+                                "id": 71,
+                                "guid": "d2c4dd45-7fda-5e46-8ba9-11d002b865e8",
+                                "date": "2024-10-17T13:50:00+02:00",
+                                "start": "13:50",
+                                "logo": null,
+                                "duration": "00:30",
+                                "room": "Aula 4.101",
+                                "slug": "swiss-python-summit-2024-71-parallel-python-at-last-subinterpreters-free-threading-in-practice",
+                                "title": "Parallel Python at last? Subinterpreters & free-threading in practice",
+                                "subtitle": "",
+                                "track": "Day 1 - Python, the programming language you love",
+                                "type": "Talk",
+                                "language": "en",
+                                "abstract": "Python has never been good at parallel computing. Multi-threading doesn't scale beyond a handful of threads because of the notorious GIL (Global Interpreter Lock). Multi-processing feels like a cumbersome workaround that increases complexity and overhead. And yet, we're firmly in an era of multicore machines, big data, and massive ML models that require all the compute they can get. Python, otherwise the star of data science and ML, doesn't really shine when it comes to parallel workloads. \r\n\r\nBut that is finally changing! There is more focus and progress happening in this area than ever before, and promising leaps forward are on the horizon. Subinterpreters, already merged in 3.12, offer a tentative step towards making the GIL less than \"global\"... while the free-threading build of Python 3.13 offers a path towards removing the GIL entirely in the future. Let's explore these new developments and look at how they work, what they do and do not solve, and how we can take advantage of them.",
+                                "description": null,
+                                "recording_license": "",
+                                "do_not_record": false,
+                                "persons": [
+                                    {
+                                        "guid": "fde346fd-87aa-5d1f-89f4-0e1c3f32ef55",
+                                        "id": 64,
+                                        "code": "PQKNF3",
+                                        "public_name": "Vita Midori",
+                                        "avatar": null,
+                                        "biography": "I led the development of a stock-trading platform for 8 years. Some bits of C++ and Cython aside, the platform was mainly a Python-based distributed system. Scaling and performance optimisation became not just a necessity but a passion for me. I've since returned to my freelance & consulting roots, and still enjoy helping clients with tough Python problems. Strangely, I've never studied computer science and often run away from all technology into the mountains, forests, and seas of our planet.",
+                                        "answers": []
+                                    }
+                                ],
+                                "links": [],
+                                "attachments": [],
+                                "answers": []
+                            },
+                            {
+                                "url": "https://www.python-summit.ch/swiss-python-summit-2024/talk/X7JEJ9/",
+                                "id": 83,
+                                "guid": "1e66eb97-4d37-5b67-97c2-8529c336cf9b",
+                                "date": "2024-10-17T14:25:00+02:00",
+                                "start": "14:25",
+                                "logo": null,
+                                "duration": "00:30",
+                                "room": "Aula 4.101",
+                                "slug": "swiss-python-summit-2024-83-property-based-testing-with-hypothesis",
+                                "title": "Property based testing with Hypothesis",
+                                "subtitle": "",
+                                "track": "Day 1 - Python, the programming language you love",
+                                "type": "Talk",
+                                "language": "en",
+                                "abstract": "The [website](https://hypothesis.works) of the Hypothesis project boldly asserts:\r\n\r\n> *Normal \u201cautomated\u201d software testing is surprisingly manual. Every scenario the computer runs, someone had to write by hand. Hypothesis can fix this.*\r\n\r\nWhile it's debatable whether property-based testing should fully replace the manual parametrization of tests with different inputs and outputs, there's no doubt that Hypothesis is a powerful tool for uncovering bugs nobody would even have considered looking for. In fact, during its development, the authors of Hypothesis accidentally discovered countless bugs in CPython and libraries, thus coining the term *\"The Curse of Hypothesis\"*.\r\n\r\nThe framework, although incredibly powerful, might seem overwhelming at first. In this talk, I will demonstrate how even simply throwing random strings at functions can reveal surprising bugs. From there, we'll progress towards generating more complex data, which will be less daunting than it initially appears. You'll also see how Hypothesis seamlessly integrates with various ecosystems and can be a valuable tool in any developer's toolkit.",
+                                "description": null,
+                                "recording_license": "",
+                                "do_not_record": false,
+                                "persons": [
+                                    {
+                                        "guid": "bd3e434b-0c25-58bd-ad95-c07952d9099c",
+                                        "id": 75,
+                                        "code": "KZNXTL",
+                                        "public_name": "Florian Bruhin",
+                                        "avatar": null,
+                                        "biography": "Florian Bruhin (\"The Compiler\") is a long-time contributor and maintainer of\r\nboth the pytest framework and various plugins. He discovered pytest in 2015 -\r\nsince then, he has given talks and conducted workshops about pytest at various\r\nconferences and companies. His primary project, qutebrowser (a keyboard-focused\r\nweb browser), has grown from a hobby to a donation-funded part-time job.",
+                                        "answers": []
+                                    }
+                                ],
+                                "links": [],
+                                "attachments": [],
+                                "answers": []
+                            },
+                            {
+                                "url": "https://www.python-summit.ch/swiss-python-summit-2024/talk/JJLUFK/",
+                                "id": 88,
+                                "guid": "31fb24c4-dfb9-5f48-b393-d0b2e0863230",
+                                "date": "2024-10-17T15:40:00+02:00",
+                                "start": "15:40",
+                                "logo": null,
+                                "duration": "00:30",
+                                "room": "Aula 4.101",
+                                "slug": "swiss-python-summit-2024-88-lab-automation-with-python",
+                                "title": "Lab Automation with Python",
+                                "subtitle": "",
+                                "track": "Day 1 - Python, the programming language you love",
+                                "type": "Talk",
+                                "language": "en",
+                                "abstract": "In a brief review of the history of Python at Hamilton, we learn the different uses of Python and the great libraries that are available to simplify the life of an engineer. From device drivers and abstraction of complex processes to data acquisition, analysis and visualization, Python provides a one-stop shop to help developers get to their goals quickly. With an outlook, we show how laboratory specialists and researchers will be able to build on a solid ground in the future.",
+                                "description": null,
+                                "recording_license": "",
+                                "do_not_record": false,
+                                "persons": [
+                                    {
+                                        "guid": "c5928940-db4e-5de1-b6d1-d24e8dd3b8b0",
+                                        "id": 82,
+                                        "code": "E9S8WF",
+                                        "public_name": "J\u00fcrg Rast",
+                                        "avatar": null,
+                                        "biography": "J\u00fcrg holds a degree in Electrical Engineering and has been working for over 10 years as a developer at Hamilton Bonaduz AG. His expertise spans across both firmware and software, contributing to various innovative projects and new products within the company.\r\n\r\nWhen he's not working on technical solutions, J\u00fcrg can often be found climbing in the Alps, where he enjoys challenging himself with alpine adventures in his free time.",
+                                        "answers": []
+                                    }
+                                ],
+                                "links": [],
+                                "attachments": [],
+                                "answers": []
+                            },
+                            {
+                                "url": "https://www.python-summit.ch/swiss-python-summit-2024/talk/CEF3VK/",
+                                "id": 78,
+                                "guid": "221780a3-5b8c-56cd-b46e-5c306ae464a0",
+                                "date": "2024-10-17T16:15:00+02:00",
+                                "start": "16:15",
+                                "logo": null,
+                                "duration": "00:45",
+                                "room": "Aula 4.101",
+                                "slug": "swiss-python-summit-2024-78-lightning-talks-day-1",
+                                "title": "Lightning Talks, Day 1",
+                                "subtitle": "",
+                                "track": "Day 1 - Python, the programming language you love",
+                                "type": "Lightning Talks (9x5min)",
+                                "language": "en",
+                                "abstract": "We are happy to announce Lightning Talks to this year's conference again! They are open to everyone \ud83d\ude0a\r\n\r\nHow it works:\r\n\u2013 You can register directly at the conference. First come, first served.\r\n\u2013 Any proposal is welcome, as long as your talk has something to do with Python and respects our [Code of Conduct](https://www.python-summit.ch/coc/). We reserve the right to reject talks.\r\n\u2013 Talk time is strictly limited to 5 minutes.\r\n\u2013 To keep turnaround times short, you will not be able to plug in your own device. Please submit your slides as PDF via email at least 60 minutes before Lightning Talks start. We will provide a laptop with all slides. \r\n\u2013 By registering, you accept that your talk may be recorded, published and streamed live (audio & video) under [Creative Commons Attribution 4.0 International license](https://creativecommons.org/licenses/by/4.0/deed.en).",
+                                "description": null,
+                                "recording_license": "",
+                                "do_not_record": false,
+                                "persons": [
+                                    {
+                                        "guid": "f553f82e-eff0-5e7b-97b1-5c43b6cbfdf1",
+                                        "id": 80,
+                                        "code": "VEWLUY",
+                                        "public_name": "Orga",
+                                        "avatar": null,
+                                        "biography": null,
+                                        "answers": []
+                                    }
+                                ],
+                                "links": [],
+                                "attachments": [],
+                                "answers": []
+                            },
+                            {
+                                "url": "https://www.python-summit.ch/swiss-python-summit-2024/talk/HCQLUJ/",
+                                "id": 86,
+                                "guid": "a8162cb0-c34b-52bf-89b6-3c64de95fe84",
+                                "date": "2024-10-17T17:00:00+02:00",
+                                "start": "17:00",
+                                "logo": null,
+                                "duration": "00:05",
+                                "room": "Aula 4.101",
+                                "slug": "swiss-python-summit-2024-86-closing",
+                                "title": "Closing",
+                                "subtitle": "",
+                                "track": "Day 1 - Python, the programming language you love",
+                                "type": "Opening/Closing",
+                                "language": "en",
+                                "abstract": "Thank you for joining us today. See you next time!",
+                                "description": null,
+                                "recording_license": "",
+                                "do_not_record": false,
+                                "persons": [
+                                    {
+                                        "guid": "f553f82e-eff0-5e7b-97b1-5c43b6cbfdf1",
+                                        "id": 80,
+                                        "code": "VEWLUY",
+                                        "public_name": "Orga",
+                                        "avatar": null,
+                                        "biography": null,
+                                        "answers": []
+                                    }
+                                ],
+                                "links": [],
+                                "attachments": [],
+                                "answers": []
+                            }
+                        ]
+                    }
+                },
+                {
+                    "index": 2,
+                    "date": "2024-10-18",
+                    "day_start": "2024-10-18T04:00:00+02:00",
+                    "day_end": "2024-10-19T03:59:00+02:00",
+                    "rooms": {
+                        "Aula 4.101": [
+                            {
+                                "url": "https://www.python-summit.ch/swiss-python-summit-2024/talk/7TB9SL/",
+                                "id": 85,
+                                "guid": "efb3e370-7e8c-5420-adf2-b987d7ace8e1",
+                                "date": "2024-10-18T09:00:00+02:00",
+                                "start": "09:00",
+                                "logo": null,
+                                "duration": "00:10",
+                                "room": "Aula 4.101",
+                                "slug": "swiss-python-summit-2024-85-welcome",
+                                "title": "Welcome",
+                                "subtitle": "",
+                                "track": "Day 2 - Data Science & More",
+                                "type": "Opening/Closing",
+                                "language": "en",
+                                "abstract": "Welcome to the Python Summit!",
+                                "description": null,
+                                "recording_license": "",
+                                "do_not_record": false,
+                                "persons": [
+                                    {
+                                        "guid": "f553f82e-eff0-5e7b-97b1-5c43b6cbfdf1",
+                                        "id": 80,
+                                        "code": "VEWLUY",
+                                        "public_name": "Orga",
+                                        "avatar": null,
+                                        "biography": null,
+                                        "answers": []
+                                    }
+                                ],
+                                "links": [],
+                                "attachments": [],
+                                "answers": []
+                            },
+                            {
+                                "url": "https://www.python-summit.ch/swiss-python-summit-2024/talk/38G8ZN/",
+                                "id": 81,
+                                "guid": "2292e25e-bd0a-59d2-b470-74e8c742148d",
+                                "date": "2024-10-18T09:10:00+02:00",
+                                "start": "09:10",
+                                "logo": null,
+                                "duration": "00:20",
+                                "room": "Aula 4.101",
+                                "slug": "swiss-python-summit-2024-81-artificial-intelligence-why-explanations-matter",
+                                "title": "Artificial Intelligence: Why Explanations Matter",
+                                "subtitle": "",
+                                "track": "Day 2 - Data Science & More",
+                                "type": "Keynote",
+                                "language": "en",
+                                "abstract": "In the rapidly evolving field of Artificial Intelligence (AI), the\r\nimportance of understanding model decisions is becoming increasingly\r\nvital. This talk explores why explanations are crucial for both\r\ntechnical and ethical reasons. We begin by examining the necessity of\r\nexplainability in AI systems, particularly in mitigating unexpected\r\nmodel behavior, biases and addressing ethical concerns. The discussion\r\nthen transitions into Explainable AI (XAI), highlighting the\r\ndifferences between interpretability and explainability, and\r\nshowcasing methods for enhancing model transparency. A real-world\r\nexamples will demonstrate how these concepts can be practically\r\nemployed to improve model performance. The talk concludes with\r\nreflections on the challenges and future directions in XAI.",
+                                "description": null,
+                                "recording_license": "",
+                                "do_not_record": false,
+                                "persons": [
+                                    {
+                                        "guid": "12f019e1-52b1-5de7-b04a-92b22bde7151",
+                                        "id": 76,
+                                        "code": "39RGZ9",
+                                        "public_name": "Albert Weichselbraun",
+                                        "avatar": null,
+                                        "biography": "Albert Weichselbraun is a Professor of Information Science at the Swiss Institute for Information Research at the University of Applied Sciences of the Grisons in Chur, and cofounder and Chief Scientist at webLyzard technology.  He has authored over 90 peer-reviewed research publications and has been a member of the expert group on communication science of the Swiss Academies of Art and Sciences.",
+                                        "answers": []
+                                    }
+                                ],
+                                "links": [],
+                                "attachments": [],
+                                "answers": []
+                            },
+                            {
+                                "url": "https://www.python-summit.ch/swiss-python-summit-2024/talk/TXSEHM/",
+                                "id": 64,
+                                "guid": "32a5755e-4df8-5070-bccb-2eb99680cee1",
+                                "date": "2024-10-18T09:35:00+02:00",
+                                "start": "09:35",
+                                "logo": null,
+                                "duration": "00:30",
+                                "room": "Aula 4.101",
+                                "slug": "swiss-python-summit-2024-64-learning-from-experiments-with-causal-machine-learning",
+                                "title": "Learning From Experiments With Causal Machine Learning",
+                                "subtitle": "",
+                                "track": "Day 2 - Data Science & More",
+                                "type": "Talk",
+                                "language": "en",
+                                "abstract": "While we have witnessed spectacular advancements in Machine Learning over the past months and years, robustness of results and establishment of causal relations remain lacking. During this talk we will walk you through an example of using causal Machine Learning techniques to estimate causal, heterogeneous treatment effects with Open Source Python tooling.\r\n\r\nLearning causal relationships - in contrast to mere correlations - is of great importance for many applications where we'd like to learn how to intervene with the real world: To whom should we administer which medical drug? To whom should we offer a marketing voucher? For which automated processed should we make a human expert intervene? In such situations we'd like to rest assured our decision don't just rely correlations - potentially tainted by common confounders. Rather, we'd like to make causal statements about the heterogeneous effects of administering a treatment.\r\n\r\nIn terms of making this happen, the field of Causal Inference has been able to incorporate progress from Machine Learning in theory. Yet, in practice, applications remain challenging: tooling is still somewhat immature and little examples to follow exist. Therefore, we would like to walk you through a case study of estimating causal, heterogeneous treatment effects with Open Source Python tooling.\r\n\r\nSchedule:\r\n- Conceptual introduction to causal effect estimation [5']\r\n- Conceptual introduction to MetaLearners [5']\r\n- Comparison of Python tooling for Conditional Average Treatment Effect Estimation [5']\r\n- Practical case study based on experiment data [10']\r\n- Q&A [5']\r\n\r\nRequirements:\r\n- Fundamental knowledge about Statistical Learning or Machine Learning\r\n- Fundamental knowledge about Python\r\n\r\nAfter this session, a participant can expect to have an idea as to what causal, heterogeneous treatment effect estimation is about and how to approach it in Python.",
+                                "description": null,
+                                "recording_license": "",
+                                "do_not_record": false,
+                                "persons": [
+                                    {
+                                        "guid": "f1710d18-727c-5d16-b6d5-977cc23d5b54",
+                                        "id": 57,
+                                        "code": "LWMXZP",
+                                        "public_name": "Kevin Klein",
+                                        "avatar": null,
+                                        "biography": "Kevin is a Data Scientist at QuantCo, where he's been working with insurances on fraud detection, risk modelling and policy learning. In the past two years he's gotten into the field of Causal Inference. Prior to joining QuantCo, he majored in Computer Science at ETH in Zurich - focusing on Theoretical Computer Science and Machine Learning. He's passionate about Open Source and is the organizer of the PyData Zurich meetup.",
+                                        "answers": []
+                                    },
+                                    {
+                                        "guid": "ce105255-c246-5264-ba17-ec4c9fcb3fd8",
+                                        "id": 58,
+                                        "code": "UTYKBZ",
+                                        "public_name": "Francesc Mart\u00ed Escofet",
+                                        "avatar": null,
+                                        "biography": "Francesc is a MSc Data Science student at ETH Z\u00fcrich. Before that, he graduated in Maths & CS at the Polytechnic University of Catalonia (UPC) with a year abroad at Columbia University. He joined QuantCo as an intern in February 2024 to work on causal inference and its applications to insurance and fraud detection.",
+                                        "answers": []
+                                    }
+                                ],
+                                "links": [],
+                                "attachments": [],
+                                "answers": []
+                            },
+                            {
+                                "url": "https://www.python-summit.ch/swiss-python-summit-2024/talk/SGU7SY/",
+                                "id": 70,
+                                "guid": "b7832aa3-2930-55cc-aa99-dbcdabb04b5f",
+                                "date": "2024-10-18T10:10:00+02:00",
+                                "start": "10:10",
+                                "logo": null,
+                                "duration": "00:30",
+                                "room": "Aula 4.101",
+                                "slug": "swiss-python-summit-2024-70-quantum-machine-learning-qiskit-1-x-vs-pennylane-0-x",
+                                "title": "Quantum Machine Learning: Qiskit 1.X vs PennyLane 0.X",
+                                "subtitle": "",
+                                "track": "Day 2 - Data Science & More",
+                                "type": "Talk",
+                                "language": "en",
+                                "abstract": "Recently, quantum machine learning algorithms have become popular due to a drastic increase in the power of quantum computation. Analysis of images with 10^54 pixels, easy encoding of Fourier series-like data, generation of novel chemical molecules - and all that with a couple of Python code lines! It's only left to choose a framework for trying out next-level deep learning models ... but which one? The \"grandfather\" of Python quantum computing packages, PennyLane, with tons of user-friendly tutorials - or maybe a Qiskit, which runs naturally on IBM quantum computers, and moreover in February 2024 got a first major release? \r\n\r\nThe answer is not that obvious, and together, we'll look at the pros and cons of both via training quantum circuits, assessing compatibility with popular Python machine learning packages - and all that on examples of real-world problems from financial and natural sciences.",
+                                "description": null,
+                                "recording_license": "",
+                                "do_not_record": false,
+                                "persons": [
+                                    {
+                                        "guid": "1a49fb42-6946-5b5e-8367-ef4729a46312",
+                                        "id": 63,
+                                        "code": "UCQNMX",
+                                        "public_name": "Pavel Sulimov",
+                                        "avatar": null,
+                                        "biography": "PhD in Computer Science. Ex-Lead Data Scientist in Gibraltar. Quantum Machine Learning Researcher at the Institute of Computer Science (ZHAW).",
+                                        "answers": []
+                                    }
+                                ],
+                                "links": [],
+                                "attachments": [],
+                                "answers": []
+                            },
+                            {
+                                "url": "https://www.python-summit.ch/swiss-python-summit-2024/talk/ZWSJFJ/",
+                                "id": 53,
+                                "guid": "5efe5e6e-3202-5894-a8a6-c91a16e4e757",
+                                "date": "2024-10-18T11:25:00+02:00",
+                                "start": "11:25",
+                                "logo": null,
+                                "duration": "00:30",
+                                "room": "Aula 4.101",
+                                "slug": "swiss-python-summit-2024-53-from-shap-to-ebm-explain-your-gradient-boosting-models-in-python",
+                                "title": "From SHAP to EBM: Explain your Gradient Boosting Models in Python",
+                                "subtitle": "",
+                                "track": "Day 2 - Data Science & More",
+                                "type": "Talk",
+                                "language": "en",
+                                "abstract": "**XGBoost** is considered a state-of-the-art model for regression, classification, and learning-to-rank problems on tabular data. Unfortunately, tree-based ensemble models are notoriously **difficult to explain**, limiting their application in critical fields. Techniques like SHapley Additive exPlanations (SHAP) and Explainable Boosting Machine (EBM) have become common methods for assessing how much each feature contributes to the model prediction.\r\n\r\nThis talk will introduce SHAP and EBM, **explaining the theory** behind their mechanisms in an accessible way and **discussing the pros and cons** of both techniques. We will also comment on Python snippets where SHAP and EBM are used to explain a gradient boosting model.\r\n\r\nAttendees will walk away with an understanding of how SHAP and EBM work, the limitations and merits of both techniques, and a tutorial on how to use these methods in Python, courtesy of the [shap](https://shap.readthedocs.io/en/latest/) and [interpret-ml](https://interpret.ml/docs/ebm.html) packages.\r\n\r\nTalk outline:\r\n\r\n- A brief reminder about gradient boosting and XGBoost (5 mins)\r\n- The challenge of explainability (5 mins)\r\n- EBM: theory and applications (10 mins)\r\n- SHAP: theory and applications (10 mins)",
+                                "description": null,
+                                "recording_license": "",
+                                "do_not_record": false,
+                                "persons": [
+                                    {
+                                        "guid": "c296f2b6-fd5d-5c56-8de9-22854fda30ff",
+                                        "id": 46,
+                                        "code": "UHMTNM",
+                                        "public_name": "Emanuele Fabbiani",
+                                        "avatar": null,
+                                        "biography": "Engineer, researcher, entrepreneur. Emanuele earned his PhD in AI by researching time series forecasting. He was a guest researcher at EPFL Lausanne, and he's now the Head of AI at xtream. He published 8 papers in international journals, presented and organized tracks and workshops at international conferences, including AMLD Lausanne, ODSC London, WeAreDevelopers Berlin, PyData Berlin and Paris, PyCon Florence, and lectured in Italy, Switzerland, and Poland.",
+                                        "answers": []
+                                    }
+                                ],
+                                "links": [],
+                                "attachments": [],
+                                "answers": []
+                            },
+                            {
+                                "url": "https://www.python-summit.ch/swiss-python-summit-2024/talk/RLF8RA/",
+                                "id": 60,
+                                "guid": "331c4504-84f0-5f97-9563-ca0d436bb322",
+                                "date": "2024-10-18T12:00:00+02:00",
+                                "start": "12:00",
+                                "logo": null,
+                                "duration": "00:30",
+                                "room": "Aula 4.101",
+                                "slug": "swiss-python-summit-2024-60-demystifying-spark-a-deep-dive-into-its-workings",
+                                "title": "Demystifying Spark: A Deep Dive into Its Workings",
+                                "subtitle": "",
+                                "track": "Day 2 - Data Science & More",
+                                "type": "Talk",
+                                "language": "en",
+                                "abstract": "Python developers and data enthusiasts attending the Swiss Python Summit, this talk is for you! Apache Spark is a powerful framework often used alongside Python for big data processing. You've seen its capabilities, but what powers its impressive performance?\r\n\r\nJoin me, Neil Gibbons, a Backend Engineer with a passion for distributed systems (and a recent MSc in Data Science!). I've also delivered talks at DevFest Mons 2022 and Birkbeck University.\r\n\r\nIn this session, we'll delve into the internal workings of Spark. We'll explore concepts like Resilient Distributed Datasets (RDDs), which are fundamental to Spark's fault tolerance. We'll see how Spark distributes tasks across a cluster, leveraging Python's strengths in parallel processing. Finally, we'll uncover the secrets of in-memory computations, the key to Spark's blazing speed.\r\n\r\nWhy attend? Gaining a deeper understanding of Spark's internals, especially within the Python ecosystem, empowers you to:\r\n\r\nOptimize your Python big data applications for peak performance.\r\nTroubleshoot issues more efficiently.\r\nWrite effective Spark code that unlocks its true potential and complements your Python expertise.\r\n\r\nWhether you're a data scientist, developer, or simply curious about big data, this talk will bridge the gap between Python and Spark. Join me as we explore Spark's inner workings!",
+                                "description": null,
+                                "recording_license": "",
+                                "do_not_record": false,
+                                "persons": [
+                                    {
+                                        "guid": "500e87e6-d18a-5609-bc63-56b4f8da3acd",
+                                        "id": 52,
+                                        "code": "JKTADP",
+                                        "public_name": "Neil Gibbons",
+                                        "avatar": null,
+                                        "biography": "Neil Gibbons is a Backend Engineer with a passion for big data. He's currently pursuing an MSc in Computer Science at St Andrew's University. He's eager to share his experience and delve into Apache Spark's inner workings at the Swiss Python Summit.",
+                                        "answers": []
+                                    }
+                                ],
+                                "links": [],
+                                "attachments": [],
+                                "answers": []
+                            },
+                            {
+                                "url": "https://www.python-summit.ch/swiss-python-summit-2024/talk/SUQHPN/",
+                                "id": 73,
+                                "guid": "b463aa1c-7d61-5de1-ad8a-e68f3f156983",
+                                "date": "2024-10-18T13:50:00+02:00",
+                                "start": "13:50",
+                                "logo": null,
+                                "duration": "00:30",
+                                "room": "Aula 4.101",
+                                "slug": "swiss-python-summit-2024-73-more-than-pixels-unlock-your-image-data-with-vision-language-models",
+                                "title": "More Than Pixels - Unlock your image data with Vision-Language Models",
+                                "subtitle": "",
+                                "track": "Day 2 - Data Science & More",
+                                "type": "Talk",
+                                "language": "en",
+                                "abstract": "Join us on two Vision-Language Adventures! \r\n\r\nWe'll uncover the information hidden inside big image collections with Vision-Language Models (VLMs) showing us the way. Who knows which forgotten gems await us?\r\n\r\nIn the first part, we'll use CLIP and FAISS to go on a treasure hunt in your photo collection. You'll learn how to filter through millions of images in a breeze, using natural language. Bye-bye endless scrolling, hour-long tagging, and frustrated folder searching \ud83d\udc4b\r\n\r\nIn the second part, we will harness the power of VLMs to help us caption images - translating pixels to words. Then we'll make use of the BERTopic library to reveal even deeper insights into your photo collections.\r\n\r\nBy the end of this talk, you'll be equipped with the knowledge and tools to unlock new insights, identify patterns, and make your image data work harder for you.\r\n\r\nThis talk is for an intermediate audience - it is good if you bring some knowledge in Computer Vision, NLP or just general Deep Learning.\r\n\r\nThe talk will be structured as follows: \r\n- 5min - What are VLMs? \r\n- 10min - Image Search with CLIP and FAISS \r\n- 10min - Analysis of Captioned Images \r\n-  5min - Possible Applications, Closing Thoughts",
+                                "description": null,
+                                "recording_license": "",
+                                "do_not_record": false,
+                                "persons": [
+                                    {
+                                        "guid": "6bc9aab7-4c1e-57c5-ac96-e67af8999cd1",
+                                        "id": 65,
+                                        "code": "QTGSPT",
+                                        "public_name": "Johannes Kolbe",
+                                        "avatar": null,
+                                        "biography": "Hey all \ud83d\udc4b\r\n\r\nI'm a Data Scientist at celebrate company by day and an AI storyteller by night.\r\n\r\nAfter experiences in research at Fraunhofer Fokus Institute and tinkering with sensor setups for autonomous vehicles, I decided to get more hands-on and joined celebrate company, where I'm now helping our customers to design amazing products with the help of Machine Learning.\r\n\r\nI hold a Master's degree in Computer Science with a focus on cognitive systems from TU Berlin.",
+                                        "answers": []
+                                    }
+                                ],
+                                "links": [],
+                                "attachments": [],
+                                "answers": []
+                            },
+                            {
+                                "url": "https://www.python-summit.ch/swiss-python-summit-2024/talk/ANXCUV/",
+                                "id": 49,
+                                "guid": "4a503c3d-e4f5-5c90-8606-9711e4be2060",
+                                "date": "2024-10-18T14:25:00+02:00",
+                                "start": "14:25",
+                                "logo": null,
+                                "duration": "00:30",
+                                "room": "Aula 4.101",
+                                "slug": "swiss-python-summit-2024-49-even-if-we-desperatly-want-to-we-do-not-always-need-deep-learning",
+                                "title": "Even if we desperatly want to, we do not always need Deep Learning",
+                                "subtitle": "",
+                                "track": "Day 2 - Data Science & More",
+                                "type": "Talk",
+                                "language": "en",
+                                "abstract": "In the pursuit of classifying train stations from Open Railway Maps data, for Europe's largest rail cargo company. Initially, the project focused on developing a robust deep learning framework, which required extensive manual labeling of images to train the model effectively. Recognizing the impracticality and time-consuming nature of manual labeling, we conceptualized an approach to expedite the labeling process using cluster algorithms and graph information.\r\nOur method involved an automated labeling algorithm, which significantly accelerated the annotation phase. This algorithm demonstrated remarkable efficiency, automatically labeling images with high accuracy, thereby drastically reducing the manual effort involved. \r\nDuring the implementation, we discovered that our automated labeling algorithm was, in itself, the comprehensive solution for the classification task we aimed to address. This realization highlighted that our initial objective of deploying a deep learning model could be achieved through \u201cclassic\u201d means.\r\n\r\nIn conclusion, our project unveiled that the automated labeling algorithm was not just a tool to facilitate deep learning, but an effective standalone solution in itself. This unexpected outcome emphasizing that sometimes, the journey towards deep learning can reveal simpler, yet equally powerful, solutions.\r\n\r\nDamn, as all data scientists deep down, we wanted to take advantage of some sexy deep learning and ended up with a great, but not so sexy core data science solution.",
+                                "description": null,
+                                "recording_license": "",
+                                "do_not_record": false,
+                                "persons": [
+                                    {
+                                        "guid": "6cf5c8ac-e00e-5508-a09b-3b0a11b76799",
+                                        "id": 42,
+                                        "code": "8XTBN8",
+                                        "public_name": "Jan Werth",
+                                        "avatar": null,
+                                        "biography": "Dr. Jan Werth started his professional life as a carpenter. After realizing, that construction sides are fun but hard on your back, he studied Electrical engineering (EE), finishing with a PhD within the signal processing group of the TU/e (NL).\r\nHe gained his first patented Med-Tec data-science solutions while working for Philips Research in 2014. From 2018 he focussed on AI-accelerators and switched in 2020 to AI-consulting at Eraneos. \r\nOverall, he has well over 10 years of experience in DS.",
+                                        "answers": []
+                                    },
+                                    {
+                                        "guid": "d082f3e5-4d91-57b8-b064-f7416649fbe2",
+                                        "id": 81,
+                                        "code": "8AUYH8",
+                                        "public_name": "Christopher Wetekamp",
+                                        "avatar": null,
+                                        "biography": "Christopher is a Chemical Engineer at heart with a passion for data. Driven by the desire to move beyond Excel and dive into real-world problem-solving, Christopher began his coding journey during his master\u2019s thesis and early career. His curiosity led him to rejoin the university, enrolling in a Data Science program while gaining hands-on experience in a data science company. He is now a full-time Data Scientist and loves to solve complex problems.",
+                                        "answers": []
+                                    }
+                                ],
+                                "links": [],
+                                "attachments": [],
+                                "answers": []
+                            },
+                            {
+                                "url": "https://www.python-summit.ch/swiss-python-summit-2024/talk/99V9FC/",
+                                "id": 9,
+                                "guid": "f228bd80-3e83-5931-b147-000770295656",
+                                "date": "2024-10-18T15:40:00+02:00",
+                                "start": "15:40",
+                                "logo": null,
+                                "duration": "00:30",
+                                "room": "Aula 4.101",
+                                "slug": "swiss-python-summit-2024-9-prototype-to-production-for-rag-applications",
+                                "title": "Prototype to Production for RAG applications",
+                                "subtitle": "",
+                                "track": "Day 2 - Data Science & More",
+                                "type": "Talk",
+                                "language": "en",
+                                "abstract": "Retrieval Augmented Generation (RAG) has been used to mitigate hallucination issues from LLMs and rapidly provide LLMs with external knowledge that were not part of the pre-training data. While tutorials offer convenient ways to build POCs quickly, transitioning these prototypes to production environments often catches us off-guard with unforeseen challenges. This talk takes a deeper dive into the topics that are often missing from cookbooks and tutorials yet are crucial in scaling your RAG prototype to production. Our discussion will use real examples to help you better understand some of the best practices in production RAG for observability, security, scalability, and fault tolerance.",
+                                "description": null,
+                                "recording_license": "",
+                                "do_not_record": false,
+                                "persons": [
+                                    {
+                                        "guid": "7b2cecc4-1faa-52f2-964d-2c318a393619",
+                                        "id": 11,
+                                        "code": "MGVD8Z",
+                                        "public_name": "Isaac Chung",
+                                        "avatar": null,
+                                        "biography": "I am currently a Staff Data Scientist at Wrike, where I work on enabling new generative AI features in production. I also help maintain MTEB and organize PyData Tallinn in my spare time. My background is in Aerospace Engineering and Machine Learning and I hold undergraduate and graduate degrees from the University of Toronto.",
+                                        "answers": []
+                                    }
+                                ],
+                                "links": [],
+                                "attachments": [],
+                                "answers": []
+                            },
+                            {
+                                "url": "https://www.python-summit.ch/swiss-python-summit-2024/talk/RRZR7E/",
+                                "id": 77,
+                                "guid": "a18cfea6-0716-59a2-89a6-ef78f0eced3d",
+                                "date": "2024-10-18T16:15:00+02:00",
+                                "start": "16:15",
+                                "logo": null,
+                                "duration": "00:45",
+                                "room": "Aula 4.101",
+                                "slug": "swiss-python-summit-2024-77-lightning-talks-day-2",
+                                "title": "Lightning Talks, Day 2",
+                                "subtitle": "",
+                                "track": "Day 2 - Data Science & More",
+                                "type": "Lightning Talks (9x5min)",
+                                "language": "en",
+                                "abstract": "We are happy to announce Lightning Talks to this year's conference again! They are open to everyone \ud83d\ude0a\r\n\r\nHow it works:\r\n\u2013 You can register directly at the conference. First come, first served.\r\n\u2013 Any proposal is welcome, as long as your talk has something to do with Python and respects our [Code of Conduct](https://www.python-summit.ch/coc/). We reserve the right to reject talks.\r\n\u2013 Talk time is strictly limited to 5 minutes.\r\n\u2013 To keep turnaround times short, you will not be able to plug in your own device. Please submit your slides as PDF via email at least 60 minutes before Lightning Talks start. We will provide a laptop with all slides. \r\n\u2013 By registering, you accept that your talk may be recorded, published and streamed live (audio & video) under [Creative Commons Attribution 4.0 International license](https://creativecommons.org/licenses/by/4.0/deed.en).",
+                                "description": null,
+                                "recording_license": "",
+                                "do_not_record": false,
+                                "persons": [
+                                    {
+                                        "guid": "f553f82e-eff0-5e7b-97b1-5c43b6cbfdf1",
+                                        "id": 80,
+                                        "code": "VEWLUY",
+                                        "public_name": "Orga",
+                                        "avatar": null,
+                                        "biography": null,
+                                        "answers": []
+                                    }
+                                ],
+                                "links": [],
+                                "attachments": [],
+                                "answers": []
+                            },
+                            {
+                                "url": "https://www.python-summit.ch/swiss-python-summit-2024/talk/HLVD9L/",
+                                "id": 87,
+                                "guid": "bb8d47a5-9e06-5dee-9abf-3a57abe572d6",
+                                "date": "2024-10-18T17:00:00+02:00",
+                                "start": "17:00",
+                                "logo": null,
+                                "duration": "00:05",
+                                "room": "Aula 4.101",
+                                "slug": "swiss-python-summit-2024-87-closing",
+                                "title": "Closing",
+                                "subtitle": "",
+                                "track": "Day 2 - Data Science & More",
+                                "type": "Opening/Closing",
+                                "language": "en",
+                                "abstract": "Thank you for joining us today. See you next time!",
+                                "description": null,
+                                "recording_license": "",
+                                "do_not_record": false,
+                                "persons": [
+                                    {
+                                        "guid": "f553f82e-eff0-5e7b-97b1-5c43b6cbfdf1",
+                                        "id": 80,
+                                        "code": "VEWLUY",
+                                        "public_name": "Orga",
+                                        "avatar": null,
+                                        "biography": null,
+                                        "answers": []
+                                    }
+                                ],
+                                "links": [],
+                                "attachments": [],
+                                "answers": []
+                            }
+                        ]
+                    }
+                }
+            ]
+        }
+    }
+}
