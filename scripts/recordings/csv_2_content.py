@@ -13,7 +13,6 @@ CSV_PATH = FILE_DIR / "talks.csv"
 CONF_SHORT = "SPS24"
 CONF_YEAR = "2024"
 
-# Warning: Will be deleted if existing!
 OUTPUT_FOLDER = Path("scripts/recordings/out")
 
 def get_data(csv_path, filter_type=["Talk", "Keynote"]):
@@ -23,14 +22,16 @@ def get_data(csv_path, filter_type=["Talk", "Keynote"]):
     return df
 
 def create_file_structure(df: pd.DataFrame):
-    if OUTPUT_FOLDER.exists():
-        shutil.rmtree(OUTPUT_FOLDER)
-    OUTPUT_FOLDER.mkdir(exist_ok=True)
+    # if OUTPUT_FOLDER.exists():
+    #     shutil.rmtree(OUTPUT_FOLDER)
+    OUTPUT_FOLDER.mkdir(exist_ok=False)
     for i, row in df.iterrows():
         filename = Path(OUTPUT_FOLDER / row.filename)
         filename.mkdir()
         content = filename / "contents.lr"
         content.write_text(create_content(i, row))
+        slide = filename / f"{filename}.lr"
+        slide.write_text("type: slides")
 
 def create_content(i, row):
     text = f'''

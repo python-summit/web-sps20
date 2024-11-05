@@ -36,7 +36,12 @@
                 {% if talk.external_slide_url %}
                     [<a href="{{ talk.external_slide_url }}">slides (external link)</a>]
                 {% endif %}
-                <div>{{ talk.speaker }}</div>
+                <div>
+                {% if talk.day %}
+                <span>{{ talk.day }}: </span>
+                {% endif %}
+                <span>{{ talk.speaker }}</span>
+            </div>
             </li>
         {% endfor %}
         </ul>

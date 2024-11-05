@@ -2,6 +2,7 @@ import pandas as pd
 from pathlib import Path
 import json
 import re
+from datetime import datetime
 
 FILE_DIR = Path("scripts/recordings/sps24")
 assert FILE_DIR.exists(), "FILE_DIR does not exist"
@@ -20,7 +21,7 @@ def get_talks_data(schedule_path = PRETALX_SCHEDULE_PATH):
         room_name = next(iter(day["rooms"]))
         for talk in day["rooms"][room_name]:
             print(f"\tProcessing talks #{talk['id']}")
-            names, bios = zip(*[(d["public_name"], d["biography"]) for d in talk["persons"]])
+            names, bios = zip(*[(d["public_name"], d["biography"] if d["biography"] else "") for d in talk["persons"]])
             talk_data = dict(
                 day = day_idx,
                 date = talk["date"],
@@ -33,6 +34,19 @@ def get_talks_data(schedule_path = PRETALX_SCHEDULE_PATH):
             talks.append(talk_data)
     return talks
 
+def timestring(timestamp):
+    dt = datetime.fromisoformat(timestamp)
+    local_dt = dt.astimezone()
+    
+    # Add suffix for day (st, nd, rd, th)
+    day = local_dt.day
+    if 4 <= day <= 20 or 24 <= day <= 30:
+        suffix = "th"
+    else:
+        suffix = ["st", "nd", "rd"][day % 10 - 1]
+    
+    return local_dt.strftime(f"%B {day}{suffix}, %Y")
+
 def enrich(talks):
     for talk in talks:
         names = ", ".join(talk["names_raw"])
@@ -43,7 +57,24 @@ def enrich(talks):
         filename = clean_filename(f"{CONF_SHORT}_{named_title}")
         talk["filename"] = filename
         talk["video_url"] = "<TODO>"
-        talk["biographies_combined"] = "<TODO>"
+        talk["biographies_combined"] = "\n\n".join(talk["biographies_raw"])
+        talk["date_str"] = talk["date"]
+        # Title and Description for youtube
+        talk["video_text"] = f'{talk["names_combined"]} – {talk["title"]} – {CONF_SHORT}'
+        talk["video_text"] = f'''Talk recorded at the Swiss Python Summit on {timestring(talk["date"])}.
+
+Licensed as Creative Commons Attribution 4.0 International.
+
+---------
+Abstract:
+
+{talk["abstract"]}
+
+---------------------
+About the speaker(s):
+
+{talk["biographies_combined"]}
+'''
     return talks
 
 def clean_filename(filename, max_length=70):
@@ -72,8 +103,10 @@ def main():
     df = pd.DataFrame(data)
     df.to_csv(CSV_PATH)
     short_csv_path = CSV_PATH.parent / (CSV_PATH.stem + "_notext" + CSV_PATH.suffix)
-    print(short_csv_path)
-    df.drop(["abstract","biographies_raw"], axis=1).to_csv(short_csv_path)
+    # print(short_csv_path)
+    # drop multiline texts
+    df.drop(["abstract","biographies_raw", "biographies_combined", "video_text"], axis=1).to_csv(short_csv_path)
 
 if __name__ == "__main__":
     main()
+    print("*** Script end ***")
