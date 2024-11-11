@@ -30,7 +30,7 @@ def create_file_structure(df: pd.DataFrame):
         filename.mkdir()
         content = filename / "contents.lr"
         content.write_text(create_content(i, row))
-        slide = filename / f"{filename}.lr"
+        slide = filename / f"{filename.stem}.lr"
         slide.write_text("type: slides")
 
 def create_content(i, row):

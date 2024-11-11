@@ -84,8 +84,27 @@ def clean_filename(filename, max_length=70):
     # Replace all spaces with underscore
     filename = filename.replace(' ', '_')
 
+    # Replace umlaut and french accents
+    umlaut_map = {
+        'ä': 'ae', 'ö': 'oe', 'ü': 'ue', 'ß': 'ss',
+        'Ä': 'Ae', 'Ö': 'Oe', 'Ü': 'Ue',
+        'é': 'e', 'è': 'e', 'ê': 'e', 'ë': 'e',
+        'à': 'a', 'â': 'a', 'ç': 'c',
+        'î': 'i', 'ï': 'i', 'í': 'i',
+        'ô': 'o',
+        'ù': 'u', 'û': 'u'
+    }
+    for umlaut, replacement in umlaut_map.items():
+        filename = filename.replace(umlaut, replacement)
+
     # Define allowed characters: letters, numbers, dashes, and underscores. Remove not allowed
-    filename = re.sub(r'[^a-zA-Z0-9_-]', '', filename)
+    new_filename = []
+    for c in filename:
+        if re.match(r'[a-zA-Z0-9_-]', c):
+            new_filename.append(c)
+        else:
+            print(f"Warning: Deleted char '{c}' in filename '{filename}'")
+    filename = ''.join(new_filename)
 
     # Truncate after n characters
     filename = filename[:min(len(filename),max_length)]
