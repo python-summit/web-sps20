@@ -45,7 +45,7 @@ speaker: {row.names_combined}
 ---
 video_url: {row.video_url}
 ---
-year: {CONF_YEAR} - Day {row.day}
+year: {CONF_YEAR}
 '''
     return text
 
