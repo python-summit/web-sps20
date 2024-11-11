@@ -14,23 +14,24 @@ See [www.python-summit.ch](https://www.python-summit.ch/)
 * Clone the repository or open in GitHub Codespace
 * Make a virtual environment and activate it (for some reason, the lektor CLI works only in venv)
 * Install requirements with `make install`
-* Run Lektor server with `make serve`
-* After that the website should be available on port 5000 with hot-reload
-
-### Deployment
-
-* The **main** branch is automatically live deployed with Netlify, so be careful what you push here!
-* You can see a preview for reviews in a pull requests:
-![preview](./doc/preview.png)
+* Run Lektor server with `make serve` for live preview of the website (on port 5000)
 
 ### Branch and merge rules
 
 Please follow these rules to keep the repo clean:
 
 * Name branches with prefix `spsYY-` e.g. `sps24-open-cfp`
+* You can see a preview for reviews in a pull requests:
+![preview](./doc/preview.png)
+
+### Deployment
+
+* The **main** branch is automatically live deployed with Netlify, so be careful what you push here!
+* The `build.sh` is executed in the Netlify build process
 
 ### How to add a talk recording
 
+#### Manually
 - Go to http://localhost:5000/admin/root:talk-recordings/edit
 - Click "Add Page"
 - Choose the "Recording" model
@@ -43,3 +44,12 @@ Please follow these rules to keep the repo clean:
 - Change the attachment type to "Slides"
 
 Note: The playlist URLs are stored in `databags/playlists.json`.
+
+#### Semi-Automatic from Pretalx JSON
+
+- See Scripts in `scripts/recordings`
+- These scripts will provide you with the folder structure.
+- Thinks to do manually:
+    - Add the youtube urls in the `contents.lr` files (per talk)
+    - Add the playlist URLs in `databags/playlists.json`
+    - Add the slides pdf and give it the same filename as the `<name>.pdf.lr` provided
