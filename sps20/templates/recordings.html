@@ -7,6 +7,8 @@
     <h1>{{ this.title }}</h1>
     {{ this.body }}
 
+
+    
     {% for year in this.children|map(attribute="year")|sort(reverse=True)|unique %}
         <h2><strong>{{ year }}</strong></h2>
 
@@ -26,6 +28,9 @@
                 {% else %}
                 <strong>{{ talk.title }}</strong>
                 {% endif %}
+
+                <div>
+                <span>{{ talk.speaker }}</span>
                 {% if slides %}
                     [
                     {%- for slide in slides -%}
@@ -36,7 +41,7 @@
                 {% if talk.external_slide_url %}
                     [<a href="{{ talk.external_slide_url }}">slides (external link)</a>]
                 {% endif %}
-                <div>{{ talk.speaker }}</div>
+            </div>
             </li>
         {% endfor %}
         </ul>
