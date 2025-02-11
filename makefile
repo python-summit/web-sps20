@@ -1,7 +1,7 @@
 usage:
 	@echo "Make targets: install, serve, venv"
 
-install: in_virtual_envma
+install: in_virtual_env
 # install: 
 	pip install -r requirements.txt
 
