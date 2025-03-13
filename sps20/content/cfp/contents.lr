@@ -6,16 +6,23 @@ body:
 
 # Call for Proposals 2025
 
-The call for proposals is not yet open. Follow us on [Linkedin](https://www.linkedin.com/company/swiss-python-summit) and [X](https://x.com/pythonsummit) so you don't miss it
+We are delighted to announce the call for proposals for our conference is open.
+
+Please **[use this form to submit your proposal](https://talks.python-summit.ch/sps25/cfp).**
+If you encounter any problems or have any questions during the process, please contact us by [email](mailto:info@python-summit.ch).
+
+The deadline for sending proposals is **May 31**. A draft schedule will be published in July.
 
 ## Guidelines
 
+- Any topic is welcome as long as it has something to do with Python!
+- As last year, there will be a general Python day and a **Data Science day**
 - Talks will be conducted in English.
 - Speaking time is 30 minutes (including Q&A).
-- Speakers will receive free admission to the conference and a complimentary lunch on both days.
 - You agree that your talk (video, audio, slides) will be streamed, recorded and published online under Creative Commons Attribution 4.0 International license.
 - You can edit your proposal while the CfP remains open.
 - You may submit several proposals.
+- As a community-driven not-for-profit conference, please note that we are unable to cover travel expenses, offer payment for presentations, or provide visa assistance. - As a community-driven not-for-profit conference, please note that we are unable to fully cover travel expenses, offer payment for presentations, or provide visa assistance. However, you will receive free entry to the conference, complimentary lunch and a contribution towards your expenses of CHF 100 per talk/day. If you did not have any expenses, we would be delighted if you donate the amount to an open source project of your choice.
 
 (More information about the entire process in the form)
 
@@ -29,4 +36,4 @@ If you are giving a talk at the summit, you can expect the following hardware:
 * If you are planning an audio output, please provide it via a 3.5 mm audio jack and let us know in advance, as we will need to integrate this into our recording. 
 
 ---
-_hidden: yes
+_hidden: no

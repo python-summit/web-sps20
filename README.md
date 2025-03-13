@@ -21,6 +21,7 @@ See [www.python-summit.ch](https://www.python-summit.ch/)
 Please follow these rules to keep the repo clean:
 
 * Name branches with prefix `spsYY-` e.g. `sps24-open-cfp`
+* Do so also for the pull request
 * You can see a preview for reviews in a pull requests:
 ![preview](./doc/preview.png)
 
