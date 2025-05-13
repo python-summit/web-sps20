@@ -41,9 +41,10 @@ Do you want to support Swiss Python Summit? Find out more about [sponsoring oppo
 #### Silver
 
 #### Bronze
-
-<a href="https://sysreq.ch/"><img src="/sponsors/sysreq.svg" style="width: 120px;"></a>
-<a href="https://deplo.io"><img src="/sponsors/deploio.svg" style="height: 80px; width: 120px"></a>
+<div style="display: flex; align-items: center">
+    <a href="https://sysreq.ch/"><img src="/sponsors/sysreq.svg" style="width: 120px;"></a>
+    <a href="https://deplo.io"><img src="/sponsors/deploio.svg" style="height: 60px; width: 120px"></a>
+</div>
 
 ### Non-Profit
 
