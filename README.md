@@ -16,6 +16,15 @@ See [www.python-summit.ch](https://www.python-summit.ch/)
 * Install requirements with `make install`
 * Run Lektor server with `make serve` for live preview of the website (on port 5000)
 
+### Tips & Tricks
+
+* To treat `*.lr` Lector files as Markdown in vscode, add these settings
+  ```json
+      "files.associations": {
+        "*.lr": "markdown"
+    }
+  ```
+
 ### Branch and merge rules
 
 Please follow these rules to keep the repo clean:
