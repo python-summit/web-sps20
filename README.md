@@ -12,9 +12,19 @@ See [www.python-summit.ch](https://www.python-summit.ch/)
 ### Run website for local development
 
 * Clone the repository or open in GitHub Codespace
-* Make a virtual environment and activate it (for some reason, the lektor CLI works only in venv)
-* Install requirements with `make install`
+* Create a venv* and install requirements with `make install`
 * Run Lektor server with `make serve` for live preview of the website (on port 5000)
+
+\* Note: For some reason, lektor works only if installed in a virtual environment
+
+### Tips & Tricks
+
+* To treat `*.lr` Lector files as Markdown in vscode, add these settings
+  ```json
+      "files.associations": {
+        "*.lr": "markdown"
+    }
+  ```
 
 ### Branch and merge rules
 

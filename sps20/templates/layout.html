@@ -1,95 +1,106 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="{{ this.description }}">
-        <meta name="theme-color" content="#85495d">
 
-        <link rel="stylesheet" href="{{ '/css/style.css'|url }}">
-        <link rel="preload" href="/hero.webp" as="image">
-        <link rel="preload" href="/logo.svg" as="image">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="{{ this.description }}">
+    <meta name="theme-color" content="#85495d">
 
-        <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
-        <link rel="icon" type="image/svg+xml" href="/logo.svg" />
-        <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="stylesheet" href="{{ '/css/style.css'|url }}">
+    <link rel="preload" href="/hero.webp" as="image">
+    <link rel="preload" href="/logo.svg" as="image">
 
-        <title>{% block title %}Welcome{% endblock %} — Swiss Python Summit</title>
-    </head>
-    <body>
-        <div class="not-footer">
-            <div class="cover">
-                <header class="navbar">
-                    <section class="navbar-section">
-                        <span class="logo">
-                            <img src="{{ '/logo.svg'|url }}" class="logo-small mr-2" alt="Logo">
-                        </span>
-                        <a href="{{ site.root|url }}" class="btn btn-link {{ site.root == this and 'active' or ''}}">Swiss Python Summit</a>
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="icon" type="image/svg+xml" href="/logo.svg" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 
-                        {% for page in site.root.children | sort(attribute="ordering") %}
-                            {% if page.ordering > 0 %}
-                                <a href="{{ page|url }}" class="btn btn-link {{ page == this and 'active' or ''}}">{{ page.title }}</a>
-                            {% endif %}
-                        {% endfor %}
-                    </section>
-                </header>
-            </div>
-            <div class="container grid-lg">
-                <main class="page">
-                    {% block body %}{% endblock %}
-                </main>
+    <title>{% block title %}Welcome{% endblock %} — Swiss Python Summit</title>
+</head>
+
+<body>
+    <div class="not-footer">
+        <div class="cover">
+            <header class="navbar">
+                <section class="navbar-section">
+                    <span class="logo">
+                        <img src="{{ '/logo.svg'|url }}" class="logo-small mr-2" alt="Logo">
+                    </span>
+                    <a href="{{ site.root|url }}" class="btn btn-link {{ site.root == this and 'active' or ''}}">Swiss
+                        Python Summit</a>
+
+                    {% for page in site.root.children | sort(attribute="ordering") %}
+                    {% if page.ordering > 0 %}
+                    <a href="{{ page|url }}" class="btn btn-link {{ page == this and 'active' or ''}}">{{ page.title
+                        }}</a>
+                    {% endif %}
+                    {% endfor %}
+                </section>
+            </header>
+        </div>
+        <div class="container grid-lg">
+            <main class="page">
+                {% block body %}{% endblock %}
+            </main>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container grid-lg">
+            <div class="page">
+                <p>
+                    The Swiss Python Summit is organized by the Swiss Python Summit Association.
+                    Contact us via <a href="mailto:info@python-summit.ch">info@python-summit.ch</a>. Follow us on
+                    Twitter/X <a href="https://x.com/pythonsummit">@pythonsummit</a> and LinkedIn <a
+                        href="https://www.linkedin.com/company/swiss-python-summit">swiss-python-summit</a>.
+                </p>
+                <p>
+                    Respect our <a href="/coc/">Code of Conduct</a>.
+                </p>
+                <p>
+                    The amazing drone shot in the header has been provided by <a
+                        href="https://www.boris-baldinger.com/">Boris Baldinger</a>, thank you very much!
+                </p>
             </div>
         </div>
+    </footer>
 
-        <footer>
-            <div class="container grid-lg">
-                <div class="page">
-                    <p>
-                        The Swiss Python Summit is organized by the Swiss Python Summit Association.
-                        Contact us via <a href="mailto:info@python-summit.ch">info@python-summit.ch</a>. Follow us on Twitter/X <a href="https://x.com/pythonsummit">@pythonsummit</a> and LinkedIn <a href="https://www.linkedin.com/company/swiss-python-summit">swiss-python-summit</a>.
-                    </p>
-                    <p>
-                        Respect our <a href="/coc/">Code of Conduct</a>.
-                    </p>
-                    <p>
-                        The amazing drone shot in the header has been provided by <a href="https://www.boris-baldinger.com/">Boris Baldinger</a>, thank you very much!
-                    </p>
-                </div>
-            </div>
-        </footer>
+    <script src='https://api.mapbox.com/mapbox-gl-js/v1.3.2/mapbox-gl.js'></script>
+    <script>
+        var styled = false;
 
-        <script src='https://api.mapbox.com/mapbox-gl-js/v1.3.2/mapbox-gl.js'></script>
-        <script>
-            var styled = false;
+        mapboxgl.accessToken = 'pk.eyJ1Ijoic3RhY2t0cmFjZSIsImEiOiJjaWh2cGI3aDkwMjlqdXNrb2l2eDl5dGgyIn0.96Y4mk2kaLNPoQb0URVi8g';
+        document.querySelectorAll('.map').forEach(function (map) {
+            if (!styled) {
+                var link = document.createElement("link");
 
-            mapboxgl.accessToken = 'pk.eyJ1Ijoic3RhY2t0cmFjZSIsImEiOiJjaWh2cGI3aDkwMjlqdXNrb2l2eDl5dGgyIn0.96Y4mk2kaLNPoQb0URVi8g';
-            document.querySelectorAll('.map').forEach(function(map) {
-                if (!styled) {
-                    var link = document.createElement("link");
+                link.type = "text/css";
+                link.rel = "stylesheet";
+                link.href = "https://api.mapbox.com/mapbox-gl-js/v1.3.2/mapbox-gl.css";
 
-                    link.type = "text/css";
-                    link.rel = "stylesheet";
-                    link.href = "https://api.mapbox.com/mapbox-gl-js/v1.3.2/mapbox-gl.css";
+                document.head.appendChild(link);
+            }
 
-                    document.head.appendChild(link);
-                }
+            var coordinates = [
+                map.getAttribute('data-lon'),
+                map.getAttribute('data-lat')
+            ];
 
-                var coordinates = [
-                    map.getAttribute('data-lon'),
-                    map.getAttribute('data-lat')
-                ];
-
-                var instance = new mapboxgl.Map({
-                    container: map,
-                    style: 'mapbox://styles/mapbox/streets-v11',
-                    center: coordinates,
-                    zoom: map.getAttribute('data-zoom'),
-                });
-
-                var marker = new mapboxgl.Marker()
-                    .setLngLat(coordinates)
-                    .addTo(instance);
+            var instance = new mapboxgl.Map({
+                container: map,
+                style: 'mapbox://styles/mapbox/streets-v11',
+                center: coordinates,
+                zoom: map.getAttribute('data-zoom'),
             });
-        </script>
-    </body>
+
+            var marker = new mapboxgl.Marker()
+                .setLngLat(coordinates)
+                .addTo(instance);
+        });
+    </script>
+</body>
+
 </html>
