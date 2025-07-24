@@ -8,7 +8,19 @@ body:
 
 # Program 2025
 
-The program is expected to be announced in July. Stay tuned!
+We are pleased to announce the draft schedule with all already confirmed sessions.
 
-Take a look at our [recordings](/recordings) and explore what was covered in previous summits.
+**PLEASE NOTE:** The exact times and order may change. More sessions will follow.
 
+<noscript>
+   <div class="pretalx-widget">
+        <div class="pretalx-widget-info-message">
+            JavaScript is disabled in your browser. To access our schedule without JavaScript,
+            please <a target="_blank" href="https://talks.python-summit.ch/sps25/schedule/">click here</a>.
+        </div>
+    </div>
+</noscript>
+<script type="text/javascript" src="https://talks.python-summit.ch/sps25/widgets/schedule.js"></script>
+<pretalx-schedule event-url="https://talks.python-summit.ch/sps25/" locale="en" format="grid" style="--pretalx-clr-primary: #336d9c"></pretalx-schedule>
+
+You can find a standalone version of the schedule [here](https://talks.python-summit.ch/sps25/schedule/).
