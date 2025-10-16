@@ -12,7 +12,8 @@ See [www.python-summit.ch](https://www.python-summit.ch/)
 ### Run website for local development
 
 * Clone the repository or open in GitHub Codespace
-* Create a venv* and install requirements with `make install`
+* Create a venv* and activate it
+* nstall requirements with `make install`
 * Run Lektor server with `make serve` for live preview of the website (on port 5000)
 
 \* Note: For some reason, lektor works only if installed in a virtual environment
