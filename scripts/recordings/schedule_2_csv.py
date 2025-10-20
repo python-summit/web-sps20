@@ -11,9 +11,13 @@ from datetime import datetime
 from textwrap import dedent
 
 # START Change these two
-BASE_DIR = Path("scripts/recordings/sps25")
-CONF_SHORT = "SPS25"
+CONF_YEAR_SLUG = "25"
 # END
+
+BASE_DIR = Path(f"scripts/recordings/sps{CONF_YEAR_SLUG}")
+CONF_SHORT = f"SPS{CONF_YEAR_SLUG}"
+CONF_YEAR = f"20{CONF_YEAR_SLUG}"
+
 
 assert BASE_DIR.exists(), "FILE_DIR does not exist"
 
@@ -28,11 +32,12 @@ def get_talks_data(schedule_path = PRETALX_SCHEDULE_PATH):
         day_idx = day["index"]
         print(f"Processing day {day_idx}")
         room_name = next(iter(day["rooms"]))
-        for talk in day["rooms"][room_name]:
+        for i, talk in enumerate(day["rooms"][room_name]):
             print(f"\tProcessing talk #{talk['id']}")
             names, bios = zip(*[(d["public_name"], d["biography"] if d["biography"] else "") for d in talk["persons"]])
             talk_data = dict(
                 day = day_idx,
+                talk_idx = i,
                 date = talk["date"],
                 title = talk["title"],
                 type = talk["type"],
@@ -63,27 +68,27 @@ def enrich(talks):
         named_title = f'{names} - {talk["title"]}'
         talk["named_title"] = named_title
         talk["video_title"] = f"{named_title} - {CONF_SHORT}"
-        filename = clean_filename(f"{CONF_SHORT}_{named_title}")
+        filename = clean_filename(f"{CONF_SHORT}_{talk['day']}-{talk['talk_idx']:02d}_{named_title}")
         talk["filename"] = filename
-        talk["video_url"] = "" # fill in manually later when the video is uploaded
+        talk["video_url"] = "<VIDEO_URL>" # fill in manually later when the video is uploaded
         talk["biographies_combined"] = "\n\n".join(talk["biographies_raw"])
         talk["date_str"] = talk["date"]
         # Title and Description for youtube
         talk["video_text"] = f'{talk["names_combined"]} – {talk["title"]} – {CONF_SHORT}'
-        talk["video_text"] = dedent(f'''
-            Talk recorded at the Swiss Python Summit on {timestring(talk["date"])}.
-            Licensed as Creative Commons Attribution 4.0 International.
+        talk["video_text"] = f'''
+Talk recorded at the Swiss Python Summit on {timestring(talk["date"])}.
+Licensed as Creative Commons Attribution 4.0 International.
 
-            ---------
-            Abstract:
+---------
+Abstract:
 
-            {talk["abstract"]}
+{talk["abstract"]}
 
-            ---------------------
-            About the speaker(s):
+---------------------
+About the speaker(s):
 
-            {talk["biographies_combined"]}
-            ''')
+{talk["biographies_combined"]}
+'''.lstrip()
     return talks
 
 def clean_filename(filename, max_length=70):
