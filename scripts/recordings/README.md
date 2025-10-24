@@ -16,7 +16,7 @@ Upload video to Youtube with the provided metadata (title, description) from the
 
 Add link to the content files provided
 
-4. Copy content files `sps20/talk-recordings` to release it
+4. Copy content files `sps20/content/recordings` to release it
 
 Copy the slides pdf as well an name it accordingly TODO
 
