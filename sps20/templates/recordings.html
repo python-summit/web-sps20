@@ -11,24 +11,21 @@
         <h2><strong>{{ year }}</strong></h2>
 
         {% if bag("playlists", "youtube", year|string) %}
-            <a href="{{ bag("playlists", "youtube", year|string) }}" class="btn btn-sm btn-secondary">full YouTube playlist</a>
+            <a href="{{ bag("playlists", "youtube", year|string) }}" class="btn btn-sm btn-secondary">Full YouTube playlist</a>
         {% endif %}
         {% if bag("playlists", "ccc", year|string) %}
-            <a href="{{ bag("playlists", "ccc", year|string) }}" class="btn btn-sm btn-primary">full media.ccc.de playlist</a>
+            <a href="{{ bag("playlists", "ccc", year|string) }}" class="btn btn-sm btn-primary">Full media.ccc.de playlist</a>
         {% endif %}
 
         <ul>
         {% for talk in this.children|selectattr("year", "eq", year)|sort(attribute="ordering") %}
             {% set slides=talk.attachments|selectattr("type", "eq", "slides")|list %}
-            <li>
-                {% if talk.video_url|string %}
-                <strong><a href="{{ talk.video_url }}">{{ talk.title }}</a></strong>
-                {% else %}
+            <li> 
                 <strong>{{ talk.title }}</strong>
+                {% if talk.speaker %}
+                <div>by {{ talk.speaker }}</div>
                 {% endif %}
-
                 <div>
-                <span>by {{ talk.speaker }}</span>
                 {% if slides %}
                     [
                     {%- for slide in slides -%}
@@ -36,10 +33,13 @@
                     {%- endfor -%}
                     ]
                 {% endif %}
+                {% if talk.video_url|string %}
+                    [<a href="{{ talk.video_url }}">YT video</a>]
+                {% endif %}
                 {% if talk.external_slide_url %}
                     [<a href="{{ talk.external_slide_url }}">slides (external link)</a>]
                 {% endif %}
-            </div>
+                </div>
             </li>
         {% endfor %}
         </ul>
