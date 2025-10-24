@@ -4,16 +4,18 @@ import json
 import re
 import shutil
 
-FILE_DIR = Path("scripts/recordings/sps24")
-assert FILE_DIR.exists(), "FILE_DIR does not exist"
+# START Change these two
+CONF_YEAR_SLUG = "25"
+# END
 
-CSV_PATH = FILE_DIR / "talks.csv"
+BASE_DIR = Path(f"scripts/recordings/sps{CONF_YEAR_SLUG}")
+CONF_SHORT = f"SPS{CONF_YEAR_SLUG}"
+CONF_YEAR = f"20{CONF_YEAR_SLUG}"
+CSV_PATH = BASE_DIR / "talks.csv"
 
+assert BASE_DIR.exists(), "BASE_DIR does not exist"
+assert CSV_PATH.exists(), "CSV_PATH not found"
 
-CONF_SHORT = "SPS24"
-CONF_YEAR = "2024"
-
-OUTPUT_FOLDER = Path("scripts/recordings/out")
 
 def get_data(csv_path, filter_type=["Talk", "Keynote", "Lightning Talks (9x5min)"]):
     df = pd.read_csv(csv_path)
@@ -22,28 +24,27 @@ def get_data(csv_path, filter_type=["Talk", "Keynote", "Lightning Talks (9x5min)
     return df
 
 def create_file_structure(df: pd.DataFrame):
-    # if OUTPUT_FOLDER.exists():
-    #     shutil.rmtree(OUTPUT_FOLDER)
-    OUTPUT_FOLDER.mkdir(exist_ok=False)
+    out_dir = BASE_DIR / "content"
+    out_dir.mkdir(exist_ok=False) # Warn user if it exists
     for i, row in df.iterrows():
-        filename = Path(OUTPUT_FOLDER / row.filename)
+        filename = Path(out_dir / row.filename)
         filename.mkdir()
         content = filename / "contents.lr"
-        content.write_text(create_content(i, row))
+        content.write_text(create_content(row))
         slide = filename / f"{filename.name}.pdf.lr"
         slide.write_text("type: slides")
 
-def create_content(i, row):
+def create_content(row):
     text = f'''
 _model: recording
 ---
 title: {row.title}
 ---
-ordering: {i}
+ordering: {row.talk_idx}
 ---
 speaker: {row.names_combined}
 ---
-video_url: {row.video_url}
+video_url: {row.video_url if row.video_url != "<VIDEO_URL>" else ""}
 ---
 year: {CONF_YEAR} - Day {row.day}
 '''

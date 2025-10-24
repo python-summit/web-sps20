@@ -7,30 +7,27 @@
     <h1>{{ this.title }}</h1>
     {{ this.body }}
 
-
-    
     {% for year in this.children|map(attribute="year")|sort(reverse=True)|unique %}
         <h2><strong>{{ year }}</strong></h2>
 
         {% if bag("playlists", "youtube", year|string) %}
-            <a href="{{ bag("playlists", "youtube", year|string) }}" class="btn btn-sm btn-primary">full YouTube playlist</a>
+            <a href="{{ bag("playlists", "youtube", year|string) }}" class="btn btn-sm btn-secondary">Full YouTube playlist</a>
         {% endif %}
         {% if bag("playlists", "ccc", year|string) %}
-            <a href="{{ bag("playlists", "ccc", year|string) }}" class="btn btn-sm btn-primary">full media.ccc.de playlist</a>
+            <a href="{{ bag("playlists", "ccc", year|string) }}" class="btn btn-sm btn-primary">Full media.ccc.de playlist</a>
         {% endif %}
 
         <ul>
         {% for talk in this.children|selectattr("year", "eq", year)|sort(attribute="ordering") %}
             {% set slides=talk.attachments|selectattr("type", "eq", "slides")|list %}
-            <li>
-                {% if talk.video_url %}
-                <strong><a href="{{ talk.video_url }}">{{ talk.title }}</a></strong>
-                {% else %}
-                <strong>{{ talk.title }}</strong>
+            <li> 
+                {# Title & Speaker #}
+                <a href={{ talk.path|url }}><strong>{{ talk.title }}</strong></a>
+                {% if talk.speaker %}
+                <div>by {{ talk.speaker }}</div>
                 {% endif %}
-
-                <div>
-                <span>{{ talk.speaker }}</span>
+                {# Slides & Video #}
+                <p>
                 {% if slides %}
                     [
                     {%- for slide in slides -%}
@@ -41,7 +38,10 @@
                 {% if talk.external_slide_url %}
                     [<a href="{{ talk.external_slide_url }}">slides (external link)</a>]
                 {% endif %}
-            </div>
+                {% if talk.video_url|string %}
+                    [<a href="{{ talk.video_url }}">video</a>]
+                {% endif %}
+                </p>
             </li>
         {% endfor %}
         </ul>

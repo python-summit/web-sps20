@@ -44,7 +44,7 @@ Please follow these rules to keep the repo clean:
 ### How to add a talk recording
 
 #### Manually
-- Go to http://localhost:5000/admin/root:talk-recordings/edit
+- Go to http://localhost:5000/admin/root:recordings/edit
 - Click "Add Page"
 - Choose the "Recording" model
 - Set the "Title" field to the talk title

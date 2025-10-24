@@ -1,0 +1,525 @@
+,day,talk_idx,date,title,type,names_raw,biographies_raw,abstract,names_combined,named_title,video_title,filename,video_url,biographies_combined,date_str,video_text
+0,1,0,2025-10-16T09:00:00+02:00,Welcome - Day 1,Opening/Closing,"('Orga',)","('',)","A welcome message and useful information from the organisers.
+
+You will also find useful information on our website [www.python-summit.ch/venue](https://www.python-summit.ch/venue/). Or feel free to ask any member of staff if you have a question.",Orga,Orga - Welcome - Day 1,Orga - Welcome - Day 1 - SPS25,sps25_1-00_orga_-_welcome_-_day_1,<VIDEO_URL>,,2025-10-16T09:00:00+02:00,"Talk recorded at the Swiss Python Summit on October 16th, 2025.
+Licensed as Creative Commons Attribution 4.0 International.
+
+---------
+Abstract:
+
+A welcome message and useful information from the organisers.
+
+You will also find useful information on our website [www.python-summit.ch/venue](https://www.python-summit.ch/venue/). Or feel free to ask any member of staff if you have a question.
+
+---------------------
+About the speaker(s):
+
+
+"
+1,1,1,2025-10-16T09:10:00+02:00,When Close Enough is Good Enough,Talk,"('Tim Head',)","(""I am a maintainer of the scikit-learn machine-learning library. In the past I've worked on building and running mybinder.org and JupyterHub.\r\n\r\nI am employed by NVIDIA."",)","Sometimes getting an approximate answer is super good enough. How do you check for duplicates, count unique users, or track item popularity when your dataset won’t fit in memory? Enter probabilistic data structures like Bloom filters, Count-Min Sketches, and HyperLogLog! This talk introduces these powerful tools, demonstrates simple implementations in Python, and gives you ideas on when to use them.
+
+Walk away ready to apply these techniques in your own projects - no advanced math required.",Tim Head,Tim Head - When Close Enough is Good Enough,Tim Head - When Close Enough is Good Enough - SPS25,sps25_1-01_tim_head_-_when_close_enough_is_good_enough,<VIDEO_URL>,"I am a maintainer of the scikit-learn machine-learning library. In the past I've worked on building and running mybinder.org and JupyterHub.
+
+I am employed by NVIDIA.",2025-10-16T09:10:00+02:00,"Talk recorded at the Swiss Python Summit on October 16th, 2025.
+Licensed as Creative Commons Attribution 4.0 International.
+
+---------
+Abstract:
+
+Sometimes getting an approximate answer is super good enough. How do you check for duplicates, count unique users, or track item popularity when your dataset won’t fit in memory? Enter probabilistic data structures like Bloom filters, Count-Min Sketches, and HyperLogLog! This talk introduces these powerful tools, demonstrates simple implementations in Python, and gives you ideas on when to use them.
+
+Walk away ready to apply these techniques in your own projects - no advanced math required.
+
+---------------------
+About the speaker(s):
+
+I am a maintainer of the scikit-learn machine-learning library. In the past I've worked on building and running mybinder.org and JupyterHub.
+
+I am employed by NVIDIA.
+"
+2,1,2,2025-10-16T09:45:00+02:00,Code review in era of collaborative development,Talk,"('Andrii Soldatenko',)","('My name is Andrii Soldatenko. I am a sr. software engineer originally from Ukraine 🇺🇦, and I am currently living in Austria 🇦🇹. Public speaker (KCD, FOSDEM, GoDays, PyCons) and OSS contributor (Apache Airflow, Golang, OpenAPI, docker). I am a big fan of debuggers, Neovim, Rust.',)","Code review is a central part of everyday developer jobs. The motivation to create this talk was a quote:
+“The most important superpower of a developer is complaining about everybody else's code.” In this talk, I’ll explain my approach to better code review.
+
+Sometimes, it’s hard to convince a colleague about change or don’t change some lines of code. In my talk I would like to cover some best practices from my software engineering experience about efficient and honest code review. How to create a culture of perfect code review. How to apply automatic tools to improve code review routine of repetitive comments or suggestions. How to write/or reuse coding style guides for your team to reduce the time spent arguing about naming conventions and different styles.
+What needs to be automated and what needs to be not automated during code review? The key role of patterns that can be reusable is not to confuse colleagues.",Andrii Soldatenko,Andrii Soldatenko - Code review in era of collaborative development,Andrii Soldatenko - Code review in era of collaborative development - SPS25,sps25_1-02_andrii_soldatenko_-_code_review_in_era_of_collaborative_dev,<VIDEO_URL>,"My name is Andrii Soldatenko. I am a sr. software engineer originally from Ukraine 🇺🇦, and I am currently living in Austria 🇦🇹. Public speaker (KCD, FOSDEM, GoDays, PyCons) and OSS contributor (Apache Airflow, Golang, OpenAPI, docker). I am a big fan of debuggers, Neovim, Rust.",2025-10-16T09:45:00+02:00,"Talk recorded at the Swiss Python Summit on October 16th, 2025.
+Licensed as Creative Commons Attribution 4.0 International.
+
+---------
+Abstract:
+
+Code review is a central part of everyday developer jobs. The motivation to create this talk was a quote:
+“The most important superpower of a developer is complaining about everybody else's code.” In this talk, I’ll explain my approach to better code review.
+
+Sometimes, it’s hard to convince a colleague about change or don’t change some lines of code. In my talk I would like to cover some best practices from my software engineering experience about efficient and honest code review. How to create a culture of perfect code review. How to apply automatic tools to improve code review routine of repetitive comments or suggestions. How to write/or reuse coding style guides for your team to reduce the time spent arguing about naming conventions and different styles.
+What needs to be automated and what needs to be not automated during code review? The key role of patterns that can be reusable is not to confuse colleagues.
+
+---------------------
+About the speaker(s):
+
+My name is Andrii Soldatenko. I am a sr. software engineer originally from Ukraine 🇺🇦, and I am currently living in Austria 🇦🇹. Public speaker (KCD, FOSDEM, GoDays, PyCons) and OSS contributor (Apache Airflow, Golang, OpenAPI, docker). I am a big fan of debuggers, Neovim, Rust.
+"
+3,1,3,2025-10-16T11:00:00+02:00,Bytecode and .pyc files,Talk,"('Konrad Gawda',)","('Python, Linux and Open Source proponent. Cloud Evangelist, Python trainer and programmer. Reportedly seen at Warsaw Python meetups since the first PyWaw meeting ever. Recognized as an Inland Sailor by the Polish Sailing Association and as an inventor by the US Patent Office.',)","Bytecode, the internal language of instructions used by the interpreter is something that perhaps most Python developers have heard about, but few have dug into. This talk will try to explain the idea behind bytecode and how it works.
+We will see how to extract bytecode from functions - with `dis` module, and from `.pyc` files (and what is the idea of `__pycache__` directories). Then, the other way around: we’ll check the possibility of building new functions with raw bytes in runtime.",Konrad Gawda,Konrad Gawda - Bytecode and .pyc files,Konrad Gawda - Bytecode and .pyc files - SPS25,sps25_1-03_konrad_gawda_-_bytecode_and_pyc_files,<VIDEO_URL>,"Python, Linux and Open Source proponent. Cloud Evangelist, Python trainer and programmer. Reportedly seen at Warsaw Python meetups since the first PyWaw meeting ever. Recognized as an Inland Sailor by the Polish Sailing Association and as an inventor by the US Patent Office.",2025-10-16T11:00:00+02:00,"Talk recorded at the Swiss Python Summit on October 16th, 2025.
+Licensed as Creative Commons Attribution 4.0 International.
+
+---------
+Abstract:
+
+Bytecode, the internal language of instructions used by the interpreter is something that perhaps most Python developers have heard about, but few have dug into. This talk will try to explain the idea behind bytecode and how it works.
+We will see how to extract bytecode from functions - with `dis` module, and from `.pyc` files (and what is the idea of `__pycache__` directories). Then, the other way around: we’ll check the possibility of building new functions with raw bytes in runtime.
+
+---------------------
+About the speaker(s):
+
+Python, Linux and Open Source proponent. Cloud Evangelist, Python trainer and programmer. Reportedly seen at Warsaw Python meetups since the first PyWaw meeting ever. Recognized as an Inland Sailor by the Polish Sailing Association and as an inventor by the US Patent Office.
+"
+4,1,4,2025-10-16T11:35:00+02:00,"Why you, as a Python developer, should learn Rust",Talk,"('Daniel Szoke',)","('Hello! I am a software engineer working for Sentry in Vienna, Austria. I am the primary maintainer of [Sentry CLI](https://github.com/getsentry/sentry-cli) and I also help maintain the [Sentry Python SDK](https://github.com/getsentry/sentry-python).\r\n\r\nIn my free time, I enjoy skiing, hiking, swimming, running, bouldering, photography, traveling etc.\r\n\r\nI am originally from the US, and have been living in Austria since summer 2023. I speak four languages: English, Hungarian, German, and Spanish.',)","Why should you, as a Python developer, learn Rust? In this talk, we will explore Rust's compelling answers to this question. Rust offers guaranteed type safety and memory safety without a garbage collector, ""fearless concurrency,"" and incredible performance. We will look into some of Rust's most distinctive features from a Python perspective, including its strict compiler, the ownership and borrowing system, null safety via Option<T>, and explicit mutability. We will discover how Rust eliminates common runtime errors at compile time, and additionally, how understanding the concepts behind Rust's safety features can sharpen your Python skills, helping to write more robust and reliable code. By the end of the talk, you'll understand Rust's core value proposition and how its paradigms can benefit you, whether you are writing Python, Rust, or any other language.",Daniel Szoke,"Daniel Szoke - Why you, as a Python developer, should learn Rust","Daniel Szoke - Why you, as a Python developer, should learn Rust - SPS25",sps25_1-04_daniel_szoke_-_why_you_as_a_python_developer_should_learn_r,<VIDEO_URL>,"Hello! I am a software engineer working for Sentry in Vienna, Austria. I am the primary maintainer of [Sentry CLI](https://github.com/getsentry/sentry-cli) and I also help maintain the [Sentry Python SDK](https://github.com/getsentry/sentry-python).
+
+In my free time, I enjoy skiing, hiking, swimming, running, bouldering, photography, traveling etc.
+
+I am originally from the US, and have been living in Austria since summer 2023. I speak four languages: English, Hungarian, German, and Spanish.",2025-10-16T11:35:00+02:00,"Talk recorded at the Swiss Python Summit on October 16th, 2025.
+Licensed as Creative Commons Attribution 4.0 International.
+
+---------
+Abstract:
+
+Why should you, as a Python developer, learn Rust? In this talk, we will explore Rust's compelling answers to this question. Rust offers guaranteed type safety and memory safety without a garbage collector, ""fearless concurrency,"" and incredible performance. We will look into some of Rust's most distinctive features from a Python perspective, including its strict compiler, the ownership and borrowing system, null safety via Option<T>, and explicit mutability. We will discover how Rust eliminates common runtime errors at compile time, and additionally, how understanding the concepts behind Rust's safety features can sharpen your Python skills, helping to write more robust and reliable code. By the end of the talk, you'll understand Rust's core value proposition and how its paradigms can benefit you, whether you are writing Python, Rust, or any other language.
+
+---------------------
+About the speaker(s):
+
+Hello! I am a software engineer working for Sentry in Vienna, Austria. I am the primary maintainer of [Sentry CLI](https://github.com/getsentry/sentry-cli) and I also help maintain the [Sentry Python SDK](https://github.com/getsentry/sentry-python).
+
+In my free time, I enjoy skiing, hiking, swimming, running, bouldering, photography, traveling etc.
+
+I am originally from the US, and have been living in Austria since summer 2023. I speak four languages: English, Hungarian, German, and Spanish.
+"
+5,1,5,2025-10-16T13:30:00+02:00,Functional Python: Saving Christmas with itertools & friends,Talk,"('Edoardo Baldi',)","('I’m a curious and analytical mind by nature. I’m a physicist turned research software engineer who enjoys both coding and wandering in the mountains—fortunately, I live in Switzerland. Outside work, I enjoy puzzles, retro tech, and meaningful conversations. I value exploration, both physical and intellectual.',)","Are you writing nested loops when solving coding challenges? Discover how Python's functional programming toolbox can transform your problem-solving approach.
+
+We'll explore functional programming principles through the lens of Advent of Code puzzles, learning to think in streams of data rather than step-by-step instructions. We’ll explore some essential bits from `itertools`, `functools`, and `operator` modules, aiming to write more expressive, debuggable code.
+
+Starting with pure functions and lazy evaluation, we'll build up to solving real AoC problems using techniques like:
+
+- `itertools.pairwise()` for sequence comparisons
+- `functools.reduce()` for data aggregation  
+- `operator.itemgetter()` for elegant sorting
+- Generator expressions for memory-efficient processing
+
+Through some puzzles from various years, we’ll see how functional approaches often lead to more concise solutions that closely mirror the problem description. We'll compare imperative vs functional solutions, highlighting pros and cons of both approaches.
+
+Whether you're preparing for coding interviews, tackling AoC, or just want to expand your Python toolkit, you'll leave with a couple more ideas for writing cleaner, more Pythonic code—no external dependencies required.",Edoardo Baldi,Edoardo Baldi - Functional Python: Saving Christmas with itertools & friends,Edoardo Baldi - Functional Python: Saving Christmas with itertools & friends - SPS25,sps25_1-05_edoardo_baldi_-_functional_python_saving_christmas_with_ite,<VIDEO_URL>,"I’m a curious and analytical mind by nature. I’m a physicist turned research software engineer who enjoys both coding and wandering in the mountains—fortunately, I live in Switzerland. Outside work, I enjoy puzzles, retro tech, and meaningful conversations. I value exploration, both physical and intellectual.",2025-10-16T13:30:00+02:00,"Talk recorded at the Swiss Python Summit on October 16th, 2025.
+Licensed as Creative Commons Attribution 4.0 International.
+
+---------
+Abstract:
+
+Are you writing nested loops when solving coding challenges? Discover how Python's functional programming toolbox can transform your problem-solving approach.
+
+We'll explore functional programming principles through the lens of Advent of Code puzzles, learning to think in streams of data rather than step-by-step instructions. We’ll explore some essential bits from `itertools`, `functools`, and `operator` modules, aiming to write more expressive, debuggable code.
+
+Starting with pure functions and lazy evaluation, we'll build up to solving real AoC problems using techniques like:
+
+- `itertools.pairwise()` for sequence comparisons
+- `functools.reduce()` for data aggregation  
+- `operator.itemgetter()` for elegant sorting
+- Generator expressions for memory-efficient processing
+
+Through some puzzles from various years, we’ll see how functional approaches often lead to more concise solutions that closely mirror the problem description. We'll compare imperative vs functional solutions, highlighting pros and cons of both approaches.
+
+Whether you're preparing for coding interviews, tackling AoC, or just want to expand your Python toolkit, you'll leave with a couple more ideas for writing cleaner, more Pythonic code—no external dependencies required.
+
+---------------------
+About the speaker(s):
+
+I’m a curious and analytical mind by nature. I’m a physicist turned research software engineer who enjoys both coding and wandering in the mountains—fortunately, I live in Switzerland. Outside work, I enjoy puzzles, retro tech, and meaningful conversations. I value exploration, both physical and intellectual.
+"
+6,1,6,2025-10-16T14:00:00+02:00,Building Resilient Python Apps for Unreliable Networks,Talk,"('Emeka Onyebuchi',)","('Emeka Onyebuchi is a Python backend and AI engineer with years of experience building high-impact systems for companies across the fintech, civic tech, and energy sectors. He has led the development of scalable APIs, data platforms, and infrastructure for projects ranging from payment gateways to smart grid applications, often working in challenging environments where network reliability cannot be taken for granted.',)","In many parts of the world, especially across Africa, software cannot assume a stable internet connection. From rural communities to field agents working in transit or enforcement, the reality is simple: offline is the default, and sync is a luxury.
+
+In this talk, we’ll explore how to build offline-first applications using Python — apps that work gracefully when the network doesn’t. Drawing from real-world civic and infrastructure projects scenarios in Nigeria, I’ll walk through techniques to queue, cache, and sync data locally, using tools like SQLite, Redis, Celery, and FastAPI. We’ll explore design patterns that prevent data loss, improve user experience, and simplify reconciliation once connectivity is restored.
+
+Whether you’re building field data tools, mobile dashboards, or lightweight IoT integrations, this session will equip you with the mindset and technical building blocks to ensure your Python applications stay resilient — no matter the network conditions.",Emeka Onyebuchi,Emeka Onyebuchi - Building Resilient Python Apps for Unreliable Networks,Emeka Onyebuchi - Building Resilient Python Apps for Unreliable Networks - SPS25,sps25_1-06_emeka_onyebuchi_-_building_resilient_python_apps_for_unreli,<VIDEO_URL>,"Emeka Onyebuchi is a Python backend and AI engineer with years of experience building high-impact systems for companies across the fintech, civic tech, and energy sectors. He has led the development of scalable APIs, data platforms, and infrastructure for projects ranging from payment gateways to smart grid applications, often working in challenging environments where network reliability cannot be taken for granted.",2025-10-16T14:00:00+02:00,"Talk recorded at the Swiss Python Summit on October 16th, 2025.
+Licensed as Creative Commons Attribution 4.0 International.
+
+---------
+Abstract:
+
+In many parts of the world, especially across Africa, software cannot assume a stable internet connection. From rural communities to field agents working in transit or enforcement, the reality is simple: offline is the default, and sync is a luxury.
+
+In this talk, we’ll explore how to build offline-first applications using Python — apps that work gracefully when the network doesn’t. Drawing from real-world civic and infrastructure projects scenarios in Nigeria, I’ll walk through techniques to queue, cache, and sync data locally, using tools like SQLite, Redis, Celery, and FastAPI. We’ll explore design patterns that prevent data loss, improve user experience, and simplify reconciliation once connectivity is restored.
+
+Whether you’re building field data tools, mobile dashboards, or lightweight IoT integrations, this session will equip you with the mindset and technical building blocks to ensure your Python applications stay resilient — no matter the network conditions.
+
+---------------------
+About the speaker(s):
+
+Emeka Onyebuchi is a Python backend and AI engineer with years of experience building high-impact systems for companies across the fintech, civic tech, and energy sectors. He has led the development of scalable APIs, data platforms, and infrastructure for projects ranging from payment gateways to smart grid applications, often working in challenging environments where network reliability cannot be taken for granted.
+"
+7,1,7,2025-10-16T15:15:00+02:00,Software estimation: False sense of certainty,Talk,"('Ines Panker',)","(""I've been building software for almost 2 decades. \r\nI'm fascinated by elegant solutions to complex problems, finding simple, straightforward patterns in what at first glance appears to be unorganized chaos. \r\nAnd I love to observe the human aspect of software. People, human interactions and motivations are just as much integral to software development as the focus on solid architecture that is maintainable, scalable and efficient."",)","It has been known since the 70s that developers tend to give very optimistic estimations. 
+
+We prefer to have exact numbers, even if that means they are wrong most of the time. 
+
+In research, developers admitted that they believe their managers will see them as less competent if they provide estimates with huge margins. But mathematically speaking providing a wider min-max interval means you will be right more often.
+
+Sp, maybe it isn’t really accuracy that businesses and people are looking for. Maybe estimates are needed for the sole purpose of risk aversion. 
+
+Risk can be measured in other ways.
+
+Maybe it is time we stop estimating tasks left and right and instead start managing the project’s risk and customer’s expectations.",Ines Panker,Ines Panker - Software estimation: False sense of certainty,Ines Panker - Software estimation: False sense of certainty - SPS25,sps25_1-07_ines_panker_-_software_estimation_false_sense_of_certainty,<VIDEO_URL>,"I've been building software for almost 2 decades. 
+I'm fascinated by elegant solutions to complex problems, finding simple, straightforward patterns in what at first glance appears to be unorganized chaos. 
+And I love to observe the human aspect of software. People, human interactions and motivations are just as much integral to software development as the focus on solid architecture that is maintainable, scalable and efficient.",2025-10-16T15:15:00+02:00,"Talk recorded at the Swiss Python Summit on October 16th, 2025.
+Licensed as Creative Commons Attribution 4.0 International.
+
+---------
+Abstract:
+
+It has been known since the 70s that developers tend to give very optimistic estimations. 
+
+We prefer to have exact numbers, even if that means they are wrong most of the time. 
+
+In research, developers admitted that they believe their managers will see them as less competent if they provide estimates with huge margins. But mathematically speaking providing a wider min-max interval means you will be right more often.
+
+Sp, maybe it isn’t really accuracy that businesses and people are looking for. Maybe estimates are needed for the sole purpose of risk aversion. 
+
+Risk can be measured in other ways.
+
+Maybe it is time we stop estimating tasks left and right and instead start managing the project’s risk and customer’s expectations.
+
+---------------------
+About the speaker(s):
+
+I've been building software for almost 2 decades. 
+I'm fascinated by elegant solutions to complex problems, finding simple, straightforward patterns in what at first glance appears to be unorganized chaos. 
+And I love to observe the human aspect of software. People, human interactions and motivations are just as much integral to software development as the focus on solid architecture that is maintainable, scalable and efficient.
+"
+8,1,8,2025-10-16T15:50:00+02:00,Using Python's array API standard for ESA's Euclid mission,Talk,"('Saransh Chopra',)","('Saransh is a ""generalist"" research software engineer at UCL’s Advanced Research Computing Centre (at the time of writing this proposal), where he works on Python, HPC, DevOps, and Education projects. Before UCL, he was a research fellow at CERN working on computational physics software, and he will be joining EPFL as a graduate student this fall. Moreover, he develops and maintains several open-source scientific software, which he believes are the key to collaborative and reproducible research.',)","Over the years, the lack of an array data type in Python has resulted in the creation of numerous array libraries, each specializing in unique niches but still having some interoperability between each other. NumPy has become the de facto array library of Python, and the other array libraries try to keep their API close to that of NumPy. However, this often becomes infeasible, and the libraries deviate out of necessity. To make Python's array libraries shake hands with each other without any inconsistencies, the Consortium for Python Data API Standards has formalised an Array API standard for libraries offering array creation and manipulation operations.
+
+The Array API standard allows users to write and use the same code for arrays belonging to any of the standard-conforming libraries. Through this talk, we will explore the need for such standardisation and discuss its salient features in detail. We will primarily delve into the example of using this standard to make specific parts of European Space Agency's Euclid space mission's code GPU and autodiff compatible. Besides cosmology, we will also take a look at a few other examples, mostly sourced from my experience working with and on several Python array libraries for scientific computing. Ultimately, the audience can expect to leave the room with the knowledge of both, the software engineering and the research side of the array API standard.",Saransh Chopra,Saransh Chopra - Using Python's array API standard for ESA's Euclid mission,Saransh Chopra - Using Python's array API standard for ESA's Euclid mission - SPS25,sps25_1-08_saransh_chopra_-_using_pythons_array_api_standard_for_esas_,<VIDEO_URL>,"Saransh is a ""generalist"" research software engineer at UCL’s Advanced Research Computing Centre (at the time of writing this proposal), where he works on Python, HPC, DevOps, and Education projects. Before UCL, he was a research fellow at CERN working on computational physics software, and he will be joining EPFL as a graduate student this fall. Moreover, he develops and maintains several open-source scientific software, which he believes are the key to collaborative and reproducible research.",2025-10-16T15:50:00+02:00,"Talk recorded at the Swiss Python Summit on October 16th, 2025.
+Licensed as Creative Commons Attribution 4.0 International.
+
+---------
+Abstract:
+
+Over the years, the lack of an array data type in Python has resulted in the creation of numerous array libraries, each specializing in unique niches but still having some interoperability between each other. NumPy has become the de facto array library of Python, and the other array libraries try to keep their API close to that of NumPy. However, this often becomes infeasible, and the libraries deviate out of necessity. To make Python's array libraries shake hands with each other without any inconsistencies, the Consortium for Python Data API Standards has formalised an Array API standard for libraries offering array creation and manipulation operations.
+
+The Array API standard allows users to write and use the same code for arrays belonging to any of the standard-conforming libraries. Through this talk, we will explore the need for such standardisation and discuss its salient features in detail. We will primarily delve into the example of using this standard to make specific parts of European Space Agency's Euclid space mission's code GPU and autodiff compatible. Besides cosmology, we will also take a look at a few other examples, mostly sourced from my experience working with and on several Python array libraries for scientific computing. Ultimately, the audience can expect to leave the room with the knowledge of both, the software engineering and the research side of the array API standard.
+
+---------------------
+About the speaker(s):
+
+Saransh is a ""generalist"" research software engineer at UCL’s Advanced Research Computing Centre (at the time of writing this proposal), where he works on Python, HPC, DevOps, and Education projects. Before UCL, he was a research fellow at CERN working on computational physics software, and he will be joining EPFL as a graduate student this fall. Moreover, he develops and maintains several open-source scientific software, which he believes are the key to collaborative and reproducible research.
+"
+9,1,9,2025-10-16T16:25:00+02:00,Lightning Talks - Day 1,Lightning Talks,"('Orga',)","('',)","Our Lightning Talks are open to everyone 😊
+
+How it works:
+– You can register directly at the conference. First come, first served.
+– Any proposal is welcome, as long as your talk has something to do with Python and respects our [Code of Conduct](https://www.python-summit.ch/coc/). We reserve the right to reject talks.
+– Talk time is strictly limited to 5 minutes.
+– To keep turnaround times short, you will not be able to plug in your own device. We will provide a laptop with all slides. Please submit your slides as PDF via email at least 60 minutes before Lightning Talks start. 
+– By registering, you accept that your talk may be recorded, published and streamed live (audio & video) under [Creative Commons Attribution 4.0 International license](https://creativecommons.org/licenses/by/4.0/deed.en).",Orga,Orga - Lightning Talks - Day 1,Orga - Lightning Talks - Day 1 - SPS25,sps25_1-09_orga_-_lightning_talks_-_day_1,<VIDEO_URL>,,2025-10-16T16:25:00+02:00,"Talk recorded at the Swiss Python Summit on October 16th, 2025.
+Licensed as Creative Commons Attribution 4.0 International.
+
+---------
+Abstract:
+
+Our Lightning Talks are open to everyone 😊
+
+How it works:
+– You can register directly at the conference. First come, first served.
+– Any proposal is welcome, as long as your talk has something to do with Python and respects our [Code of Conduct](https://www.python-summit.ch/coc/). We reserve the right to reject talks.
+– Talk time is strictly limited to 5 minutes.
+– To keep turnaround times short, you will not be able to plug in your own device. We will provide a laptop with all slides. Please submit your slides as PDF via email at least 60 minutes before Lightning Talks start. 
+– By registering, you accept that your talk may be recorded, published and streamed live (audio & video) under [Creative Commons Attribution 4.0 International license](https://creativecommons.org/licenses/by/4.0/deed.en).
+
+---------------------
+About the speaker(s):
+
+
+"
+10,1,10,2025-10-16T17:10:00+02:00,Closing - Day 1,Opening/Closing,"('Orga',)","('',)","A thank you from the organisers. We hope you enjoyed your day!
+                                       
+(It won't take long, we promise! After that long day, everyone is looking forward to the buffet!)",Orga,Orga - Closing - Day 1,Orga - Closing - Day 1 - SPS25,sps25_1-10_orga_-_closing_-_day_1,<VIDEO_URL>,,2025-10-16T17:10:00+02:00,"Talk recorded at the Swiss Python Summit on October 16th, 2025.
+Licensed as Creative Commons Attribution 4.0 International.
+
+---------
+Abstract:
+
+A thank you from the organisers. We hope you enjoyed your day!
+                                       
+(It won't take long, we promise! After that long day, everyone is looking forward to the buffet!)
+
+---------------------
+About the speaker(s):
+
+
+"
+11,2,0,2025-10-17T09:00:00+02:00,Welcome - Day 2,Opening/Closing,"('Orga',)","('',)","A welcome message and useful information from the organisers.
+
+You will also find useful information on our website [www.python-summit.ch/venue](https://www.python-summit.ch/venue/). Or feel free to ask any member of staff if you have a question.",Orga,Orga - Welcome - Day 2,Orga - Welcome - Day 2 - SPS25,sps25_2-00_orga_-_welcome_-_day_2,<VIDEO_URL>,,2025-10-17T09:00:00+02:00,"Talk recorded at the Swiss Python Summit on October 17th, 2025.
+Licensed as Creative Commons Attribution 4.0 International.
+
+---------
+Abstract:
+
+A welcome message and useful information from the organisers.
+
+You will also find useful information on our website [www.python-summit.ch/venue](https://www.python-summit.ch/venue/). Or feel free to ask any member of staff if you have a question.
+
+---------------------
+About the speaker(s):
+
+
+"
+12,2,1,2025-10-17T09:10:00+02:00,Machine learning for Swiss democracy,Talk,"('Vita Midori',)","(""I led the development of a stock-trading platform for 8 years. Some bits of C++ and Cython aside, the platform was mainly a Python-based distributed system. Scaling and performance optimisation became not just a necessity but a passion for me. I've since returned to my freelance & consulting roots, and still enjoy helping clients with tough Python problems. Strangely, I've never studied computer science and often run away from all technology into the mountains, forests, and seas of our planet."",)","Demokratis.ch is a non-profit project working to modernise the consultation procedure—a key democratic process that allows Swiss citizens to provide feedback on proposed laws and amendments. Today, the process is slow and cumbersome for everyone involved: it requires studying lengthy PDFs, writing formal letters, and even synthesising legal arguments by copy-pasting into Excel. There’s a huge opportunity to streamline this process and make this democratic tool more accessible and inclusive.
+
+In this talk, I’ll share how we’re tackling this challenge with machine learning: building data processing pipelines, extracting features from endless PDFs, embedding and classifying text, designing and evaluating models—and ultimately deploying them in production. Because the data comes from the federal administration and 26 different cantons, it’s often heterogeneous and in varying formats. Data quality, in general, presents many challenges for both training and evaluation. Spoiler: PDF is a pretty terrible format for machines… 
+
+Our approach is practical and pragmatic, and our code is open source, so you’re welcome to explore our solutions or even contribute yourself!",Vita Midori,Vita Midori - Machine learning for Swiss democracy,Vita Midori - Machine learning for Swiss democracy - SPS25,sps25_2-01_vita_midori_-_machine_learning_for_swiss_democracy,<VIDEO_URL>,"I led the development of a stock-trading platform for 8 years. Some bits of C++ and Cython aside, the platform was mainly a Python-based distributed system. Scaling and performance optimisation became not just a necessity but a passion for me. I've since returned to my freelance & consulting roots, and still enjoy helping clients with tough Python problems. Strangely, I've never studied computer science and often run away from all technology into the mountains, forests, and seas of our planet.",2025-10-17T09:10:00+02:00,"Talk recorded at the Swiss Python Summit on October 17th, 2025.
+Licensed as Creative Commons Attribution 4.0 International.
+
+---------
+Abstract:
+
+Demokratis.ch is a non-profit project working to modernise the consultation procedure—a key democratic process that allows Swiss citizens to provide feedback on proposed laws and amendments. Today, the process is slow and cumbersome for everyone involved: it requires studying lengthy PDFs, writing formal letters, and even synthesising legal arguments by copy-pasting into Excel. There’s a huge opportunity to streamline this process and make this democratic tool more accessible and inclusive.
+
+In this talk, I’ll share how we’re tackling this challenge with machine learning: building data processing pipelines, extracting features from endless PDFs, embedding and classifying text, designing and evaluating models—and ultimately deploying them in production. Because the data comes from the federal administration and 26 different cantons, it’s often heterogeneous and in varying formats. Data quality, in general, presents many challenges for both training and evaluation. Spoiler: PDF is a pretty terrible format for machines… 
+
+Our approach is practical and pragmatic, and our code is open source, so you’re welcome to explore our solutions or even contribute yourself!
+
+---------------------
+About the speaker(s):
+
+I led the development of a stock-trading platform for 8 years. Some bits of C++ and Cython aside, the platform was mainly a Python-based distributed system. Scaling and performance optimisation became not just a necessity but a passion for me. I've since returned to my freelance & consulting roots, and still enjoy helping clients with tough Python problems. Strangely, I've never studied computer science and often run away from all technology into the mountains, forests, and seas of our planet.
+"
+13,2,2,2025-10-17T09:45:00+02:00,AI Coding Agents and how to code them,Talk,"('Alex Shershebnev',)","('Alex Shershebnev is a seasoned Computer Vision and MLOps Engineer with over ten years of experience shaping the future of AI-driven software development. Currently, Alex leads the ML/DevOps team at Zencoder, where he leverages his extensive background in Software Engineering, ML and DevOps to deliver high-quality machine learning solutions. His work spans complex data pipelines, cloud infrastructure management (GCP, Kubernetes), and advanced ML/DevOps pipelines.',)","AI Agents are the next big thing everyone has been talking about. They are expected to revolutionize various industries by automating routine tasks, mission critical business workflows, enhancing productivity, and enabling humans to focus on creative and strategic work. Of course, you can apply them to your everyday coding tasks as well.
+
+In this talk we’ll go over what those agents can bring to the table of coding world, and why they can deliver the promise of coding smarter that the current generation of coding assistants can’t. We will then dive right into a quick live coding session where I’ll show what such agents can do in real life and how you can start using them to enhance your everyday life already right after the talk. And we’ll finish off with some remarks on what the future of programming might look like in the near future as those agents get included into your everyday life.",Alex Shershebnev,Alex Shershebnev - AI Coding Agents and how to code them,Alex Shershebnev - AI Coding Agents and how to code them - SPS25,sps25_2-02_alex_shershebnev_-_ai_coding_agents_and_how_to_code_them,<VIDEO_URL>,"Alex Shershebnev is a seasoned Computer Vision and MLOps Engineer with over ten years of experience shaping the future of AI-driven software development. Currently, Alex leads the ML/DevOps team at Zencoder, where he leverages his extensive background in Software Engineering, ML and DevOps to deliver high-quality machine learning solutions. His work spans complex data pipelines, cloud infrastructure management (GCP, Kubernetes), and advanced ML/DevOps pipelines.",2025-10-17T09:45:00+02:00,"Talk recorded at the Swiss Python Summit on October 17th, 2025.
+Licensed as Creative Commons Attribution 4.0 International.
+
+---------
+Abstract:
+
+AI Agents are the next big thing everyone has been talking about. They are expected to revolutionize various industries by automating routine tasks, mission critical business workflows, enhancing productivity, and enabling humans to focus on creative and strategic work. Of course, you can apply them to your everyday coding tasks as well.
+
+In this talk we’ll go over what those agents can bring to the table of coding world, and why they can deliver the promise of coding smarter that the current generation of coding assistants can’t. We will then dive right into a quick live coding session where I’ll show what such agents can do in real life and how you can start using them to enhance your everyday life already right after the talk. And we’ll finish off with some remarks on what the future of programming might look like in the near future as those agents get included into your everyday life.
+
+---------------------
+About the speaker(s):
+
+Alex Shershebnev is a seasoned Computer Vision and MLOps Engineer with over ten years of experience shaping the future of AI-driven software development. Currently, Alex leads the ML/DevOps team at Zencoder, where he leverages his extensive background in Software Engineering, ML and DevOps to deliver high-quality machine learning solutions. His work spans complex data pipelines, cloud infrastructure management (GCP, Kubernetes), and advanced ML/DevOps pipelines.
+"
+14,2,3,2025-10-17T11:00:00+02:00,Causal ML for Smarter Advertising Campaigns with Python,Talk,"('Francesco Conti',)","('I’m a Telecommunications Engineer who grew up immersed in Fourier transforms (aka Francesco in Fourier-Land). Thanks to Fourier analysis, I learnt that things can look completely different when seen from another perspective. I’m particularly drawn to niche and often overlooked topics, and I like to spend my time where I can truly make a meaningful impact.\r\n\r\nI currently work as a Data Scientist at AgileLab, an amazing company that has given me the chance to work on fascinating projects.',)","Traditionally, **marketing campaign analysis** relies on simple metrics like the number of purchases made after a contact, or conversions following a promotion. While these numbers tell us what happened, they don’t reveal **why it happened** or if the campaign truly made a difference.
+
+Such analysis can’t distinguish between customers who would have acted anyway and those who were genuinely influenced by the campaign. **The key question is: did the campaign actually cause the desired effect?**
+
+In this **practical** and **beginner-friendly** session, we’ll explore how **Causal Machine Learning** provides the missing piece in campaign evaluation and targeting.
+
+Starting from real-world scenarios, we’ll dive into:
+
+- **Why causality matters** more than correlation when evaluating ad performance.
+- How to estimate the true impact of a campaign using **uplift modeling** and treatment effect estimation in just a few lines of code.
+- How to target users who are not just likely to interact with ads, but whose behavior can be influenced by the campaign (for example, to reduce churn or boost engagement).
+
+The session will be hands-on with Python, with clear examples drawn from marketing applications.
+
+**Take-away:**
+Participants will gain a practical understanding of how to think causally in digital marketing, learning key techniques to measure impact and target campaigns more intelligently. moving from predictive to truly prescriptive analytics.",Francesco Conti,Francesco Conti - Causal ML for Smarter Advertising Campaigns with Python,Francesco Conti - Causal ML for Smarter Advertising Campaigns with Python - SPS25,sps25_2-03_francesco_conti_-_causal_ml_for_smarter_advertising_campaig,<VIDEO_URL>,"I’m a Telecommunications Engineer who grew up immersed in Fourier transforms (aka Francesco in Fourier-Land). Thanks to Fourier analysis, I learnt that things can look completely different when seen from another perspective. I’m particularly drawn to niche and often overlooked topics, and I like to spend my time where I can truly make a meaningful impact.
+
+I currently work as a Data Scientist at AgileLab, an amazing company that has given me the chance to work on fascinating projects.",2025-10-17T11:00:00+02:00,"Talk recorded at the Swiss Python Summit on October 17th, 2025.
+Licensed as Creative Commons Attribution 4.0 International.
+
+---------
+Abstract:
+
+Traditionally, **marketing campaign analysis** relies on simple metrics like the number of purchases made after a contact, or conversions following a promotion. While these numbers tell us what happened, they don’t reveal **why it happened** or if the campaign truly made a difference.
+
+Such analysis can’t distinguish between customers who would have acted anyway and those who were genuinely influenced by the campaign. **The key question is: did the campaign actually cause the desired effect?**
+
+In this **practical** and **beginner-friendly** session, we’ll explore how **Causal Machine Learning** provides the missing piece in campaign evaluation and targeting.
+
+Starting from real-world scenarios, we’ll dive into:
+
+- **Why causality matters** more than correlation when evaluating ad performance.
+- How to estimate the true impact of a campaign using **uplift modeling** and treatment effect estimation in just a few lines of code.
+- How to target users who are not just likely to interact with ads, but whose behavior can be influenced by the campaign (for example, to reduce churn or boost engagement).
+
+The session will be hands-on with Python, with clear examples drawn from marketing applications.
+
+**Take-away:**
+Participants will gain a practical understanding of how to think causally in digital marketing, learning key techniques to measure impact and target campaigns more intelligently. moving from predictive to truly prescriptive analytics.
+
+---------------------
+About the speaker(s):
+
+I’m a Telecommunications Engineer who grew up immersed in Fourier transforms (aka Francesco in Fourier-Land). Thanks to Fourier analysis, I learnt that things can look completely different when seen from another perspective. I’m particularly drawn to niche and often overlooked topics, and I like to spend my time where I can truly make a meaningful impact.
+
+I currently work as a Data Scientist at AgileLab, an amazing company that has given me the chance to work on fascinating projects.
+"
+15,2,4,2025-10-17T11:35:00+02:00,Docling: Get your documents ready for generative AI,Talk,"('Peter Staar', 'Michele Dolfi', 'Panos Vagenas', 'Nikos Livathinos')","(""Currently, Peter manages the 'AI for Knowledge' group at the IBM Research - Zurich Laboratory. The group focusses on the development of Docling. \r\n\r\nPeter joined the IBM Research - Zurich Laboratory in July of 2014 as a post-doctoral researcher. The Belgium-born scientist first came to IBM Research as a summer student in 2006.\r\n\r\nPrior to joining IBM"", '', 'Panos Vagenas is an Advisory Engineer at IBM Research, leading development efforts at the intersection of Artificial Intelligence, Information Retrieval, and Data Management.', 'Nikos Livathinos is a Senior Software Engineer at IBM Research, leading research and development initiatives in Computer Vision, Software Architecture, and efficient software systems.\r\n\r\nWith over 15 years of experience in software design and development, Nikos has worked extensively across the domains of Artificial Intelligence, Big Data, and Analytics.\r\n\r\nNikos holds 2 Master’s degrees in Computer Science and works at the intersection of applied research and practical engineering execution.')","Docling is an open-source Python package that simplifies document processing by parsing diverse formats — including advanced PDF understanding — and integrating seamlessly with the generative AI ecosystem. It supports a wide range of input types such as PDFs, DOCX, XLSX, HTML, and images, offering rich parsing capabilities including reading order, table structure, code, and formulas. Docling provides a unified and expressive DoclingDocument format, enabling easy export to Markdown, HTML, and lossless JSON. It offers plug-and-play integrations with popular frameworks like LangChain, LlamaIndex, Crew AI, and Haystack, along with strong local execution support for sensitive data and air-gapped environments. As a Python package, Docling is pip-installable and comes with a clean, intuitive API for both programmatic and CLI-based workflows, making it easy to embed into any data pipeline or AI stack. Its modular design also supports extension and customization for enterprise use cases.
+
+We also introduce SmolDocling, an ultra-compact 256M parameter vision-language model for end-to-end document conversion. SmolDocling generates a novel markup format called DocTags that captures the full content, structure, and spatial layout of a page, and offers accurate reproduction of document features such as tables, equations, charts, and code across a wide variety of formats — all while matching the performance of models up to 27× larger.","Peter Staar, Michele Dolfi, Panos Vagenas, Nikos Livathinos","Peter Staar, Michele Dolfi, Panos Vagenas, Nikos Livathinos - Docling: Get your documents ready for generative AI","Peter Staar, Michele Dolfi, Panos Vagenas, Nikos Livathinos - Docling: Get your documents ready for generative AI - SPS25",sps25_2-04_peter_staar_michele_dolfi_panos_vagenas_nikos_livathinos_-_,<VIDEO_URL>,"Currently, Peter manages the 'AI for Knowledge' group at the IBM Research - Zurich Laboratory. The group focusses on the development of Docling. 
+
+Peter joined the IBM Research - Zurich Laboratory in July of 2014 as a post-doctoral researcher. The Belgium-born scientist first came to IBM Research as a summer student in 2006.
+
+Prior to joining IBM
+
+
+
+Panos Vagenas is an Advisory Engineer at IBM Research, leading development efforts at the intersection of Artificial Intelligence, Information Retrieval, and Data Management.
+
+Nikos Livathinos is a Senior Software Engineer at IBM Research, leading research and development initiatives in Computer Vision, Software Architecture, and efficient software systems.
+
+With over 15 years of experience in software design and development, Nikos has worked extensively across the domains of Artificial Intelligence, Big Data, and Analytics.
+
+Nikos holds 2 Master’s degrees in Computer Science and works at the intersection of applied research and practical engineering execution.",2025-10-17T11:35:00+02:00,"Talk recorded at the Swiss Python Summit on October 17th, 2025.
+Licensed as Creative Commons Attribution 4.0 International.
+
+---------
+Abstract:
+
+Docling is an open-source Python package that simplifies document processing by parsing diverse formats — including advanced PDF understanding — and integrating seamlessly with the generative AI ecosystem. It supports a wide range of input types such as PDFs, DOCX, XLSX, HTML, and images, offering rich parsing capabilities including reading order, table structure, code, and formulas. Docling provides a unified and expressive DoclingDocument format, enabling easy export to Markdown, HTML, and lossless JSON. It offers plug-and-play integrations with popular frameworks like LangChain, LlamaIndex, Crew AI, and Haystack, along with strong local execution support for sensitive data and air-gapped environments. As a Python package, Docling is pip-installable and comes with a clean, intuitive API for both programmatic and CLI-based workflows, making it easy to embed into any data pipeline or AI stack. Its modular design also supports extension and customization for enterprise use cases.
+
+We also introduce SmolDocling, an ultra-compact 256M parameter vision-language model for end-to-end document conversion. SmolDocling generates a novel markup format called DocTags that captures the full content, structure, and spatial layout of a page, and offers accurate reproduction of document features such as tables, equations, charts, and code across a wide variety of formats — all while matching the performance of models up to 27× larger.
+
+---------------------
+About the speaker(s):
+
+Currently, Peter manages the 'AI for Knowledge' group at the IBM Research - Zurich Laboratory. The group focusses on the development of Docling. 
+
+Peter joined the IBM Research - Zurich Laboratory in July of 2014 as a post-doctoral researcher. The Belgium-born scientist first came to IBM Research as a summer student in 2006.
+
+Prior to joining IBM
+
+
+
+Panos Vagenas is an Advisory Engineer at IBM Research, leading development efforts at the intersection of Artificial Intelligence, Information Retrieval, and Data Management.
+
+Nikos Livathinos is a Senior Software Engineer at IBM Research, leading research and development initiatives in Computer Vision, Software Architecture, and efficient software systems.
+
+With over 15 years of experience in software design and development, Nikos has worked extensively across the domains of Artificial Intelligence, Big Data, and Analytics.
+
+Nikos holds 2 Master’s degrees in Computer Science and works at the intersection of applied research and practical engineering execution.
+"
+16,2,5,2025-10-17T13:30:00+02:00,Agentic Cyber Defense with External Threat Intelligence,Talk,"('Jyoti Yadav',)","('Jyoti Yadav is a Cyber Security Data Scientist at Microsoft with extensive experience in data science, machine learning, and cybersecurity. Having worked at companies like Blockchain.com, EXL, and Lucidian, she has built advanced models for fraud detection, market forecasting, and security risk assessments. She specializes in predictive modeling, machine learning, anomaly detection, Agentic AI, and Large Language Models (LLM). Passionate about driving impactful results.',)","This talk will detail how to integrate external threat intelligence data into an autonomous agentic AI system for proactive cybersecurity. Using real world datasets—including open-source threat feeds, security logs, or OSINT—you will learn how to build a data ingestion pipeline, train models with Python, and deploy agents that autonomously detect and mitigate cyber threats. This case study will provide practical insights into data preprocessing, feature engineering, and the challenges of adversarial conditions.",Jyoti Yadav,Jyoti Yadav - Agentic Cyber Defense with External Threat Intelligence,Jyoti Yadav - Agentic Cyber Defense with External Threat Intelligence - SPS25,sps25_2-05_jyoti_yadav_-_agentic_cyber_defense_with_external_threat_in,<VIDEO_URL>,"Jyoti Yadav is a Cyber Security Data Scientist at Microsoft with extensive experience in data science, machine learning, and cybersecurity. Having worked at companies like Blockchain.com, EXL, and Lucidian, she has built advanced models for fraud detection, market forecasting, and security risk assessments. She specializes in predictive modeling, machine learning, anomaly detection, Agentic AI, and Large Language Models (LLM). Passionate about driving impactful results.",2025-10-17T13:30:00+02:00,"Talk recorded at the Swiss Python Summit on October 17th, 2025.
+Licensed as Creative Commons Attribution 4.0 International.
+
+---------
+Abstract:
+
+This talk will detail how to integrate external threat intelligence data into an autonomous agentic AI system for proactive cybersecurity. Using real world datasets—including open-source threat feeds, security logs, or OSINT—you will learn how to build a data ingestion pipeline, train models with Python, and deploy agents that autonomously detect and mitigate cyber threats. This case study will provide practical insights into data preprocessing, feature engineering, and the challenges of adversarial conditions.
+
+---------------------
+About the speaker(s):
+
+Jyoti Yadav is a Cyber Security Data Scientist at Microsoft with extensive experience in data science, machine learning, and cybersecurity. Having worked at companies like Blockchain.com, EXL, and Lucidian, she has built advanced models for fraud detection, market forecasting, and security risk assessments. She specializes in predictive modeling, machine learning, anomaly detection, Agentic AI, and Large Language Models (LLM). Passionate about driving impactful results.
+"
+17,2,6,2025-10-17T14:05:00+02:00,Anonymization of sensitive information in financial document,Talk,"('Piotr Gryko',)","('Dr Piotr Gryko, studied experimental physics at University College London. His PhD at Imperial College London focused on using biomaterials to self assemble inorganic materials, merging the boundaries of biological systems and machines.\r\n\r\nWith 12 years of experience writing software, he now focuses on AI engineering.',)","Data is the fossil fuel of the machine learning world, essential for developing high quality models but in limited supply. Yet institutions handling sensitive documents — such as financial, medical, or legal records often cannot fully leverage their own data due to stringent privacy, compliance, and security requirements, making training high quality models difficult.
+
+A promising solution is to replace the personally identifiable information (PII) with realistic synthetic stand-ins, whilst leaving the rest of the document in tact.
+
+In this talk, we will discuss the use of open source tools and models that can be self hosted to anonymize documents. We will go over the various approaches for Named Entity Recognition (NER) to identify sensitive entities and the use of diffusion models to inpaint anonymized content.",Piotr Gryko,Piotr Gryko - Anonymization of sensitive information in financial document,Piotr Gryko - Anonymization of sensitive information in financial document - SPS25,sps25_2-06_piotr_gryko_-_anonymization_of_sensitive_information_in_fin,<VIDEO_URL>,"Dr Piotr Gryko, studied experimental physics at University College London. His PhD at Imperial College London focused on using biomaterials to self assemble inorganic materials, merging the boundaries of biological systems and machines.
+
+With 12 years of experience writing software, he now focuses on AI engineering.",2025-10-17T14:05:00+02:00,"Talk recorded at the Swiss Python Summit on October 17th, 2025.
+Licensed as Creative Commons Attribution 4.0 International.
+
+---------
+Abstract:
+
+Data is the fossil fuel of the machine learning world, essential for developing high quality models but in limited supply. Yet institutions handling sensitive documents — such as financial, medical, or legal records often cannot fully leverage their own data due to stringent privacy, compliance, and security requirements, making training high quality models difficult.
+
+A promising solution is to replace the personally identifiable information (PII) with realistic synthetic stand-ins, whilst leaving the rest of the document in tact.
+
+In this talk, we will discuss the use of open source tools and models that can be self hosted to anonymize documents. We will go over the various approaches for Named Entity Recognition (NER) to identify sensitive entities and the use of diffusion models to inpaint anonymized content.
+
+---------------------
+About the speaker(s):
+
+Dr Piotr Gryko, studied experimental physics at University College London. His PhD at Imperial College London focused on using biomaterials to self assemble inorganic materials, merging the boundaries of biological systems and machines.
+
+With 12 years of experience writing software, he now focuses on AI engineering.
+"
+18,2,7,2025-10-17T15:15:00+02:00,Gompertz Linear Units (GoLU),Talk,"('Das\tIndrashis',)","(""Hello! I'm Indrashis Das from India. I'm a Machine Learning Engineer at AICONIX in Freiburg, Germany. I hold a Master's in Computer Science (AI specialization) from the University of Freiburg, where I also served as a Teaching Assistant in Prof. Frank Hutter's ML lab for 2.5 years and worked on GoLU as my Master's Thesis."",)","Activation functions are fundamental elements of deep learning architectures as they significantly influence training dynamics. ReLU, while widely used, is prone to the dying neuron problem, which has been mitigated by variants such as LeakyReLU, PReLU, and ELU that better handle negative neuron outputs. Recently, self-gated activations like GELU and Swish have emerged as state-of-the-art alternatives, leveraging their smoothness to ensure stable gradient flow and prevent neuron inactivity.
+
+In this work, we introduce the Gompertz Linear Unit (GoLU), a novel self-gated activation function defined as `GoLU(x) = x Gompertz(x)`, where `Gompertz(x) = exp(−exp(−x))`. The GoLU activation leverages the asymmetry in the Gompertz function to reduce variance in the latent space more effectively compared to GELU and Swish, while preserving robust gradient flow. Extensive experiments across diverse tasks, including Image Classification, Language Modeling, Semantic Segmentation, Object Detection, Instance Segmentation, and Diffusion, highlight GoLU's superior performance relative to state-of-the-art activation functions, establishing GoLU as a robust alternative to existing activation functions.",Das	Indrashis,Das	Indrashis - Gompertz Linear Units (GoLU),Das	Indrashis - Gompertz Linear Units (GoLU) - SPS25,sps25_2-07_dasindrashis_-_gompertz_linear_units_golu,<VIDEO_URL>,"Hello! I'm Indrashis Das from India. I'm a Machine Learning Engineer at AICONIX in Freiburg, Germany. I hold a Master's in Computer Science (AI specialization) from the University of Freiburg, where I also served as a Teaching Assistant in Prof. Frank Hutter's ML lab for 2.5 years and worked on GoLU as my Master's Thesis.",2025-10-17T15:15:00+02:00,"Talk recorded at the Swiss Python Summit on October 17th, 2025.
+Licensed as Creative Commons Attribution 4.0 International.
+
+---------
+Abstract:
+
+Activation functions are fundamental elements of deep learning architectures as they significantly influence training dynamics. ReLU, while widely used, is prone to the dying neuron problem, which has been mitigated by variants such as LeakyReLU, PReLU, and ELU that better handle negative neuron outputs. Recently, self-gated activations like GELU and Swish have emerged as state-of-the-art alternatives, leveraging their smoothness to ensure stable gradient flow and prevent neuron inactivity.
+
+In this work, we introduce the Gompertz Linear Unit (GoLU), a novel self-gated activation function defined as `GoLU(x) = x Gompertz(x)`, where `Gompertz(x) = exp(−exp(−x))`. The GoLU activation leverages the asymmetry in the Gompertz function to reduce variance in the latent space more effectively compared to GELU and Swish, while preserving robust gradient flow. Extensive experiments across diverse tasks, including Image Classification, Language Modeling, Semantic Segmentation, Object Detection, Instance Segmentation, and Diffusion, highlight GoLU's superior performance relative to state-of-the-art activation functions, establishing GoLU as a robust alternative to existing activation functions.
+
+---------------------
+About the speaker(s):
+
+Hello! I'm Indrashis Das from India. I'm a Machine Learning Engineer at AICONIX in Freiburg, Germany. I hold a Master's in Computer Science (AI specialization) from the University of Freiburg, where I also served as a Teaching Assistant in Prof. Frank Hutter's ML lab for 2.5 years and worked on GoLU as my Master's Thesis.
+"
+19,2,8,2025-10-17T15:50:00+02:00,"What Networks tell us about Trades, Power, and the World?",Talk,"('Kshitijaa Jaglan',)","(""I'm Kshitijaa Jaglan, and I like using AI, Machine Learning and Networks to make complex systems (and the web) a little more optimized, fast and understandable! Currently I am transitioning from my research position at the Social Computing Group, University of Zurich, towards more applied and technical roles in industry."",)","Networks are all around us, shaping phenomena like epidemics, communication, and transportation. In this talk, we will explore how real-world problems can be analyzed and solved using graph-based methods and simple algorithms. Drawing from examples such as trade networks, corporate structures, and historical data, I will demonstrate how network analysis reveals insights that would otherwise remain hidden. Using NetworKit (and NetworkX), we will analyze real-world datasets to answer questions like:
+
+1. What does the core-periphery model reveal about trade networks?
+2. Could we have predicted that Moscow will become Russia's capital?
+3. How do corporate hierarchies differ from interaction hierarchies within organizations?
+
+Throughout the talk, I will introduce key concepts in network analysis and showcase Python as a tool for research. Attendees will have access to all datasets and code, enabling them to replicate the analyses and apply these techniques to their own projects. This session is designed for Python enthusiasts with an interest in data science, networks, and/or applied research.",Kshitijaa Jaglan,"Kshitijaa Jaglan - What Networks tell us about Trades, Power, and the World?","Kshitijaa Jaglan - What Networks tell us about Trades, Power, and the World? - SPS25",sps25_2-08_kshitijaa_jaglan_-_what_networks_tell_us_about_trades_power,<VIDEO_URL>,"I'm Kshitijaa Jaglan, and I like using AI, Machine Learning and Networks to make complex systems (and the web) a little more optimized, fast and understandable! Currently I am transitioning from my research position at the Social Computing Group, University of Zurich, towards more applied and technical roles in industry.",2025-10-17T15:50:00+02:00,"Talk recorded at the Swiss Python Summit on October 17th, 2025.
+Licensed as Creative Commons Attribution 4.0 International.
+
+---------
+Abstract:
+
+Networks are all around us, shaping phenomena like epidemics, communication, and transportation. In this talk, we will explore how real-world problems can be analyzed and solved using graph-based methods and simple algorithms. Drawing from examples such as trade networks, corporate structures, and historical data, I will demonstrate how network analysis reveals insights that would otherwise remain hidden. Using NetworKit (and NetworkX), we will analyze real-world datasets to answer questions like:
+
+1. What does the core-periphery model reveal about trade networks?
+2. Could we have predicted that Moscow will become Russia's capital?
+3. How do corporate hierarchies differ from interaction hierarchies within organizations?
+
+Throughout the talk, I will introduce key concepts in network analysis and showcase Python as a tool for research. Attendees will have access to all datasets and code, enabling them to replicate the analyses and apply these techniques to their own projects. This session is designed for Python enthusiasts with an interest in data science, networks, and/or applied research.
+
+---------------------
+About the speaker(s):
+
+I'm Kshitijaa Jaglan, and I like using AI, Machine Learning and Networks to make complex systems (and the web) a little more optimized, fast and understandable! Currently I am transitioning from my research position at the Social Computing Group, University of Zurich, towards more applied and technical roles in industry.
+"
+20,2,9,2025-10-17T16:25:00+02:00,Lightning Talks - Day 2,Lightning Talks,"('Orga',)","('',)","Our Lightning Talks are open to everyone 😊
+
+How it works:
+– You can register directly at the conference. First come, first served.
+– Any proposal is welcome, as long as your talk has something to do with Python and respects our [Code of Conduct](https://www.python-summit.ch/coc/). We reserve the right to reject talks.
+– Talk time is strictly limited to 5 minutes.
+– To keep turnaround times short, you will not be able to plug in your own device. We will provide a laptop with all slides. Please submit your slides as PDF via email at least 60 minutes before Lightning Talks start. 
+– By registering, you accept that your talk may be recorded, published and streamed live (audio & video) under [Creative Commons Attribution 4.0 International license](https://creativecommons.org/licenses/by/4.0/deed.en).",Orga,Orga - Lightning Talks - Day 2,Orga - Lightning Talks - Day 2 - SPS25,sps25_2-09_orga_-_lightning_talks_-_day_2,<VIDEO_URL>,,2025-10-17T16:25:00+02:00,"Talk recorded at the Swiss Python Summit on October 17th, 2025.
+Licensed as Creative Commons Attribution 4.0 International.
+
+---------
+Abstract:
+
+Our Lightning Talks are open to everyone 😊
+
+How it works:
+– You can register directly at the conference. First come, first served.
+– Any proposal is welcome, as long as your talk has something to do with Python and respects our [Code of Conduct](https://www.python-summit.ch/coc/). We reserve the right to reject talks.
+– Talk time is strictly limited to 5 minutes.
+– To keep turnaround times short, you will not be able to plug in your own device. We will provide a laptop with all slides. Please submit your slides as PDF via email at least 60 minutes before Lightning Talks start. 
+– By registering, you accept that your talk may be recorded, published and streamed live (audio & video) under [Creative Commons Attribution 4.0 International license](https://creativecommons.org/licenses/by/4.0/deed.en).
+
+---------------------
+About the speaker(s):
+
+
+"
+21,2,10,2025-10-17T17:10:00+02:00,Closing - Day 2,Opening/Closing,"('Orga',)","('',)","A thank you from the organisers. We hope you enjoyed your day!
+                                       
+(It won't take long, we promise! After that long day, everyone is looking forward to the buffet!)",Orga,Orga - Closing - Day 2,Orga - Closing - Day 2 - SPS25,sps25_2-10_orga_-_closing_-_day_2,<VIDEO_URL>,,2025-10-17T17:10:00+02:00,"Talk recorded at the Swiss Python Summit on October 17th, 2025.
+Licensed as Creative Commons Attribution 4.0 International.
+
+---------
+Abstract:
+
+A thank you from the organisers. We hope you enjoyed your day!
+                                       
+(It won't take long, we promise! After that long day, everyone is looking forward to the buffet!)
+
+---------------------
+About the speaker(s):
+
+
+"

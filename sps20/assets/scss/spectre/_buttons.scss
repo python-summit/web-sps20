@@ -81,7 +81,13 @@
   &.btn-error {
     @include button-variant($error-color);
   }
+  
+  &.btn-secondary {
+    @include button-variant($secondary-color);
+  }
 
+  
+  
   // Button Link
   &.btn-link {
     background: transparent;

@@ -8,7 +8,7 @@ ordering: 9
 ---
 body:
 
-Here you can find recorded talks and slides of the past summits.
+Here you can find recorded talks and slides from past summits.
 
 ---
 _template: recordings.html
