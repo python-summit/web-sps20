@@ -11,7 +11,7 @@
         <h2><strong>{{ year }}</strong></h2>
 
         {% if bag("playlists", "youtube", year|string) %}
-            <a href="{{ bag("playlists", "youtube", year|string) }}" class="btn btn-sm btn-primary">full YouTube playlist</a>
+            <a href="{{ bag("playlists", "youtube", year|string) }}" class="btn btn-sm btn-secondary">full YouTube playlist</a>
         {% endif %}
         {% if bag("playlists", "ccc", year|string) %}
             <a href="{{ bag("playlists", "ccc", year|string) }}" class="btn btn-sm btn-primary">full media.ccc.de playlist</a>
