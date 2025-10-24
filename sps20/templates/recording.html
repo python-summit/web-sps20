@@ -4,20 +4,28 @@
 
 {% block body %}
     <h1>{{ this.title }}</h1>
-    <h2>{{ this.speaker }}</h2>
+    {% if this.speaker %}
+    <h2>by {{ this.speaker }}</h2>
+    {% endif %}
 
     <p>This talk was presented at the Swiss Python Summit {{ this.year }}.</p>
 
-    <a href="{{ this.video_url }}" target="_blank">Video Recording</a>
-
+    
     {% set slides=this.attachments|selectattr("type", "eq", "slides")|list %}
-
+    <p>
     {% if slides %}
-    <h3>Slides</h3>
-    <ul>
         {% for slide in slides %}
-        <li><a href="{{ slide|url }}">{{ slide.path.split('/')[-1] }}</a></li>
+        <a href="{{ slide|url }}" class="btn btn-sm btn-primary">Slides (PDF)</a>
         {% endfor %}
-    </ul>
     {% endif %}
+    
+    {% if this.external_slide_url %}
+    <a href="{{ this.external_slide_url }}" class="btn btn-sm btn-primary" target="_blank">Slides (external link)</a>
+    {% endif %}
+    
+    {% if this.video_url|string %}
+    <a href="{{ this.video_url }}" class="btn btn-sm btn-secondary" target="_blank">Video Recording</a>
+    {% endif %}
+    
+    </p><a href="{{ this.parent.path|url }}">&larr; Back to all recordings</a></p>
 {% endblock %}

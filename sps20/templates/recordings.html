@@ -21,11 +21,13 @@
         {% for talk in this.children|selectattr("year", "eq", year)|sort(attribute="ordering") %}
             {% set slides=talk.attachments|selectattr("type", "eq", "slides")|list %}
             <li> 
-                <strong>{{ talk.title }}</strong>
+                {# Title & Speaker #}
+                <a href={{ talk.path|url }}><strong>{{ talk.title }}</strong></a>
                 {% if talk.speaker %}
                 <div>by {{ talk.speaker }}</div>
                 {% endif %}
-                <div>
+                {# Slides & Video #}
+                <p>
                 {% if slides %}
                     [
                     {%- for slide in slides -%}
@@ -33,13 +35,13 @@
                     {%- endfor -%}
                     ]
                 {% endif %}
-                {% if talk.video_url|string %}
-                    [<a href="{{ talk.video_url }}">YT video</a>]
-                {% endif %}
                 {% if talk.external_slide_url %}
                     [<a href="{{ talk.external_slide_url }}">slides (external link)</a>]
                 {% endif %}
-                </div>
+                {% if talk.video_url|string %}
+                    [<a href="{{ talk.video_url }}">video</a>]
+                {% endif %}
+                </p>
             </li>
         {% endfor %}
         </ul>
