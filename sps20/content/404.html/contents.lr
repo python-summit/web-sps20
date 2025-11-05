@@ -2,10 +2,10 @@ title: Oops!
 ---
 ordering: -1
 ---
+_template: 404.html
+---
 body:
 
 The page you are looking for does not exist.
 
 Want to go back to the [homepage](/)?
----
-_template: 404.html
