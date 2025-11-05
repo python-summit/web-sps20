@@ -4,7 +4,9 @@ title: Ticket
 ---
 ordering: 4
 ---
-description: Tickets for the Swiss Python Summit
+description: Get your ticket for the Swiss Python Summit
+---
+_hidden: yes
 ---
 body:
 
@@ -27,5 +29,3 @@ Online ticket sales close at 11am CEST on Wednesday 14th October. Limited on-sit
 
 The ticketing is handled by ti.to.
 
----
-_hidden: no

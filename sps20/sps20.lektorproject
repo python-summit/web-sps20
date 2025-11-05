@@ -1,5 +1,5 @@
 [project]
-name = Swiss Python Summit 2024
+name = Swiss Python Summit
 
 [packages]
 lektor-scss = 1.5.0
