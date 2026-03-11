@@ -4,23 +4,17 @@ description: The schedule of the Swiss Python Summit
 ---
 ordering: 3
 ---
-_hidden: no
----
 body:
 
-# Program 2025
+# Program 2026
 
-This was this years conference schedule. Take a look at the [recordings](/recordings) page for videos and slides.
+The detailed program is expected to be announced in July.
 
-<noscript>
-   <div class="pretalx-widget">
-        <div class="pretalx-widget-info-message">
-            JavaScript is disabled in your browser. To access our schedule without JavaScript,
-            please <a target="_blank" href="https://talks.python-summit.ch/sps25/schedule/">click here</a>.
-        </div>
-    </div>
-</noscript>
-<script type="text/javascript" src="https://talks.python-summit.ch/sps25/widgets/schedule.js"></script>
-<pretalx-schedule event-url="https://talks.python-summit.ch/sps25/" locale="en" format="grid" style="--pretalx-clr-primary: #336d9c"></pretalx-schedule>
+- **Thursday 22th October:** Day 1 - Python, the programming language you love
+  - This day is all about general Python topics and the programming language you love. Discover the wide field of Python applications, hear how others use the language, and meet Swiss Pythonistas.
+- **Friday 23th October:** Day 2 - Data Science & more
+  - This day is specially dedicated to all Data Science related topics such as Machine Learning, Data Processing & Analytics, Data Engineering, Data Visualization, AI, LLM and many more ...
 
-You can find a standalone version of the schedule [here](https://talks.python-summit.ch/sps25/schedule/).
+🔔 Stay tuned and following us on our social media channels on [Linkedin](https://www.linkedin.com/company/swiss-python-summit) and [X](https://x.com/pythonsummit) for updates.
+
+🎥 Take a look at our [recordings](/recordings) and explore what was covered in previous summits.
