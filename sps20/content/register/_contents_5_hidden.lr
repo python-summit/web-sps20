@@ -1,0 +1,14 @@
+_model: page
+---
+title: Ticket
+---
+ordering: 4
+---
+description: Get your ticket for the Swiss Python Summit
+---
+_hidden: yes
+---
+body:
+
+# (Hidden)
+

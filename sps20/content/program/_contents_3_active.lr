@@ -1,0 +1,26 @@
+title: Program
+---
+description: The schedule of the Swiss Python Summit
+---
+ordering: 3
+---
+body:
+
+# Program 2025
+
+We are pleased to announce our schedule for this years conference.
+
+Please note, that changes may still happen due to unforeseen circumstances. So please check it regularely!
+
+<noscript>
+   <div class="pretalx-widget">
+        <div class="pretalx-widget-info-message">
+            JavaScript is disabled in your browser. To access our schedule without JavaScript,
+            please <a target="_blank" href="https://talks.python-summit.ch/sps25/schedule/">click here</a>.
+        </div>
+    </div>
+</noscript>
+<script type="text/javascript" src="https://talks.python-summit.ch/sps25/widgets/schedule.js"></script>
+<pretalx-schedule event-url="https://talks.python-summit.ch/sps25/" locale="en" format="grid" style="--pretalx-clr-primary: #336d9c"></pretalx-schedule>
+
+You can find a standalone version of the schedule [here](https://talks.python-summit.ch/sps25/schedule/).

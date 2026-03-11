@@ -1,0 +1,16 @@
+_model: page
+---
+title: Ticket
+---
+ordering: 4
+---
+description: Tickets for the Swiss Python Summit
+---
+body:
+
+# Tickets 2024
+
+The online tickets sales is closed. Limited on-site tickets will be available for a CHF 10 surcharge.
+
+---
+_hidden: no
