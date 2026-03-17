@@ -8,7 +8,6 @@ usage:
 install: 
 	rm -rf $(VENV)
 	python -m venv $(VENV)
-	# source $(VENV_BIN)/activate
 	$(VENV_BIN)/pip install -r requirements.txt
 	@echo "\n*** Venv installed with: ***"
 	@$(VENV_BIN)/pip list
