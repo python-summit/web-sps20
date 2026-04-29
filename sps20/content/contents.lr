@@ -52,7 +52,10 @@ Still available!
 
 ### Bronze
 
-Still available!
+<div style="display: flex; align-items: center">
+    <a href="https://sysreq.ch/"><img src="/sponsors/sysreq.svg" style="width: 120px;"></a>
+    <a href="https://deplo.io"><img src="/sponsors/deploio.svg" style="height: 60px; width: 120px"></a>
+</div>
 
 ## 🔗 Community Partners
 
@@ -65,7 +68,3 @@ Still available!
         <a href="https://mastodon.social/@zurich_pyladies">Mastodon</a>
     </small>
 </div>
-
-
-
-
