@@ -6,21 +6,21 @@ ordering: 3
 ---
 body:
 
-# Program 2025
+# Program 2026
 
 We are pleased to announce the draft schedule with all already confirmed sessions.
 
-**PLEASE NOTE:** The exact times and order may change. More sessions will follow.
+**PLEASE NOTE:** The talks, times and order may change. More sessions might follow.
 
 <noscript>
    <div class="pretalx-widget">
         <div class="pretalx-widget-info-message">
             JavaScript is disabled in your browser. To access our schedule without JavaScript,
-            please <a target="_blank" href="https://talks.python-summit.ch/sps25/schedule/">click here</a>.
+            please <a target="_blank" href="https://talks.python-summit.ch/swiss-python-summit-2026/schedule/">click here</a>.
         </div>
     </div>
 </noscript>
-<script type="text/javascript" src="https://talks.python-summit.ch/sps25/widgets/schedule.js"></script>
-<pretalx-schedule event-url="https://talks.python-summit.ch/sps25/" locale="en" format="grid" style="--pretalx-clr-primary: #336d9c"></pretalx-schedule>
+<script type="text/javascript" src="https://talks.python-summit.ch/swiss-python-summit-2026/widgets/schedule.js"></script>
+<pretalx-schedule event-url="https://talks.python-summit.ch/swiss-python-summit-2026/" locale="en" format="grid" style="--pretalx-clr-primary: #336d9c"></pretalx-schedule>
 
-You can find a standalone version of the schedule [here](https://talks.python-summit.ch/sps25/schedule/).
+You can find a standalone version of the schedule [here](https://talks.python-summit.ch/swiss-python-summit-2026/schedule/).
