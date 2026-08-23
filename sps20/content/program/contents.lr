@@ -8,13 +8,19 @@ body:
 
 # Program 2026
 
-The detailed program is expected to be announced in July.
+We are pleased to announce the draft schedule with all already confirmed sessions.
 
-- **Thursday 22th October:** Day 1 - Python, the programming language you love
-  - This day is all about general Python topics and the programming language you love. Discover the wide field of Python applications, hear how others use the language, and meet Swiss Pythonistas.
-- **Friday 23th October:** Day 2 - Data Science & more
-  - This day is specially dedicated to all Data Science related topics such as Machine Learning, Data Processing & Analytics, Data Engineering, Data Visualization, AI, LLM and many more ...
+**PLEASE NOTE:** The talks, times and order may change. More sessions might follow.
 
-🔔 Stay tuned and following us on our social media channels on [Linkedin](https://www.linkedin.com/company/swiss-python-summit) and [X](https://x.com/pythonsummit) for updates.
+<noscript>
+   <div class="pretalx-widget">
+        <div class="pretalx-widget-info-message">
+            JavaScript is disabled in your browser. To access our schedule without JavaScript,
+            please <a target="_blank" href="https://talks.python-summit.ch/swiss-python-summit-2026/schedule/">click here</a>.
+        </div>
+    </div>
+</noscript>
+<script type="text/javascript" src="https://talks.python-summit.ch/swiss-python-summit-2026/widgets/schedule.js"></script>
+<pretalx-schedule event-url="https://talks.python-summit.ch/swiss-python-summit-2026/" locale="en" format="grid" style="--pretalx-clr-primary: #336d9c"></pretalx-schedule>
 
-🎥 Take a look at our [recordings](/recordings) and explore what was covered in previous summits.
+You can find a standalone version of the schedule [here](https://talks.python-summit.ch/swiss-python-summit-2026/schedule/).
