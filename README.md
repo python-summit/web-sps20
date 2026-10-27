@@ -12,11 +12,20 @@ See [www.python-summit.ch](https://www.python-summit.ch/)
 ### Run website for local development
 
 * Clone the repository or open in GitHub Codespace
-* Create a venv* and activate it
-* nstall requirements with `make install`
+* Install [uv](https://docs.astral.sh/uv/getting-started/installation/)
+* Install dependencies with `make install` (or `uv sync --locked`)
 * Run Lektor server with `make serve` for live preview of the website (on port 5000)
 
-\* Note: For some reason, lektor works only if installed in a virtual environment
+uv manages the `.venv` automatically and uses Python 3.10 from `.python-version`,
+downloading it if needed. You do not need to create or activate a virtual environment.
+
+* Build the website with `make build`; output goes to `build/`
+* Check that the Lektor CLI works with `make test`
+* Add dependencies with `uv add <package>` and update locked versions with `uv lock --upgrade`
+* Commit both `pyproject.toml` and `uv.lock` when changing dependencies
+
+Lektor manages the plugins listed in `sps20/sps20.lektorproject` separately.
+Their versions are pinned there, but their transitive dependencies are not covered by `uv.lock`.
 
 ### Tips & Tricks
 
@@ -40,6 +49,8 @@ Please follow these rules to keep the repo clean:
 
 * The **main** branch is automatically live deployed with Netlify, so be careful what you push here!
 * The `build.sh` is executed in the Netlify build process
+* The build script installs uv if needed and builds using the committed lockfile
+* Keep `.python-version` and Netlify's `runtime.txt` aligned when changing Python versions
 
 ### How to add a talk recording
 
