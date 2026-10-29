@@ -12,12 +12,14 @@ These script should help in the process of releasing the talk recordings on Yout
 
 Upload video to Youtube with the provided metadata (title, description) from the CSV. Get the Youtube link and add it to the CSV
 
-3. Run `csv_2_content.py`
+3. Slides PDFs
+
+but all available slides in `spsXX/slides/` as `<filename>.pdf` (where filename is the one in the CSV). 
+
+1. Run `csv_2_content.py`
 
 Add link to the content files provided
 
 4. Copy content files `sps20/content/recordings` to release it
-
-Copy the slides pdf as well an name it accordingly TODO
 
 5. For full playlist, add them to `sps20/databags/playlists.json`
