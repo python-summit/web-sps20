@@ -114,3 +114,8 @@ venv.bak/
 
 # Build output
 sps20/build
+
+# Local photo sources and generated release assets
+Live/
+.gallery-build/
+.DS_Store

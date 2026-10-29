@@ -1,0 +1,15 @@
+_model: page
+---
+title: Photos 2026
+---
+description: Photos from the Swiss Python Summit 2026.
+---
+ordering: 10
+---
+menu_title: Photos
+---
+_template: photos.html
+---
+body:
+
+Photos from Thursday and Friday of the Swiss Python Summit 2026.

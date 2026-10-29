@@ -355,6 +355,154 @@ div.mapboxgl-canvas-container > div > svg > g > g:nth-child(2) {
     margin-top: 1rem !important;
 }
 
+// photos
+.photo-credit {
+    font-size: .8rem;
+    margin-bottom: 1rem;
+}
+
+.photo-credit-bottom {
+    margin-top: 1.5rem;
+}
+
+.photo-day-links {
+    display: flex;
+    gap: .5rem;
+    margin: 1rem 0;
+}
+
+.photo-day {
+    scroll-margin-top: 1rem;
+
+    > h2 {
+        margin-top: 1.5rem;
+    }
+}
+
+.photo-grid {
+    display: grid;
+    gap: .5rem;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+
+    .photo-link {
+        aspect-ratio: 3 / 2;
+        background: $gray-light;
+        border-radius: $smooth-borders;
+        display: block;
+        overflow: hidden;
+
+        &:focus-visible {
+            outline: 3px solid $primary-color;
+            outline-offset: 2px;
+        }
+    }
+
+    img {
+        height: 100%;
+        object-fit: cover;
+        transition: transform .15s ease-out;
+        width: 100%;
+    }
+
+    .photo-link:hover img {
+        transform: scale(1.02);
+    }
+}
+
+.photo-lightbox {
+    background: transparent;
+    border: 0;
+    color: #fff;
+    height: 100vh;
+    margin: 0;
+    max-height: none;
+    max-width: none;
+    padding: 0;
+    width: 100vw;
+
+    &::backdrop {
+        background: rgba(0, 0, 0, .94);
+    }
+
+    &[open] {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    }
+
+    figure {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        justify-content: center;
+        margin: 0;
+        width: 100%;
+    }
+
+    img {
+        max-height: calc(100vh - 4rem);
+        max-width: calc(100vw - 7rem);
+        object-fit: contain;
+    }
+
+    figcaption {
+        font-size: .75rem;
+        margin-top: .5rem;
+    }
+
+    button {
+        background: rgba(0, 0, 0, .55);
+        border: 1px solid rgba(255, 255, 255, .6);
+        border-radius: 50%;
+        color: #fff;
+        cursor: pointer;
+        font-size: 2rem;
+        height: 2.5rem;
+        line-height: 1;
+        padding: 0;
+        position: absolute;
+        width: 2.5rem;
+        z-index: 1;
+
+        &:focus-visible {
+            outline: 3px solid #fff;
+            outline-offset: 2px;
+        }
+    }
+}
+
+.photo-lightbox-close {
+    right: 1rem;
+    top: 1rem;
+}
+
+.photo-lightbox-previous {
+    left: 1rem;
+    top: calc(50% - 1.25rem);
+}
+
+.photo-lightbox-next {
+    right: 1rem;
+    top: calc(50% - 1.25rem);
+}
+
+@media (max-width: $size-sm) {
+    .photo-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .photo-lightbox img {
+        max-width: calc(100vw - 1rem);
+    }
+
+    .photo-lightbox-previous,
+    .photo-lightbox-next {
+        bottom: 1rem;
+        top: auto;
+    }
+}
+
 // program
 table#program {
     border: 0;

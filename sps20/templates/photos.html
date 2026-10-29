@@ -1,0 +1,68 @@
+{% extends "layout.html" %}
+
+{% block title %}{{ this.title }}{% endblock %}
+
+{% block body %}
+  {% set gallery = bag("photos-2026") %}
+
+  <div class="photos-page">
+    <h1>{{ this.title }}</h1>
+    {{ this.body }}
+
+    <p class="photo-credit">
+      <a href="{{ gallery.credit.url }}" rel="external">{{ gallery.credit.label }}</a>
+    </p>
+
+    <nav class="photo-day-links" aria-label="Photo gallery days">
+      {% for day in gallery.days %}
+        <a class="btn" href="#{{ day.id }}">{{ day.title }}</a>
+      {% endfor %}
+    </nav>
+
+    {% for day in gallery.days %}
+      <section class="photo-day" id="{{ day.id }}">
+        <h2>{{ day.title }}</h2>
+        <p>{{ day.photos|length }} photos</p>
+
+        <div class="photo-grid" data-gallery="{{ day.id }}">
+          {% for photo in day.photos %}
+            <a
+              class="photo-link"
+              href="{{ photo.large_url }}"
+              data-width="{{ photo.width }}"
+              data-height="{{ photo.height }}"
+              data-alt="{{ photo.alt }}"
+              data-index="{{ loop.index }}"
+              data-total="{{ day.photos|length }}"
+            >
+              <img
+                src="{{ photo.thumb_url }}"
+                width="{{ photo.width }}"
+                height="{{ photo.height }}"
+                loading="lazy"
+                decoding="async"
+                alt="{{ photo.alt }}"
+              >
+            </a>
+          {% endfor %}
+        </div>
+      </section>
+    {% endfor %}
+
+    <p class="photo-credit photo-credit-bottom">
+      <a href="{{ gallery.credit.url }}" rel="external">{{ gallery.credit.label }}</a>
+    </p>
+  </div>
+
+  <dialog class="photo-lightbox" aria-label="Photo viewer">
+    <button class="photo-lightbox-close" type="button" aria-label="Close photo viewer">×</button>
+    <button class="photo-lightbox-previous" type="button" aria-label="Previous photo">‹</button>
+    <figure>
+      <img alt="">
+      <figcaption aria-live="polite"></figcaption>
+    </figure>
+    <button class="photo-lightbox-next" type="button" aria-label="Next photo">›</button>
+  </dialog>
+
+  <script src="{{ '/js/photos.js'|url }}" defer></script>
+{% endblock %}
