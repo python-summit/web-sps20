@@ -11,7 +11,7 @@ from datetime import datetime
 from textwrap import dedent
 
 # START Change these two
-CONF_YEAR_SLUG = "25"
+CONF_YEAR_SLUG = "26"
 # END
 
 BASE_DIR = Path(f"scripts/recordings/sps{CONF_YEAR_SLUG}")
@@ -34,7 +34,13 @@ def get_talks_data(schedule_path = PRETALX_SCHEDULE_PATH):
         room_name = next(iter(day["rooms"]))
         for i, talk in enumerate(day["rooms"][room_name]):
             print(f"\tProcessing talk #{talk['id']}")
-            names, bios = zip(*[(d["public_name"], d["biography"] if d["biography"] else "") for d in talk["persons"]])
+            if talk["persons"]:
+                names, bios = zip(*[(d["public_name"], d["biography"] if d["biography"] else "") for d in talk["persons"]])
+            else:
+                if talk["type"] in ["Opening/Closing", "Lightning Talks"]:
+                    names, bios = ["Swiss Python Summit Team"], [""]
+                else:
+                    names, bios = [""], [""]
             talk_data = dict(
                 day = day_idx,
                 talk_idx = i,

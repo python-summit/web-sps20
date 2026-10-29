@@ -1,0 +1,669 @@
+,day,talk_idx,date,title,type,names_raw,biographies_raw,abstract,names_combined,named_title,video_title,filename,video_url,biographies_combined,date_str,video_text
+0,1,0,2026-10-22T09:00:00+02:00,Welcome - Day 1,Opening/Closing,['Swiss Python Summit Team'],[''],"A welcome message and useful information from the organisers.
+
+You will also find useful information on our website [www.python-summit.ch/venue](https://www.python-summit.ch/venue/). Or feel free to ask any member of staff if you have a question.",Swiss Python Summit Team,Swiss Python Summit Team - Welcome - Day 1,Swiss Python Summit Team - Welcome - Day 1 - SPS26,sps26_1-00_swiss_python_summit_team_-_welcome_-_day_1,<VIDEO_URL>,,2026-10-22T09:00:00+02:00,"Talk recorded at the Swiss Python Summit on October 22nd, 2026.
+Licensed as Creative Commons Attribution 4.0 International.
+
+---------
+Abstract:
+
+A welcome message and useful information from the organisers.
+
+You will also find useful information on our website [www.python-summit.ch/venue](https://www.python-summit.ch/venue/). Or feel free to ask any member of staff if you have a question.
+
+---------------------
+About the speaker(s):
+
+
+"
+1,1,1,2026-10-22T09:10:00+02:00,Your Code Is Slower Than Expected - Hidden Performance Traps,Talk,"('Michael Inden',)","('Michael Inden ist Java- und Python-Enthusiast mit über 25 Jahren Berufserfahrung. Er hat bei diversen internationalen Firmen in verschiedenen Rollen etwa als Software-entwickler, -architekt, Teamleiter, CTO, Head of Development und Trainer gearbeitet. Derzeit ist er als Dozent für Software Engineering an der FH OST in Rapperswil tätig. \n\nDarüber hinaus spricht er auf Konferenzen und schreibt Fachbücher wie ""Java Challenge» / «Python Challenge"" und ""Einfach Java"" / ""Einfach Python"".',)","Python makes it easy to write clean and expressive code — but it also makes it easy to write code that is unexpectedly slow.
+
+In this talk, we’ll look at everyday Python patterns that seem harmless but can have serious performance implications. Why is x in list sometimes dramatically slower than expected? What’s the real difference between append(), +=, and +? And when does a simple data structure choice turn an O(n) solution into O(n²)?
+
+Instead of focusing on micro-optimizations, we’ll go one level deeper: how Python’s core data structures (lists, sets, dictionaries) actually work under the hood — and how that directly impacts runtime behavior.
+
+You’ll leave with a practical mental model and a small set of rules of thumb that help you write code that is not just correct and readable, but also efficient — without premature optimization.",Michael Inden,Michael Inden - Your Code Is Slower Than Expected - Hidden Performance Traps,Michael Inden - Your Code Is Slower Than Expected - Hidden Performance Traps - SPS26,sps26_1-01_michael_inden_-_your_code_is_slower_than_expected_-_hidden_,<VIDEO_URL>,"Michael Inden ist Java- und Python-Enthusiast mit über 25 Jahren Berufserfahrung. Er hat bei diversen internationalen Firmen in verschiedenen Rollen etwa als Software-entwickler, -architekt, Teamleiter, CTO, Head of Development und Trainer gearbeitet. Derzeit ist er als Dozent für Software Engineering an der FH OST in Rapperswil tätig. 
+
+Darüber hinaus spricht er auf Konferenzen und schreibt Fachbücher wie ""Java Challenge» / «Python Challenge"" und ""Einfach Java"" / ""Einfach Python"".",2026-10-22T09:10:00+02:00,"Talk recorded at the Swiss Python Summit on October 22nd, 2026.
+Licensed as Creative Commons Attribution 4.0 International.
+
+---------
+Abstract:
+
+Python makes it easy to write clean and expressive code — but it also makes it easy to write code that is unexpectedly slow.
+
+In this talk, we’ll look at everyday Python patterns that seem harmless but can have serious performance implications. Why is x in list sometimes dramatically slower than expected? What’s the real difference between append(), +=, and +? And when does a simple data structure choice turn an O(n) solution into O(n²)?
+
+Instead of focusing on micro-optimizations, we’ll go one level deeper: how Python’s core data structures (lists, sets, dictionaries) actually work under the hood — and how that directly impacts runtime behavior.
+
+You’ll leave with a practical mental model and a small set of rules of thumb that help you write code that is not just correct and readable, but also efficient — without premature optimization.
+
+---------------------
+About the speaker(s):
+
+Michael Inden ist Java- und Python-Enthusiast mit über 25 Jahren Berufserfahrung. Er hat bei diversen internationalen Firmen in verschiedenen Rollen etwa als Software-entwickler, -architekt, Teamleiter, CTO, Head of Development und Trainer gearbeitet. Derzeit ist er als Dozent für Software Engineering an der FH OST in Rapperswil tätig. 
+
+Darüber hinaus spricht er auf Konferenzen und schreibt Fachbücher wie ""Java Challenge» / «Python Challenge"" und ""Einfach Java"" / ""Einfach Python"".
+"
+2,1,2,2026-10-22T09:45:00+02:00,Eliminate hidden exceptions via railway-oriented programming,Talk,"('Christoph Gietl',)","(""Christoph has been working in software engineering and data engineering for 10+ years.\n\nComing from a mathematical statistics background he discovered his passion for Python in the late 2010s and for railway-oriented programming in the early 2020s.\n\nChristoph's non-technical interests include parenting, craft beer, history, and Bayern Munich."",)","Python’s dynamic nature makes it easy to miss hidden exceptions and implicit control flow, leading to bugs that static type checkers such as `mypy`, `pyrefly`, `pyright`, or `ty` cannot catch. Railway-oriented programming (ROP) addresses this by making all domain outcomes explicit in function signatures, using a `Result` type instead of exceptions. This talk introduces ROP in Python, showing how it enables type-safe control flow that static analyzers can verify.
+
+We will compare three open-source libraries: `Expression` by Dag Brattli, `returns` by Nikita Sobolev (Drylabs), and `trcks` by the speaker, each offering different approaches to ROP. Special focus will be given to `trcks`, which uniquely supports both object-oriented (method chaining) and functional (pipeline composition) styles while being designed for maximum type safety and interoperability.
+
+Attendees will learn when and how to use ROP in both synchronous and asynchronous code, how to choose the right library, and when ROP is not the best fit. By the end, you will know how to write Python code that is safer, more predictable, and easier to maintain without sacrificing expressiveness. Attendees should be familiar with type annotations and static type checking in Python. A basic understanding of object-oriented programming and of functional programming can be helpful but is not strictly required.",Christoph Gietl,Christoph Gietl - Eliminate hidden exceptions via railway-oriented programming,Christoph Gietl - Eliminate hidden exceptions via railway-oriented programming - SPS26,sps26_1-02_christoph_gietl_-_eliminate_hidden_exceptions_via_railway-o,<VIDEO_URL>,"Christoph has been working in software engineering and data engineering for 10+ years.
+
+Coming from a mathematical statistics background he discovered his passion for Python in the late 2010s and for railway-oriented programming in the early 2020s.
+
+Christoph's non-technical interests include parenting, craft beer, history, and Bayern Munich.",2026-10-22T09:45:00+02:00,"Talk recorded at the Swiss Python Summit on October 22nd, 2026.
+Licensed as Creative Commons Attribution 4.0 International.
+
+---------
+Abstract:
+
+Python’s dynamic nature makes it easy to miss hidden exceptions and implicit control flow, leading to bugs that static type checkers such as `mypy`, `pyrefly`, `pyright`, or `ty` cannot catch. Railway-oriented programming (ROP) addresses this by making all domain outcomes explicit in function signatures, using a `Result` type instead of exceptions. This talk introduces ROP in Python, showing how it enables type-safe control flow that static analyzers can verify.
+
+We will compare three open-source libraries: `Expression` by Dag Brattli, `returns` by Nikita Sobolev (Drylabs), and `trcks` by the speaker, each offering different approaches to ROP. Special focus will be given to `trcks`, which uniquely supports both object-oriented (method chaining) and functional (pipeline composition) styles while being designed for maximum type safety and interoperability.
+
+Attendees will learn when and how to use ROP in both synchronous and asynchronous code, how to choose the right library, and when ROP is not the best fit. By the end, you will know how to write Python code that is safer, more predictable, and easier to maintain without sacrificing expressiveness. Attendees should be familiar with type annotations and static type checking in Python. A basic understanding of object-oriented programming and of functional programming can be helpful but is not strictly required.
+
+---------------------
+About the speaker(s):
+
+Christoph has been working in software engineering and data engineering for 10+ years.
+
+Coming from a mathematical statistics background he discovered his passion for Python in the late 2010s and for railway-oriented programming in the early 2020s.
+
+Christoph's non-technical interests include parenting, craft beer, history, and Bayern Munich.
+"
+3,1,3,2026-10-22T10:20:00+02:00,How to make Django insecure,Talk,"('Gaweng Tan',)","('I am a Software Architect at a manufacturing company, specializing in building reliable products and establishing solid DevOps practices with Python from the ground up. Driven by curiosity and hands-on experimentation, I love tackling complex technical challenges and optimizing workflows. Outside of engineering, I run coding side projects, share thoughts on my personal blog, and enjoy deep conversations about technology and society, valuing individuality as much in tech as in everyday life.',)","Django is one of the most security-conscious web frameworks in any language. SQL injection, cross-site scripting, CSRF, password hashing — Django handles all of it out of the box, often before you even know the attack exists. But what does Django actually *do*? And what happens when you — accidentally or on purpose — turn those protections off?
+
+This talk walks through the OWASP by doing everything wrong first. For each vulnerability, I'll show you the insecure version — the f-string in a raw SQL query, the `|safe` on user input, the `@csrf_exempt` on a money transfer, the `DEBUG = True` in production — and then open Django's source code to show you exactly how the framework prevents it. Not as a black box, but line by line: how the ORM keeps parameters separate from SQL, how the template engine escapes every variable, how the CSRF middleware validates tokens, and why Django hashes your passwords 870,000 times.
+
+By the end you'll know where Django protects you, where it can't, and what one management command to run before every deployment.",Gaweng Tan,Gaweng Tan - How to make Django insecure,Gaweng Tan - How to make Django insecure - SPS26,sps26_1-03_gaweng_tan_-_how_to_make_django_insecure,<VIDEO_URL>,"I am a Software Architect at a manufacturing company, specializing in building reliable products and establishing solid DevOps practices with Python from the ground up. Driven by curiosity and hands-on experimentation, I love tackling complex technical challenges and optimizing workflows. Outside of engineering, I run coding side projects, share thoughts on my personal blog, and enjoy deep conversations about technology and society, valuing individuality as much in tech as in everyday life.",2026-10-22T10:20:00+02:00,"Talk recorded at the Swiss Python Summit on October 22nd, 2026.
+Licensed as Creative Commons Attribution 4.0 International.
+
+---------
+Abstract:
+
+Django is one of the most security-conscious web frameworks in any language. SQL injection, cross-site scripting, CSRF, password hashing — Django handles all of it out of the box, often before you even know the attack exists. But what does Django actually *do*? And what happens when you — accidentally or on purpose — turn those protections off?
+
+This talk walks through the OWASP by doing everything wrong first. For each vulnerability, I'll show you the insecure version — the f-string in a raw SQL query, the `|safe` on user input, the `@csrf_exempt` on a money transfer, the `DEBUG = True` in production — and then open Django's source code to show you exactly how the framework prevents it. Not as a black box, but line by line: how the ORM keeps parameters separate from SQL, how the template engine escapes every variable, how the CSRF middleware validates tokens, and why Django hashes your passwords 870,000 times.
+
+By the end you'll know where Django protects you, where it can't, and what one management command to run before every deployment.
+
+---------------------
+About the speaker(s):
+
+I am a Software Architect at a manufacturing company, specializing in building reliable products and establishing solid DevOps practices with Python from the ground up. Driven by curiosity and hands-on experimentation, I love tackling complex technical challenges and optimizing workflows. Outside of engineering, I run coding side projects, share thoughts on my personal blog, and enjoy deep conversations about technology and society, valuing individuality as much in tech as in everyday life.
+"
+4,1,4,2026-10-22T10:50:00+02:00,Pyladies presentation,Other,[''],[''],"A brief introduction and a few words from the Pyladies Zurich. 
+
+PyLadies Zurich is part of an international mentorship group for underrepresented genders in the Python community, such as but not limited to women, trans people and non-binary people. We focus on helping our members become active participants and leaders in the Python open-source community. Our mission is to promote, educate and advance a diverse Python community through outreach, education, conferences, events and social gatherings.
+
+PyLadies also aims to provide a friendly support network and a bridge to the larger Python world. Anyone with an interest in Python is encouraged to participate!
+
+Our mission is to promote, educate and advance a diverse Python community through outreach, education, conferences, events and social gatherings.",, - Pyladies presentation, - Pyladies presentation - SPS26,sps26_1-04__-_pyladies_presentation,<VIDEO_URL>,,2026-10-22T10:50:00+02:00,"Talk recorded at the Swiss Python Summit on October 22nd, 2026.
+Licensed as Creative Commons Attribution 4.0 International.
+
+---------
+Abstract:
+
+A brief introduction and a few words from the Pyladies Zurich. 
+
+PyLadies Zurich is part of an international mentorship group for underrepresented genders in the Python community, such as but not limited to women, trans people and non-binary people. We focus on helping our members become active participants and leaders in the Python open-source community. Our mission is to promote, educate and advance a diverse Python community through outreach, education, conferences, events and social gatherings.
+
+PyLadies also aims to provide a friendly support network and a bridge to the larger Python world. Anyone with an interest in Python is encouraged to participate!
+
+Our mission is to promote, educate and advance a diverse Python community through outreach, education, conferences, events and social gatherings.
+
+---------------------
+About the speaker(s):
+
+
+"
+5,1,5,2026-10-22T11:35:00+02:00,Sentinel Values in Python: Why None Is Not Enough,Talk,"('Florian Wilhelm',)","('Florian is Head of Data Science & Mathematical Modeling at inovex GmbH, an IT project center driven by innovation and quality, focusing its services on ‘Digital Transformation’. He holds a PhD in mathematics, has more than 10 years of experience in predictive & prescriptive analytics use-cases and likes everything math 🤯',)","Every Python developer has used `None` as a default but what happens when `None` is also a valid value? This talk explores sentinel values as a first-class concept in Python. We'll uncover why `None` is semantically overloaded, how built-in sentinels like `NotImplemented` and `...` (Ellipsis) quietly power Python's object model, and what happens when you try to create your own. The central challenge: Python's type system has no good answer for sentinel values. We'll walk through why `Optional`, `Literal`, and custom classes all fall short, look at real-world workarounds including Pydantic's experimental MISSING, and discuss what PEP 661's deferral means for your code today. You'll leave with a clear mental model and practical guidance for handling absence in typed Python.",Florian Wilhelm,Florian Wilhelm - Sentinel Values in Python: Why None Is Not Enough,Florian Wilhelm - Sentinel Values in Python: Why None Is Not Enough - SPS26,sps26_1-05_florian_wilhelm_-_sentinel_values_in_python_why_none_is_not,<VIDEO_URL>,"Florian is Head of Data Science & Mathematical Modeling at inovex GmbH, an IT project center driven by innovation and quality, focusing its services on ‘Digital Transformation’. He holds a PhD in mathematics, has more than 10 years of experience in predictive & prescriptive analytics use-cases and likes everything math 🤯",2026-10-22T11:35:00+02:00,"Talk recorded at the Swiss Python Summit on October 22nd, 2026.
+Licensed as Creative Commons Attribution 4.0 International.
+
+---------
+Abstract:
+
+Every Python developer has used `None` as a default but what happens when `None` is also a valid value? This talk explores sentinel values as a first-class concept in Python. We'll uncover why `None` is semantically overloaded, how built-in sentinels like `NotImplemented` and `...` (Ellipsis) quietly power Python's object model, and what happens when you try to create your own. The central challenge: Python's type system has no good answer for sentinel values. We'll walk through why `Optional`, `Literal`, and custom classes all fall short, look at real-world workarounds including Pydantic's experimental MISSING, and discuss what PEP 661's deferral means for your code today. You'll leave with a clear mental model and practical guidance for handling absence in typed Python.
+
+---------------------
+About the speaker(s):
+
+Florian is Head of Data Science & Mathematical Modeling at inovex GmbH, an IT project center driven by innovation and quality, focusing its services on ‘Digital Transformation’. He holds a PhD in mathematics, has more than 10 years of experience in predictive & prescriptive analytics use-cases and likes everything math 🤯
+"
+6,1,6,2026-10-22T12:10:00+02:00,Securing the Supply Chain of your Python app,Talk,"('Federico Fregosi',)","('Experienced engineering leader with a strong interest in distributed, highly scalable, and cloud-based systems.\nOperated for years in engineering leadership roles, focused on cloud-native architecture and delivery of large-scale projects on the three major public cloud providers: AWS, Azure, and GCP.  \nRegular speaker at conferences and meetups.\nFederico holds an MSc in Software Engineering from City University London',)","After Log4Shell and the ""GitHub Actions"" based attacks, the most significant security vulnerabilities of the past few years, controlling the software supply chain is top of mind for every security-conscious development team. We realize that embedding open-source libraries in our applications has substantial security risks. Still, no major software artifact can be built without OSS components these days. 
+In this session, we will use the recommendations of the most popular supply chain frameworks to explore a series of practical software development and system architecture best practices you can follow to secure your Python builds, sources, and dependencies.
+We will look at how you can protect your application from two classes of risks: internal and external. The former focuses on insider threats and compromised accounts, and the latter concentrates on open-source libraries embedded in your software projects.",Federico Fregosi,Federico Fregosi - Securing the Supply Chain of your Python app,Federico Fregosi - Securing the Supply Chain of your Python app - SPS26,sps26_1-06_federico_fregosi_-_securing_the_supply_chain_of_your_python,<VIDEO_URL>,"Experienced engineering leader with a strong interest in distributed, highly scalable, and cloud-based systems.
+Operated for years in engineering leadership roles, focused on cloud-native architecture and delivery of large-scale projects on the three major public cloud providers: AWS, Azure, and GCP.  
+Regular speaker at conferences and meetups.
+Federico holds an MSc in Software Engineering from City University London",2026-10-22T12:10:00+02:00,"Talk recorded at the Swiss Python Summit on October 22nd, 2026.
+Licensed as Creative Commons Attribution 4.0 International.
+
+---------
+Abstract:
+
+After Log4Shell and the ""GitHub Actions"" based attacks, the most significant security vulnerabilities of the past few years, controlling the software supply chain is top of mind for every security-conscious development team. We realize that embedding open-source libraries in our applications has substantial security risks. Still, no major software artifact can be built without OSS components these days. 
+In this session, we will use the recommendations of the most popular supply chain frameworks to explore a series of practical software development and system architecture best practices you can follow to secure your Python builds, sources, and dependencies.
+We will look at how you can protect your application from two classes of risks: internal and external. The former focuses on insider threats and compromised accounts, and the latter concentrates on open-source libraries embedded in your software projects.
+
+---------------------
+About the speaker(s):
+
+Experienced engineering leader with a strong interest in distributed, highly scalable, and cloud-based systems.
+Operated for years in engineering leadership roles, focused on cloud-native architecture and delivery of large-scale projects on the three major public cloud providers: AWS, Azure, and GCP.  
+Regular speaker at conferences and meetups.
+Federico holds an MSc in Software Engineering from City University London
+"
+7,1,7,2026-10-22T13:55:00+02:00,Pulumi: The Joy of Infrastructure as (Python) Code,Talk,"('Jonas Böer',)","('Data Engineer at inovex since 2022, full-time software engineer since 2018, coder for as long as I can remember. With my experience working on data warehouses and machine learning applications from small tests up to international deployments, I enjoy eliminating bugs and bottlenecks, getting cool systems online and writing beautiful code. Still proud of the time when a colleague complained that I made deploying to production too predictable and therefore boring.',)","We don't need to use Python only for developing applications and pipelines, we can also use it to maintain our infrastructure. Pulumi allows us to describe our infrastructure as a Python program. As this gives us access to Python's flexibility, readability, power, and joy, it has quickly become my favourite way to manage infrastructure, no matter if for a small team's ML application or for a multinational company's analytics platform. Let me share this joy with you!
+
+In this talk I will show you how Pulumi works and what it does better than other IaC tools: Among others, I will talk about custom resources and resource grouping, state versioning and understanding your infrastructure deployment as a program to be run.
+
+Caution: This talk may lead to strong feelings of ""why haven't we always done it like this?""",Jonas Böer,Jonas Böer - Pulumi: The Joy of Infrastructure as (Python) Code,Jonas Böer - Pulumi: The Joy of Infrastructure as (Python) Code - SPS26,sps26_1-07_jonas_boeer_-_pulumi_the_joy_of_infrastructure_as_python_co,<VIDEO_URL>,"Data Engineer at inovex since 2022, full-time software engineer since 2018, coder for as long as I can remember. With my experience working on data warehouses and machine learning applications from small tests up to international deployments, I enjoy eliminating bugs and bottlenecks, getting cool systems online and writing beautiful code. Still proud of the time when a colleague complained that I made deploying to production too predictable and therefore boring.",2026-10-22T13:55:00+02:00,"Talk recorded at the Swiss Python Summit on October 22nd, 2026.
+Licensed as Creative Commons Attribution 4.0 International.
+
+---------
+Abstract:
+
+We don't need to use Python only for developing applications and pipelines, we can also use it to maintain our infrastructure. Pulumi allows us to describe our infrastructure as a Python program. As this gives us access to Python's flexibility, readability, power, and joy, it has quickly become my favourite way to manage infrastructure, no matter if for a small team's ML application or for a multinational company's analytics platform. Let me share this joy with you!
+
+In this talk I will show you how Pulumi works and what it does better than other IaC tools: Among others, I will talk about custom resources and resource grouping, state versioning and understanding your infrastructure deployment as a program to be run.
+
+Caution: This talk may lead to strong feelings of ""why haven't we always done it like this?""
+
+---------------------
+About the speaker(s):
+
+Data Engineer at inovex since 2022, full-time software engineer since 2018, coder for as long as I can remember. With my experience working on data warehouses and machine learning applications from small tests up to international deployments, I enjoy eliminating bugs and bottlenecks, getting cool systems online and writing beautiful code. Still proud of the time when a colleague complained that I made deploying to production too predictable and therefore boring.
+"
+8,1,8,2026-10-22T14:30:00+02:00,Profiling Python: From cProfile to Sampling,Talk,"('Farid Mirzayev',)","('By day, he works as a Python Software Developer at Ørsted, helping automate simulation workflows for power engineers. By curiosity, he enjoys exploring Python internals, performance tools, and the strange ways developers convince themselves their code is fast before measuring it.',)","Python developers have long faced a frustrating tradeoff: the more precisely you measured performance, the more you risked changing it.
+
+Traditional profilers like `profile` and `cProfile` trace every function call, providing exact call counts and instrumented timings at the cost of significant overhead.
+
+The ecosystem fought back. Tools like `py-spy` and `austin` embraced statistical sampling, attaching to running processes and gathering useful insights with minimal impact. Yet statistical sampling remained outside the Python standard library.
+
+Python 3.15 changes that.
+
+The new `profiling.sampling` module, also known as Tachyon, brings statistical profiling into the standard library, building on years of community experimentation.
+
+In this talk, we'll compare tracing and sampling profilers, exploring how each approach works, where it struggles, and how sampled stacks become flame graphs.
+
+By profiling the same code with different tools, we'll see how each profiler reveals a different picture of performance — and why choosing the right tool matters.
+
+## Problem Statement
+
+Most Python developers reach for `cProfile` because it's built in, often without realizing its limitations or knowing modern alternatives exist. Sampling profilers have been available for years, but many developers have not encountered them. This talk closes that gap.
+
+## Attendees will leave knowing
+
+- Deterministic vs statistical profiling and why it matters
+- When `cProfile` helps — and when it can mislead
+- How and when to use Python 3.15's `profiling.sampling`
+- How to choose the right profiler for the job",Farid Mirzayev,Farid Mirzayev - Profiling Python: From cProfile to Sampling,Farid Mirzayev - Profiling Python: From cProfile to Sampling - SPS26,sps26_1-08_farid_mirzayev_-_profiling_python_from_cprofile_to_sampling,<VIDEO_URL>,"By day, he works as a Python Software Developer at Ørsted, helping automate simulation workflows for power engineers. By curiosity, he enjoys exploring Python internals, performance tools, and the strange ways developers convince themselves their code is fast before measuring it.",2026-10-22T14:30:00+02:00,"Talk recorded at the Swiss Python Summit on October 22nd, 2026.
+Licensed as Creative Commons Attribution 4.0 International.
+
+---------
+Abstract:
+
+Python developers have long faced a frustrating tradeoff: the more precisely you measured performance, the more you risked changing it.
+
+Traditional profilers like `profile` and `cProfile` trace every function call, providing exact call counts and instrumented timings at the cost of significant overhead.
+
+The ecosystem fought back. Tools like `py-spy` and `austin` embraced statistical sampling, attaching to running processes and gathering useful insights with minimal impact. Yet statistical sampling remained outside the Python standard library.
+
+Python 3.15 changes that.
+
+The new `profiling.sampling` module, also known as Tachyon, brings statistical profiling into the standard library, building on years of community experimentation.
+
+In this talk, we'll compare tracing and sampling profilers, exploring how each approach works, where it struggles, and how sampled stacks become flame graphs.
+
+By profiling the same code with different tools, we'll see how each profiler reveals a different picture of performance — and why choosing the right tool matters.
+
+## Problem Statement
+
+Most Python developers reach for `cProfile` because it's built in, often without realizing its limitations or knowing modern alternatives exist. Sampling profilers have been available for years, but many developers have not encountered them. This talk closes that gap.
+
+## Attendees will leave knowing
+
+- Deterministic vs statistical profiling and why it matters
+- When `cProfile` helps — and when it can mislead
+- How and when to use Python 3.15's `profiling.sampling`
+- How to choose the right profiler for the job
+
+---------------------
+About the speaker(s):
+
+By day, he works as a Python Software Developer at Ørsted, helping automate simulation workflows for power engineers. By curiosity, he enjoys exploring Python internals, performance tools, and the strange ways developers convince themselves their code is fast before measuring it.
+"
+9,1,9,2026-10-22T15:40:00+02:00,Packaging FOSS Python applications and libraries for Debian,Talk,"('Theodore Tucker',)","(""Theodore is an early-career software engineer at Codethink Ltd. in Manchester, UK, where he works on the hardware-in-the-loop testing of embedded Linux-based operating systems against functional safety standards. In his spare time, he studies Combined STEM at the UK's Open University, and maintains Debian packages for Apache BuildStream and dependencies along with personal open source Python and Rust projects, FOSS computing being a hobby since the age of 7."",)","# Packaging FOSS Python applications and libraries for Debian
+
+Debian Linux is deployed on millions of desktops and servers worldwide, renowned for 30 years for its stability and the quality of software packages installable from its archives. Over 1,400 volunteer contributors from around the world serve Debian users and the free software community by maintaining more than 60,000 well-behaved, consistent, secure and up-to-date packages, including Python applications and libraries.
+
+System administrators, software integrators, and scientists can be considerably more certain of the provenance, reliability, and intercompatibility of Python packages from the Debian archives than uploads to PyPi.org, especially at a time where these aspects are coming under greater scrutiny in Europe. For the Python developer, packaging your work for Debian, and therefore satisfying the stringent quality assurance criteria, is a great responsibility, but also a rewarding opportunity to gain more users in higher-integrity contexts, improve your coding practices, and engage with a community of free software experts.
+
+This talk will present case studies of the ""Debianisation"" of a Python library (pyroaring) and application (Apache BuildStream 2.7.0) recently undertaken by the speaker in their first major FOSS contribution, covering from first principles:
+- Preparing upstream sources and Debian-specific metadata and build instructions in compliance with Debian Policy and Free Software Guidelines, both for pure Python libraries and those with Cython extensions and Sphinx documentation
+- Guiding a new package through the Debian quality assurance processes (including version control, integration testing, reproducibility, and migration) so it can be included in a release
+- Responsibilities of a Debian package maintainer to their users, upstreams, and reverse-dependencies in handling bugs and updates
+- Sources of help when contributing to a project as mature as Debian for the first time",Theodore Tucker,Theodore Tucker - Packaging FOSS Python applications and libraries for Debian,Theodore Tucker - Packaging FOSS Python applications and libraries for Debian - SPS26,sps26_1-09_theodore_tucker_-_packaging_foss_python_applications_and_li,<VIDEO_URL>,"Theodore is an early-career software engineer at Codethink Ltd. in Manchester, UK, where he works on the hardware-in-the-loop testing of embedded Linux-based operating systems against functional safety standards. In his spare time, he studies Combined STEM at the UK's Open University, and maintains Debian packages for Apache BuildStream and dependencies along with personal open source Python and Rust projects, FOSS computing being a hobby since the age of 7.",2026-10-22T15:40:00+02:00,"Talk recorded at the Swiss Python Summit on October 22nd, 2026.
+Licensed as Creative Commons Attribution 4.0 International.
+
+---------
+Abstract:
+
+# Packaging FOSS Python applications and libraries for Debian
+
+Debian Linux is deployed on millions of desktops and servers worldwide, renowned for 30 years for its stability and the quality of software packages installable from its archives. Over 1,400 volunteer contributors from around the world serve Debian users and the free software community by maintaining more than 60,000 well-behaved, consistent, secure and up-to-date packages, including Python applications and libraries.
+
+System administrators, software integrators, and scientists can be considerably more certain of the provenance, reliability, and intercompatibility of Python packages from the Debian archives than uploads to PyPi.org, especially at a time where these aspects are coming under greater scrutiny in Europe. For the Python developer, packaging your work for Debian, and therefore satisfying the stringent quality assurance criteria, is a great responsibility, but also a rewarding opportunity to gain more users in higher-integrity contexts, improve your coding practices, and engage with a community of free software experts.
+
+This talk will present case studies of the ""Debianisation"" of a Python library (pyroaring) and application (Apache BuildStream 2.7.0) recently undertaken by the speaker in their first major FOSS contribution, covering from first principles:
+- Preparing upstream sources and Debian-specific metadata and build instructions in compliance with Debian Policy and Free Software Guidelines, both for pure Python libraries and those with Cython extensions and Sphinx documentation
+- Guiding a new package through the Debian quality assurance processes (including version control, integration testing, reproducibility, and migration) so it can be included in a release
+- Responsibilities of a Debian package maintainer to their users, upstreams, and reverse-dependencies in handling bugs and updates
+- Sources of help when contributing to a project as mature as Debian for the first time
+
+---------------------
+About the speaker(s):
+
+Theodore is an early-career software engineer at Codethink Ltd. in Manchester, UK, where he works on the hardware-in-the-loop testing of embedded Linux-based operating systems against functional safety standards. In his spare time, he studies Combined STEM at the UK's Open University, and maintains Debian packages for Apache BuildStream and dependencies along with personal open source Python and Rust projects, FOSS computing being a hobby since the age of 7.
+"
+10,1,10,2026-10-22T16:15:00+02:00,Lightning Talks - Day 1,Lightning Talks,['Swiss Python Summit Team'],[''],"Our Lightning Talks are open to everyone 😊
+
+How it works:
+– You can register directly at the conference. First come, first served.
+– Any proposal is welcome, as long as your talk has something to do with Python and respects our [Code of Conduct](https://www.python-summit.ch/coc/). We reserve the right to reject talks.
+– Talk time is strictly limited to 5 minutes.
+– To keep turnaround times short, you will not be able to plug in your own device. We will provide a laptop with all slides. Please submit your slides as PDF via email at least 60 minutes before Lightning Talks start. 
+– By registering, you accept that your talk may be recorded, published and streamed live (audio & video) under [Creative Commons Attribution 4.0 International license](https://creativecommons.org/licenses/by/4.0/deed.en).",Swiss Python Summit Team,Swiss Python Summit Team - Lightning Talks - Day 1,Swiss Python Summit Team - Lightning Talks - Day 1 - SPS26,sps26_1-10_swiss_python_summit_team_-_lightning_talks_-_day_1,<VIDEO_URL>,,2026-10-22T16:15:00+02:00,"Talk recorded at the Swiss Python Summit on October 22nd, 2026.
+Licensed as Creative Commons Attribution 4.0 International.
+
+---------
+Abstract:
+
+Our Lightning Talks are open to everyone 😊
+
+How it works:
+– You can register directly at the conference. First come, first served.
+– Any proposal is welcome, as long as your talk has something to do with Python and respects our [Code of Conduct](https://www.python-summit.ch/coc/). We reserve the right to reject talks.
+– Talk time is strictly limited to 5 minutes.
+– To keep turnaround times short, you will not be able to plug in your own device. We will provide a laptop with all slides. Please submit your slides as PDF via email at least 60 minutes before Lightning Talks start. 
+– By registering, you accept that your talk may be recorded, published and streamed live (audio & video) under [Creative Commons Attribution 4.0 International license](https://creativecommons.org/licenses/by/4.0/deed.en).
+
+---------------------
+About the speaker(s):
+
+
+"
+11,1,11,2026-10-22T17:05:00+02:00,Closing - Day 1,Opening/Closing,['Swiss Python Summit Team'],[''],"A thank you from the organisers. We hope you enjoyed your day!
+                                       
+(It won't take long, we promise! After that long day, everyone is looking forward to the buffet!)",Swiss Python Summit Team,Swiss Python Summit Team - Closing - Day 1,Swiss Python Summit Team - Closing - Day 1 - SPS26,sps26_1-11_swiss_python_summit_team_-_closing_-_day_1,<VIDEO_URL>,,2026-10-22T17:05:00+02:00,"Talk recorded at the Swiss Python Summit on October 22nd, 2026.
+Licensed as Creative Commons Attribution 4.0 International.
+
+---------
+Abstract:
+
+A thank you from the organisers. We hope you enjoyed your day!
+                                       
+(It won't take long, we promise! After that long day, everyone is looking forward to the buffet!)
+
+---------------------
+About the speaker(s):
+
+
+"
+12,2,0,2026-10-23T09:00:00+02:00,Welcome - Day 2,Opening/Closing,['Swiss Python Summit Team'],[''],"A welcome message and useful information from the organisers.
+
+You will also find useful information on our website [www.python-summit.ch/venue](https://www.python-summit.ch/venue/). Or feel free to ask any member of staff if you have a question.",Swiss Python Summit Team,Swiss Python Summit Team - Welcome - Day 2,Swiss Python Summit Team - Welcome - Day 2 - SPS26,sps26_2-00_swiss_python_summit_team_-_welcome_-_day_2,<VIDEO_URL>,,2026-10-23T09:00:00+02:00,"Talk recorded at the Swiss Python Summit on October 23rd, 2026.
+Licensed as Creative Commons Attribution 4.0 International.
+
+---------
+Abstract:
+
+A welcome message and useful information from the organisers.
+
+You will also find useful information on our website [www.python-summit.ch/venue](https://www.python-summit.ch/venue/). Or feel free to ask any member of staff if you have a question.
+
+---------------------
+About the speaker(s):
+
+
+"
+13,2,1,2026-10-23T09:10:00+02:00,Before you open that OSS issue: evidence-first triage,Talk,"('Pavel Sulimov', 'Sergey Eremeykin')","('Lecturer and Head of Quantum Lab at Zurich University of Applied Sciences, and Academic Lead of the Innosuisse AI Booster Expert Group on Quantum Algorithms. Pavel has 9+ years in applied data science across bioinformatics, banking, network analysis, and online gambling services. He has a PhD in Theoretical Computer Science, and before moving into research and teaching, he led data science teams in the gambling and banking industries.', '')","You found a gap in a library you use. Should you open an issue, write an RFC, or spend a month on a pull request? Most teams answer this in a one-off chat with an LLM, get a confident two-sentence verdict, and only later discover the closed duplicate issue or the adjacent API that already solves the problem.
+
+This talk is a case study, not a product pitch. I walk through how we evaluated whether reviving PyTorch's prototype torch.masked module was worth a multi-month upstream contribution. The decision changed once we gathered evidence: old and closed GitHub issues, maintainer activity on the code path, and alternatives such as NestedTensor and FlexAttention. The useful output was not ""yes"" or ""no"" - it was a short, cited brief that a teammate could verify in ten minutes.
+
+From that workflow I distill a repeatable method any Python team can use before writing a spec: what to retrieve (issues, merged PRs, module git history, ecosystem docs), what not to trust (verdict-first LLM answers, unvalidated ""library X already does this""), and how to structure the result so humans keep the final call.
+
+I briefly show the shape of a Python CLI we are building to automate retrieval and synthesis with mandatory citations - Typer, httpx, GitHub API, local indexing - but the talk stands alone: you leave with a checklist you can run tomorrow with ripgrep, gh, and a markdown template.
+
+Audience: contributors, maintainers tired of duplicate feature requests, and teams choosing where to invest OSS effort. Intermediate level; no PyTorch expertise required (since the Data Science Day is only tomorrow).","Pavel Sulimov, Sergey Eremeykin","Pavel Sulimov, Sergey Eremeykin - Before you open that OSS issue: evidence-first triage","Pavel Sulimov, Sergey Eremeykin - Before you open that OSS issue: evidence-first triage - SPS26",sps26_2-01_pavel_sulimov_sergey_eremeykin_-_before_you_open_that_oss_i,<VIDEO_URL>,"Lecturer and Head of Quantum Lab at Zurich University of Applied Sciences, and Academic Lead of the Innosuisse AI Booster Expert Group on Quantum Algorithms. Pavel has 9+ years in applied data science across bioinformatics, banking, network analysis, and online gambling services. He has a PhD in Theoretical Computer Science, and before moving into research and teaching, he led data science teams in the gambling and banking industries.
+
+",2026-10-23T09:10:00+02:00,"Talk recorded at the Swiss Python Summit on October 23rd, 2026.
+Licensed as Creative Commons Attribution 4.0 International.
+
+---------
+Abstract:
+
+You found a gap in a library you use. Should you open an issue, write an RFC, or spend a month on a pull request? Most teams answer this in a one-off chat with an LLM, get a confident two-sentence verdict, and only later discover the closed duplicate issue or the adjacent API that already solves the problem.
+
+This talk is a case study, not a product pitch. I walk through how we evaluated whether reviving PyTorch's prototype torch.masked module was worth a multi-month upstream contribution. The decision changed once we gathered evidence: old and closed GitHub issues, maintainer activity on the code path, and alternatives such as NestedTensor and FlexAttention. The useful output was not ""yes"" or ""no"" - it was a short, cited brief that a teammate could verify in ten minutes.
+
+From that workflow I distill a repeatable method any Python team can use before writing a spec: what to retrieve (issues, merged PRs, module git history, ecosystem docs), what not to trust (verdict-first LLM answers, unvalidated ""library X already does this""), and how to structure the result so humans keep the final call.
+
+I briefly show the shape of a Python CLI we are building to automate retrieval and synthesis with mandatory citations - Typer, httpx, GitHub API, local indexing - but the talk stands alone: you leave with a checklist you can run tomorrow with ripgrep, gh, and a markdown template.
+
+Audience: contributors, maintainers tired of duplicate feature requests, and teams choosing where to invest OSS effort. Intermediate level; no PyTorch expertise required (since the Data Science Day is only tomorrow).
+
+---------------------
+About the speaker(s):
+
+Lecturer and Head of Quantum Lab at Zurich University of Applied Sciences, and Academic Lead of the Innosuisse AI Booster Expert Group on Quantum Algorithms. Pavel has 9+ years in applied data science across bioinformatics, banking, network analysis, and online gambling services. He has a PhD in Theoretical Computer Science, and before moving into research and teaching, he led data science teams in the gambling and banking industries.
+
+
+"
+14,2,2,2026-10-23T09:45:00+02:00,Too Complicated to Model? Missing Female Athletes Data,Talk,"('Hilal Işık',)","('Hilal Işık is a Berlin-based data analyst, amateur endurance athlete, and senior data analytics coach specializing in Python, pandas, SQL, dbt, and BI tools such as Superset, and Tableau. She works at the intersection of data, feminist research, and tech communities like PyLadies, focusing on data ethics, AI, and knowledge transfer. She is also a free researcher with a focus on feminist research. In this context, she is the author of the book Rebel With Rhythm, Shatter With Words(2021)',)","Sports science and performance analytics have historically been built on datasets that underrepresent female athletes. In many cases, when data showed structured variability linked to biological cycles, this was treated as a complication rather than something to incorporate into modelling. As a result, female athletes were often excluded from analysis frameworks that could not easily handle this type of variation.
+
+As an amateur athlete and data analyst myself, I see this very clearly in practice. Many training guidelines, performance models, and recovery assumptions that are widely used today are still largely based on male dominated datasets. Female athletes are not only underrepresented in the data, but the way their performance varies over time is often not properly captured in the models themselves. This leads to a situation where the structure of female athletic performance is simplified, averaged out, or ignored, rather than being understood as part of the signal.
+
+In this talk, I explore this problem through different modelling approaches in Python, comparing standard methods with approaches that explicitly account for structured variability, such as cyclical representations and Generalized Additive Models (GAMs). The focus is on how modelling choices shape what is considered signal versus noise in athlete performance data.
+
+Recent research directions already point toward more inclusive modelling approaches in sports science, including cycle aware performance analysis, individualized training response models, and frameworks that better account for physiological variation in female athletes. These approaches aim to improve training and nutrition recommendations and reduce blind spots that arise when female athletes are not properly represented in the data.
+
+The key question is no longer whether this structure exists, but how we choose to model it and what becomes possible when we do.",Hilal Işık,Hilal Işık - Too Complicated to Model? Missing Female Athletes Data,Hilal Işık - Too Complicated to Model? Missing Female Athletes Data - SPS26,sps26_2-02_hilal_ik_-_too_complicated_to_model_missing_female_athletes,<VIDEO_URL>,"Hilal Işık is a Berlin-based data analyst, amateur endurance athlete, and senior data analytics coach specializing in Python, pandas, SQL, dbt, and BI tools such as Superset, and Tableau. She works at the intersection of data, feminist research, and tech communities like PyLadies, focusing on data ethics, AI, and knowledge transfer. She is also a free researcher with a focus on feminist research. In this context, she is the author of the book Rebel With Rhythm, Shatter With Words(2021)",2026-10-23T09:45:00+02:00,"Talk recorded at the Swiss Python Summit on October 23rd, 2026.
+Licensed as Creative Commons Attribution 4.0 International.
+
+---------
+Abstract:
+
+Sports science and performance analytics have historically been built on datasets that underrepresent female athletes. In many cases, when data showed structured variability linked to biological cycles, this was treated as a complication rather than something to incorporate into modelling. As a result, female athletes were often excluded from analysis frameworks that could not easily handle this type of variation.
+
+As an amateur athlete and data analyst myself, I see this very clearly in practice. Many training guidelines, performance models, and recovery assumptions that are widely used today are still largely based on male dominated datasets. Female athletes are not only underrepresented in the data, but the way their performance varies over time is often not properly captured in the models themselves. This leads to a situation where the structure of female athletic performance is simplified, averaged out, or ignored, rather than being understood as part of the signal.
+
+In this talk, I explore this problem through different modelling approaches in Python, comparing standard methods with approaches that explicitly account for structured variability, such as cyclical representations and Generalized Additive Models (GAMs). The focus is on how modelling choices shape what is considered signal versus noise in athlete performance data.
+
+Recent research directions already point toward more inclusive modelling approaches in sports science, including cycle aware performance analysis, individualized training response models, and frameworks that better account for physiological variation in female athletes. These approaches aim to improve training and nutrition recommendations and reduce blind spots that arise when female athletes are not properly represented in the data.
+
+The key question is no longer whether this structure exists, but how we choose to model it and what becomes possible when we do.
+
+---------------------
+About the speaker(s):
+
+Hilal Işık is a Berlin-based data analyst, amateur endurance athlete, and senior data analytics coach specializing in Python, pandas, SQL, dbt, and BI tools such as Superset, and Tableau. She works at the intersection of data, feminist research, and tech communities like PyLadies, focusing on data ethics, AI, and knowledge transfer. She is also a free researcher with a focus on feminist research. In this context, she is the author of the book Rebel With Rhythm, Shatter With Words(2021)
+"
+15,2,3,2026-10-23T10:20:00+02:00,Beyond the Hype: Building a Python Game to Teach AI Concepts,Talk,"('Vadim Vlasov', 'Eric Glaser')","('I\'m a Data Scientist based in Munich with a Master Degree in AI. For five years I\'ve been turning complex ML challenges — from computer vision to agentic systems — into working solutions. I\'m passionate about making AI click for others: through workshops, interactive tools, and experiences that turn abstract concepts into ""aha!"" moments. When I\'m not wrangling models, I explore ways to gamify learning and bridge AI with everyday understanding', 'I am a data scientist at Steadforce, building LLM and agent workflows with Python from cloud to edge. My current focus is AI literacy: helping teams understand what LLMs, RAG, and agents actually do beyond the hype. I co-designed “AI Factory,” a game where players break and fix AI systems to build real intuition.')","Everyone talks about LLMs, RAG, and AI agents — but who truly understands them? Marketing promises magic while documentation assumes expertise. Recent research from Gartner reveals the consequences: only 8% of HR leaders believe their managers possess adequate AI competency, while companies that restructure work around AI achieve revenue goals twice as often as those who merely train employees. The problem isn't lack of information; it's the lack of genuine understanding through experience.
+
+We took a different approach. Instead of slides or tutorials, we built ""AI Factory"" — an educational platform in the form of an escape room game where players learn by doing. Craft prompts under budget pressure. Watch guardrails fail in real-time. Break your own RAG pipeline. Each mistake teaches more than any documentation ever could.
+
+The entire platform is built in Python — Streamlit for the frontend, FastAPI for the backend — which shaped both what was easy and what surprised us. In this talk, we'll share what we discovered while building and testing this game with real users: why failure-driven learning outperforms tutorials, how game mechanics create memorable ""aha moments,"" and the surprising concepts that clicked only through play.","Vadim Vlasov, Eric Glaser","Vadim Vlasov, Eric Glaser - Beyond the Hype: Building a Python Game to Teach AI Concepts","Vadim Vlasov, Eric Glaser - Beyond the Hype: Building a Python Game to Teach AI Concepts - SPS26",sps26_2-03_vadim_vlasov_eric_glaser_-_beyond_the_hype_building_a_pytho,<VIDEO_URL>,"I'm a Data Scientist based in Munich with a Master Degree in AI. For five years I've been turning complex ML challenges — from computer vision to agentic systems — into working solutions. I'm passionate about making AI click for others: through workshops, interactive tools, and experiences that turn abstract concepts into ""aha!"" moments. When I'm not wrangling models, I explore ways to gamify learning and bridge AI with everyday understanding
+
+I am a data scientist at Steadforce, building LLM and agent workflows with Python from cloud to edge. My current focus is AI literacy: helping teams understand what LLMs, RAG, and agents actually do beyond the hype. I co-designed “AI Factory,” a game where players break and fix AI systems to build real intuition.",2026-10-23T10:20:00+02:00,"Talk recorded at the Swiss Python Summit on October 23rd, 2026.
+Licensed as Creative Commons Attribution 4.0 International.
+
+---------
+Abstract:
+
+Everyone talks about LLMs, RAG, and AI agents — but who truly understands them? Marketing promises magic while documentation assumes expertise. Recent research from Gartner reveals the consequences: only 8% of HR leaders believe their managers possess adequate AI competency, while companies that restructure work around AI achieve revenue goals twice as often as those who merely train employees. The problem isn't lack of information; it's the lack of genuine understanding through experience.
+
+We took a different approach. Instead of slides or tutorials, we built ""AI Factory"" — an educational platform in the form of an escape room game where players learn by doing. Craft prompts under budget pressure. Watch guardrails fail in real-time. Break your own RAG pipeline. Each mistake teaches more than any documentation ever could.
+
+The entire platform is built in Python — Streamlit for the frontend, FastAPI for the backend — which shaped both what was easy and what surprised us. In this talk, we'll share what we discovered while building and testing this game with real users: why failure-driven learning outperforms tutorials, how game mechanics create memorable ""aha moments,"" and the surprising concepts that clicked only through play.
+
+---------------------
+About the speaker(s):
+
+I'm a Data Scientist based in Munich with a Master Degree in AI. For five years I've been turning complex ML challenges — from computer vision to agentic systems — into working solutions. I'm passionate about making AI click for others: through workshops, interactive tools, and experiences that turn abstract concepts into ""aha!"" moments. When I'm not wrangling models, I explore ways to gamify learning and bridge AI with everyday understanding
+
+I am a data scientist at Steadforce, building LLM and agent workflows with Python from cloud to edge. My current focus is AI literacy: helping teams understand what LLMs, RAG, and agents actually do beyond the hype. I co-designed “AI Factory,” a game where players break and fix AI systems to build real intuition.
+"
+16,2,4,2026-10-23T10:50:00+02:00,Pyladies presentation,Other,[''],[''],"A brief introduction and a few words from the Pyladies Zurich. 
+
+PyLadies Zurich is part of an international mentorship group for underrepresented genders in the Python community, such as but not limited to women, trans people and non-binary people. We focus on helping our members become active participants and leaders in the Python open-source community. Our mission is to promote, educate and advance a diverse Python community through outreach, education, conferences, events and social gatherings.
+
+PyLadies also aims to provide a friendly support network and a bridge to the larger Python world. Anyone with an interest in Python is encouraged to participate!
+
+Our mission is to promote, educate and advance a diverse Python community through outreach, education, conferences, events and social gatherings.",, - Pyladies presentation, - Pyladies presentation - SPS26,sps26_2-04__-_pyladies_presentation,<VIDEO_URL>,,2026-10-23T10:50:00+02:00,"Talk recorded at the Swiss Python Summit on October 23rd, 2026.
+Licensed as Creative Commons Attribution 4.0 International.
+
+---------
+Abstract:
+
+A brief introduction and a few words from the Pyladies Zurich. 
+
+PyLadies Zurich is part of an international mentorship group for underrepresented genders in the Python community, such as but not limited to women, trans people and non-binary people. We focus on helping our members become active participants and leaders in the Python open-source community. Our mission is to promote, educate and advance a diverse Python community through outreach, education, conferences, events and social gatherings.
+
+PyLadies also aims to provide a friendly support network and a bridge to the larger Python world. Anyone with an interest in Python is encouraged to participate!
+
+Our mission is to promote, educate and advance a diverse Python community through outreach, education, conferences, events and social gatherings.
+
+---------------------
+About the speaker(s):
+
+
+"
+17,2,5,2026-10-23T11:35:00+02:00,Is Your Data Lying? Bayesian Data Credibility,Talk,"('Vince Nelidov',)","('Vince Nelidov is a Staff Data Scientist at Blue Yonder, with consulting experience across energy, banking, skincare, and agriculture. He combines advanced data science with business insight to create practical impact, uncover root causes, and build scalable long-term solutions. Passionate about data literacy, Vince draws on his background in statistics, research, teaching, and consulting to make data science accessible and useful.',)","Datasets are often treated as ground truth, even though they rarely are. Labels can be noisy, measurements can be imprecise, user segments can be under-recorded, and dashboards can hide uncertainty behind clean-looking numbers. Teams then often build models, metrics, and decisions on top of data whose reliability we have never actually measured.
+
+This talk shows how Bayesian modelling can make data credibility explicit. Using simple, realistic examples, we will model uncertainty in labels, measurements, and sampling bias; distinguish signal from noise; and identify parts of a dataset that should not be trusted at face value. The goal is to employ Bayesian statistics as a practical tool for asking: where is this dataset solid, where is it fragile, and where might it be misleading us?
+
+Attendees will leave with a practical framework for measuring data trustworthiness, and concrete examples of how Bayesian methods can make uncertainty visible before it starts to contaminate models, dashboards, or business decisions.",Vince Nelidov,Vince Nelidov - Is Your Data Lying? Bayesian Data Credibility,Vince Nelidov - Is Your Data Lying? Bayesian Data Credibility - SPS26,sps26_2-05_vince_nelidov_-_is_your_data_lying_bayesian_data_credibilit,<VIDEO_URL>,"Vince Nelidov is a Staff Data Scientist at Blue Yonder, with consulting experience across energy, banking, skincare, and agriculture. He combines advanced data science with business insight to create practical impact, uncover root causes, and build scalable long-term solutions. Passionate about data literacy, Vince draws on his background in statistics, research, teaching, and consulting to make data science accessible and useful.",2026-10-23T11:35:00+02:00,"Talk recorded at the Swiss Python Summit on October 23rd, 2026.
+Licensed as Creative Commons Attribution 4.0 International.
+
+---------
+Abstract:
+
+Datasets are often treated as ground truth, even though they rarely are. Labels can be noisy, measurements can be imprecise, user segments can be under-recorded, and dashboards can hide uncertainty behind clean-looking numbers. Teams then often build models, metrics, and decisions on top of data whose reliability we have never actually measured.
+
+This talk shows how Bayesian modelling can make data credibility explicit. Using simple, realistic examples, we will model uncertainty in labels, measurements, and sampling bias; distinguish signal from noise; and identify parts of a dataset that should not be trusted at face value. The goal is to employ Bayesian statistics as a practical tool for asking: where is this dataset solid, where is it fragile, and where might it be misleading us?
+
+Attendees will leave with a practical framework for measuring data trustworthiness, and concrete examples of how Bayesian methods can make uncertainty visible before it starts to contaminate models, dashboards, or business decisions.
+
+---------------------
+About the speaker(s):
+
+Vince Nelidov is a Staff Data Scientist at Blue Yonder, with consulting experience across energy, banking, skincare, and agriculture. He combines advanced data science with business insight to create practical impact, uncover root causes, and build scalable long-term solutions. Passionate about data literacy, Vince draws on his background in statistics, research, teaching, and consulting to make data science accessible and useful.
+"
+18,2,6,2026-10-23T12:10:00+02:00,Keeping data private in real-time pipelines,Talk,"('Olena Kutsenko',)","('Olena is a Staff Developer Advocate at Confluent and a recognized expert in data streaming and analytics. With two decades of experience in software engineering, she has built mission-critical applications, led high-performing teams, and driven large-scale technology adoption at industry leaders.',)","We all love real-time data — clicks, payments, rides, messages — but most of it comes with a catch: it contains personal information we’re not supposed to leak, such as names, emails, locations, or even small clues that can identify someone. The challenge: how do we keep streaming data useful and safe at the same time?
+
+In this talk, we’ll explore practical ways to protect privacy in streaming systems using Apache Kafka, Apache Flink, and Apache Iceberg. We’ll cover:
+- simple tricks like masking and tokenizing PII;
+- why “anonymous” data often isn’t anonymous (the re-identification problem);
+- techniques like bucketing, k-anonymity, and adding noise;
+- how to balance privacy with data utility (too much hiding makes data useless).
+
+Along the way, we’ll look at real-world stories: from public data leaks to surprising deanonymization attacks, and show live demos of pipelines that anonymize data before it’s written to storage.
+If you’ve ever wondered how to build privacy-aware pipelines, this talk will give you practical patterns you can use right away.",Olena Kutsenko,Olena Kutsenko - Keeping data private in real-time pipelines,Olena Kutsenko - Keeping data private in real-time pipelines - SPS26,sps26_2-06_olena_kutsenko_-_keeping_data_private_in_real-time_pipeline,<VIDEO_URL>,"Olena is a Staff Developer Advocate at Confluent and a recognized expert in data streaming and analytics. With two decades of experience in software engineering, she has built mission-critical applications, led high-performing teams, and driven large-scale technology adoption at industry leaders.",2026-10-23T12:10:00+02:00,"Talk recorded at the Swiss Python Summit on October 23rd, 2026.
+Licensed as Creative Commons Attribution 4.0 International.
+
+---------
+Abstract:
+
+We all love real-time data — clicks, payments, rides, messages — but most of it comes with a catch: it contains personal information we’re not supposed to leak, such as names, emails, locations, or even small clues that can identify someone. The challenge: how do we keep streaming data useful and safe at the same time?
+
+In this talk, we’ll explore practical ways to protect privacy in streaming systems using Apache Kafka, Apache Flink, and Apache Iceberg. We’ll cover:
+- simple tricks like masking and tokenizing PII;
+- why “anonymous” data often isn’t anonymous (the re-identification problem);
+- techniques like bucketing, k-anonymity, and adding noise;
+- how to balance privacy with data utility (too much hiding makes data useless).
+
+Along the way, we’ll look at real-world stories: from public data leaks to surprising deanonymization attacks, and show live demos of pipelines that anonymize data before it’s written to storage.
+If you’ve ever wondered how to build privacy-aware pipelines, this talk will give you practical patterns you can use right away.
+
+---------------------
+About the speaker(s):
+
+Olena is a Staff Developer Advocate at Confluent and a recognized expert in data streaming and analytics. With two decades of experience in software engineering, she has built mission-critical applications, led high-performing teams, and driven large-scale technology adoption at industry leaders.
+"
+19,2,7,2026-10-23T13:55:00+02:00,No more model training? TabPFN v3 vs. tuned trees.,Talk,"('Dominik Traxl',)","('I am a Senior Data Scientist and Engineer at inovex GmbH with a Ph.D. in Theoretical Physics and a strong foundation in complex systems, non-linear dynamics and mathematical modeling. Following an extensive academic career researching computational neuroscience and earth sciences, I transitioned into the tech industry to focus on end-to-end machine learning solutions.',)","What if you never had to train or tune a model again? That is the pitch behind
+tabular foundation models: state-of-the-art predictions with no training, no
+hyperparameter search, no feature engineering. Just call .fit() and .predict().
+The headliner, TabPFN, whose earlier version was published in Nature, now adds
+claims aimed straight at the gradient-boosted trees most of us reach for by
+default. TabPFN v3 promises to ingest raw text natively, scale toward a million
+rows, support multi-class classification natively and offer a
+""thinking mode"" for extra quality. Too good to be true? I put it on trial.
+
+This talk walks through a systematic, reproducible Python benchmark that puts
+TabPFN, exactly as it ships, up against a best-effort, Optuna-tuned pipeline of
+XGBoost, LightGBM, and CatBoost on the messy public Steam Dataset 2025:
+numerics, booleans, categoricals, date-times, free-text, embeddings, skewed
+distributions, NaNs. The case spans three tasks: binary sentiment classification,
+multi-class publisher prediction, and Metacritic-score regression.
+
+We stress-test each vendor claim one at a time: raw text versus sentence
+embeddings versus no text, out-of-the-box versus cleaned data, default versus
+thinking mode, small samples up to large, few to many classes.
+
+But the real takeaway is the method: how to benchmark a hyped claim fairly, why
+the metric you pick can quietly decide the winner, and the data-leakage traps you
+must defuse before you trust a single result.
+
+The honest answer to ""Too good to be true?"" is: ""it depends"". And knowing what
+it depends on is the point. You'll leave with a feel for when a tabular
+foundation model earns its keep, when a tuned tree still wins, and how to put
+the next ""no training required"" promise on trial yourself.",Dominik Traxl,Dominik Traxl - No more model training? TabPFN v3 vs. tuned trees.,Dominik Traxl - No more model training? TabPFN v3 vs. tuned trees. - SPS26,sps26_2-07_dominik_traxl_-_no_more_model_training_tabpfn_v3_vs_tuned_t,<VIDEO_URL>,"I am a Senior Data Scientist and Engineer at inovex GmbH with a Ph.D. in Theoretical Physics and a strong foundation in complex systems, non-linear dynamics and mathematical modeling. Following an extensive academic career researching computational neuroscience and earth sciences, I transitioned into the tech industry to focus on end-to-end machine learning solutions.",2026-10-23T13:55:00+02:00,"Talk recorded at the Swiss Python Summit on October 23rd, 2026.
+Licensed as Creative Commons Attribution 4.0 International.
+
+---------
+Abstract:
+
+What if you never had to train or tune a model again? That is the pitch behind
+tabular foundation models: state-of-the-art predictions with no training, no
+hyperparameter search, no feature engineering. Just call .fit() and .predict().
+The headliner, TabPFN, whose earlier version was published in Nature, now adds
+claims aimed straight at the gradient-boosted trees most of us reach for by
+default. TabPFN v3 promises to ingest raw text natively, scale toward a million
+rows, support multi-class classification natively and offer a
+""thinking mode"" for extra quality. Too good to be true? I put it on trial.
+
+This talk walks through a systematic, reproducible Python benchmark that puts
+TabPFN, exactly as it ships, up against a best-effort, Optuna-tuned pipeline of
+XGBoost, LightGBM, and CatBoost on the messy public Steam Dataset 2025:
+numerics, booleans, categoricals, date-times, free-text, embeddings, skewed
+distributions, NaNs. The case spans three tasks: binary sentiment classification,
+multi-class publisher prediction, and Metacritic-score regression.
+
+We stress-test each vendor claim one at a time: raw text versus sentence
+embeddings versus no text, out-of-the-box versus cleaned data, default versus
+thinking mode, small samples up to large, few to many classes.
+
+But the real takeaway is the method: how to benchmark a hyped claim fairly, why
+the metric you pick can quietly decide the winner, and the data-leakage traps you
+must defuse before you trust a single result.
+
+The honest answer to ""Too good to be true?"" is: ""it depends"". And knowing what
+it depends on is the point. You'll leave with a feel for when a tabular
+foundation model earns its keep, when a tuned tree still wins, and how to put
+the next ""no training required"" promise on trial yourself.
+
+---------------------
+About the speaker(s):
+
+I am a Senior Data Scientist and Engineer at inovex GmbH with a Ph.D. in Theoretical Physics and a strong foundation in complex systems, non-linear dynamics and mathematical modeling. Following an extensive academic career researching computational neuroscience and earth sciences, I transitioned into the tech industry to focus on end-to-end machine learning solutions.
+"
+20,2,8,2026-10-23T14:30:00+02:00,From Open Weights to Trusted Models,Talk,"('Emmanuel Okedele',)","('A machine learning engineer at Coefficient AI, a consultancy building bespoke AI for the public and private sectors. With recent projects centred on evaluating large language models, from auditing Gemma 4 for emergent misalignment to building benchmark evaluations for the UK government, including one for deepfake detection',)","APIs of frontier models are the fast way to ship, but rarely the cheapest place to stay. Open weights are a real alternative: you pay for compute instead of per-token rent, the model runs on your own machines so the data never leaves, residency and governance are yours to set.
+
+The open question is whether an open-weight model is actually good enough for your use case, and which one. A leaderboard won't tell you. It measures someone else's tasks, not yours, and an agent that runs over many turns and calls tools can score well on a benchmark and still fail the real job.
+
+This talk is about answering that for yourself, with two open-source Python tools: Inspect, the UK AI Security Institute's evaluation framework, and Petri, Anthropic's auditor built on top of it. Between them they let you judge an open-weight agent on your own traffic and on the failures you'd never think to collect, so you can put a number on the open-versus-frontier trade-off and decide on evidence.
+
+**Takeaways**
+
+By the end you'll be able to decide whether an open-weight model is good enough to replace a frontier API for your use case, and which one. You'll be able to:
+
+- Build an evaluation from your own traffic, then let Petri's auditor extend it, so you test the cases you've seen and the ones you haven't.
+- Score candidates against your current model on real agent work, across many turns and tool calls, not on a single tidy reply.
+- Turn the result into a decision: a number on the quality-versus-cost, latency.",Emmanuel Okedele,Emmanuel Okedele - From Open Weights to Trusted Models,Emmanuel Okedele - From Open Weights to Trusted Models - SPS26,sps26_2-08_emmanuel_okedele_-_from_open_weights_to_trusted_models,<VIDEO_URL>,"A machine learning engineer at Coefficient AI, a consultancy building bespoke AI for the public and private sectors. With recent projects centred on evaluating large language models, from auditing Gemma 4 for emergent misalignment to building benchmark evaluations for the UK government, including one for deepfake detection",2026-10-23T14:30:00+02:00,"Talk recorded at the Swiss Python Summit on October 23rd, 2026.
+Licensed as Creative Commons Attribution 4.0 International.
+
+---------
+Abstract:
+
+APIs of frontier models are the fast way to ship, but rarely the cheapest place to stay. Open weights are a real alternative: you pay for compute instead of per-token rent, the model runs on your own machines so the data never leaves, residency and governance are yours to set.
+
+The open question is whether an open-weight model is actually good enough for your use case, and which one. A leaderboard won't tell you. It measures someone else's tasks, not yours, and an agent that runs over many turns and calls tools can score well on a benchmark and still fail the real job.
+
+This talk is about answering that for yourself, with two open-source Python tools: Inspect, the UK AI Security Institute's evaluation framework, and Petri, Anthropic's auditor built on top of it. Between them they let you judge an open-weight agent on your own traffic and on the failures you'd never think to collect, so you can put a number on the open-versus-frontier trade-off and decide on evidence.
+
+**Takeaways**
+
+By the end you'll be able to decide whether an open-weight model is good enough to replace a frontier API for your use case, and which one. You'll be able to:
+
+- Build an evaluation from your own traffic, then let Petri's auditor extend it, so you test the cases you've seen and the ones you haven't.
+- Score candidates against your current model on real agent work, across many turns and tool calls, not on a single tidy reply.
+- Turn the result into a decision: a number on the quality-versus-cost, latency.
+
+---------------------
+About the speaker(s):
+
+A machine learning engineer at Coefficient AI, a consultancy building bespoke AI for the public and private sectors. With recent projects centred on evaluating large language models, from auditing Gemma 4 for emergent misalignment to building benchmark evaluations for the UK government, including one for deepfake detection
+"
+21,2,9,2026-10-23T15:40:00+02:00,Did we break up? Auditing Instagram data with Python,Talk,"('Almudena Barreiro Carrillo',)","('Co-founder of Data for Good Madrid, a non-profit initiative that uses data to drive social impact, and Data Scientist and AI Governance Consultant at TMC. She works at the intersection of data science, responsible AI, and AI governance, combining a background in mathematics and statistics with experience building and assessing AI systems.She also contributes to Sesgo404 (Sirviendo Código YouTube), helping make discussions around AI ethics, bias, and societal impact accessible to a wider audience',)","Instagram logs every interaction: likes, messages, stories viewed, searches, and follower changes. Even if you post nothing, your activity leaves a digital footprint.
+
+In this talk, we will explore how to access and analyze the personal data Instagram collects about you. We will use Python, with libraries like pandas or polars, to clean and structure the information downloaded directly from the platform's privacy portal.
+
+Next, we will build an interactive dashboard using Dash to visualize behavioral patterns over time. We will apply time-series anomaly detection techniques (such as rolling z-score, IsolationForest, or DBSCAN) and supervised classifiers (RandomForestClassifier, LogisticRegression) to identify potentially significant shifts in your digital activity—like a breakup.
+
+Finally, we will reflect on the economic value of this data, the inferences platforms can make about our personal lives, and briefly discuss the European AI Act's relevance to privacy protection.",Almudena Barreiro Carrillo,Almudena Barreiro Carrillo - Did we break up? Auditing Instagram data with Python,Almudena Barreiro Carrillo - Did we break up? Auditing Instagram data with Python - SPS26,sps26_2-09_almudena_barreiro_carrillo_-_did_we_break_up_auditing_insta,<VIDEO_URL>,"Co-founder of Data for Good Madrid, a non-profit initiative that uses data to drive social impact, and Data Scientist and AI Governance Consultant at TMC. She works at the intersection of data science, responsible AI, and AI governance, combining a background in mathematics and statistics with experience building and assessing AI systems.She also contributes to Sesgo404 (Sirviendo Código YouTube), helping make discussions around AI ethics, bias, and societal impact accessible to a wider audience",2026-10-23T15:40:00+02:00,"Talk recorded at the Swiss Python Summit on October 23rd, 2026.
+Licensed as Creative Commons Attribution 4.0 International.
+
+---------
+Abstract:
+
+Instagram logs every interaction: likes, messages, stories viewed, searches, and follower changes. Even if you post nothing, your activity leaves a digital footprint.
+
+In this talk, we will explore how to access and analyze the personal data Instagram collects about you. We will use Python, with libraries like pandas or polars, to clean and structure the information downloaded directly from the platform's privacy portal.
+
+Next, we will build an interactive dashboard using Dash to visualize behavioral patterns over time. We will apply time-series anomaly detection techniques (such as rolling z-score, IsolationForest, or DBSCAN) and supervised classifiers (RandomForestClassifier, LogisticRegression) to identify potentially significant shifts in your digital activity—like a breakup.
+
+Finally, we will reflect on the economic value of this data, the inferences platforms can make about our personal lives, and briefly discuss the European AI Act's relevance to privacy protection.
+
+---------------------
+About the speaker(s):
+
+Co-founder of Data for Good Madrid, a non-profit initiative that uses data to drive social impact, and Data Scientist and AI Governance Consultant at TMC. She works at the intersection of data science, responsible AI, and AI governance, combining a background in mathematics and statistics with experience building and assessing AI systems.She also contributes to Sesgo404 (Sirviendo Código YouTube), helping make discussions around AI ethics, bias, and societal impact accessible to a wider audience
+"
+22,2,10,2026-10-23T16:15:00+02:00,Lightning Talks - Day 2,Lightning Talks,['Swiss Python Summit Team'],[''],"Our Lightning Talks are open to everyone 😊
+
+How it works:
+– You can register directly at the conference. First come, first served.
+– Any proposal is welcome, as long as your talk has something to do with Python and respects our [Code of Conduct](https://www.python-summit.ch/coc/). We reserve the right to reject talks.
+– Talk time is strictly limited to 5 minutes.
+– To keep turnaround times short, you will not be able to plug in your own device. We will provide a laptop with all slides. Please submit your slides as PDF via email at least 60 minutes before Lightning Talks start. 
+– By registering, you accept that your talk may be recorded, published and streamed live (audio & video) under [Creative Commons Attribution 4.0 International license](https://creativecommons.org/licenses/by/4.0/deed.en).",Swiss Python Summit Team,Swiss Python Summit Team - Lightning Talks - Day 2,Swiss Python Summit Team - Lightning Talks - Day 2 - SPS26,sps26_2-10_swiss_python_summit_team_-_lightning_talks_-_day_2,<VIDEO_URL>,,2026-10-23T16:15:00+02:00,"Talk recorded at the Swiss Python Summit on October 23rd, 2026.
+Licensed as Creative Commons Attribution 4.0 International.
+
+---------
+Abstract:
+
+Our Lightning Talks are open to everyone 😊
+
+How it works:
+– You can register directly at the conference. First come, first served.
+– Any proposal is welcome, as long as your talk has something to do with Python and respects our [Code of Conduct](https://www.python-summit.ch/coc/). We reserve the right to reject talks.
+– Talk time is strictly limited to 5 minutes.
+– To keep turnaround times short, you will not be able to plug in your own device. We will provide a laptop with all slides. Please submit your slides as PDF via email at least 60 minutes before Lightning Talks start. 
+– By registering, you accept that your talk may be recorded, published and streamed live (audio & video) under [Creative Commons Attribution 4.0 International license](https://creativecommons.org/licenses/by/4.0/deed.en).
+
+---------------------
+About the speaker(s):
+
+
+"
+23,2,11,2026-10-23T17:05:00+02:00,Closing - Day 2,Opening/Closing,['Swiss Python Summit Team'],[''],"A thank you from the organisers. We hope you enjoyed your day!
+                                       
+(It won't take long, we promise! After that long day, everyone is looking forward to the buffet!)",Swiss Python Summit Team,Swiss Python Summit Team - Closing - Day 2,Swiss Python Summit Team - Closing - Day 2 - SPS26,sps26_2-11_swiss_python_summit_team_-_closing_-_day_2,<VIDEO_URL>,,2026-10-23T17:05:00+02:00,"Talk recorded at the Swiss Python Summit on October 23rd, 2026.
+Licensed as Creative Commons Attribution 4.0 International.
+
+---------
+Abstract:
+
+A thank you from the organisers. We hope you enjoyed your day!
+                                       
+(It won't take long, we promise! After that long day, everyone is looking forward to the buffet!)
+
+---------------------
+About the speaker(s):
+
+
+"
