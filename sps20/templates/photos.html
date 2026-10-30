@@ -3,37 +3,92 @@
 {% block title %}{{ this.title }}{% endblock %}
 
 {% block body %}
-  {% set gallery = bag("photos-2026") %}
+  {% set gallery = bag(this.gallery_bag) %}
+  {% set totals = namespace(photos=0) %}
+  {% for day in gallery.days %}
+    {% set totals.photos = totals.photos + day.photos|length %}
+  {% endfor %}
 
   <div class="photos-page">
-    <h1>{{ this.title }}</h1>
-    {{ this.body }}
+    <section class="photos-intro" aria-labelledby="photos-title">
+      <div class="photos-intro-copy">
+        <p class="photos-kicker">{{ this.kicker }}</p>
+        <h1 id="photos-title">{{ this.headline_first }}<br>{{ this.headline_second }}</h1>
+        <div class="photos-lead">{{ this.intro }}</div>
 
-    <p class="photo-credit">
-      <a href="{{ gallery.credit.url }}" rel="external">{{ gallery.credit.label }}</a>
-    </p>
+        <dl class="photos-stats" aria-label="Gallery overview">
+          <div>
+            <dt>{{ totals.photos }}</dt>
+            <dd>photographs</dd>
+          </div>
+          <div>
+            <dt>{{ gallery.days|length }}</dt>
+            <dd>summit days</dd>
+          </div>
+        </dl>
+      </div>
 
-    <nav class="photo-day-links" aria-label="Photo gallery days">
-      {% for day in gallery.days %}
-        <a class="btn" href="#{{ day.id }}">{{ day.title }}</a>
-      {% endfor %}
-    </nav>
+      <div class="photos-intro-collage" aria-hidden="true">
+        {% set hero_photos = [
+          gallery.days[0].photos[0],
+          gallery.days[0].photos[1],
+          gallery.days[-1].photos[0]
+        ] %}
+        {% for photo in hero_photos %}
+          <figure>
+            <img
+              src="{{ photo.thumb_url }}"
+              width="{{ photo.width }}"
+              height="{{ photo.height }}"
+              decoding="async"
+              alt=""
+            >
+          </figure>
+        {% endfor %}
+      </div>
+    </section>
+
+    <div class="photos-toolbar">
+      <nav class="photo-day-links" aria-label="Photo gallery days">
+        {% for day in gallery.days %}
+          <a
+            class="photo-day-link{% if loop.first %} active{% endif %}"
+            href="#{{ day.id }}"
+            data-day-link="{{ day.id }}"
+          >
+            <span>{{ "%02d"|format(loop.index) }}</span>
+            {{ day.title }}
+          </a>
+        {% endfor %}
+      </nav>
+
+      <p class="photo-credit">
+        <a href="{{ gallery.credit.url }}" rel="external">{{ gallery.credit.label }}</a>
+      </p>
+    </div>
 
     {% for day in gallery.days %}
-      <section class="photo-day" id="{{ day.id }}">
-        <h2>{{ day.title }}</h2>
-        <p>{{ day.photos|length }} photos</p>
+      <section class="photo-day" id="{{ day.id }}" data-day-section="{{ day.id }}">
+        <header class="photo-day-header">
+          <div>
+            <p class="photo-day-number">Day {{ "%02d"|format(loop.index) }}</p>
+            <h2>{{ day.title }}</h2>
+          </div>
+          <p><strong>{{ day.photos|length }}</strong> moments</p>
+        </header>
 
         <div class="photo-grid" data-gallery="{{ day.id }}">
           {% for photo in day.photos %}
+            {% set featured = loop.index in [1, 12, 31, 58, 97, 142, 203, 269] %}
+            {% set portrait = photo.height > photo.width %}
             <a
-              class="photo-link"
+              class="photo-link{% if featured %} photo-link-featured{% elif portrait %} photo-link-portrait{% endif %}"
               href="{{ photo.large_url }}"
-              data-width="{{ photo.width }}"
-              data-height="{{ photo.height }}"
               data-alt="{{ photo.alt }}"
+              data-day="{{ day.title }}"
               data-index="{{ loop.index }}"
               data-total="{{ day.photos|length }}"
+              aria-label="View {{ photo.alt }}"
             >
               <img
                 src="{{ photo.thumb_url }}"
@@ -43,24 +98,47 @@
                 decoding="async"
                 alt="{{ photo.alt }}"
               >
+              <span class="photo-link-overlay" aria-hidden="true">
+                <span>{{ loop.index }} / {{ day.photos|length }}</span>
+                <span>View photo&nbsp; ↗</span>
+              </span>
             </a>
           {% endfor %}
         </div>
       </section>
     {% endfor %}
 
-    <p class="photo-credit photo-credit-bottom">
+    <footer class="photos-outro">
+      <p>Thank you for being part of the Swiss Python community.</p>
       <a href="{{ gallery.credit.url }}" rel="external">{{ gallery.credit.label }}</a>
-    </p>
+    </footer>
   </div>
 
   <dialog class="photo-lightbox" aria-label="Photo viewer">
+    <div class="photo-lightbox-progress" aria-hidden="true"><span></span></div>
+
+    <header class="photo-lightbox-header">
+      <p>
+        <span class="photo-lightbox-day"></span>
+        <span class="photo-lightbox-counter" aria-live="polite"></span>
+      </p>
+      <a href="{{ gallery.credit.url }}" rel="external">{{ gallery.credit.label }}</a>
+    </header>
+
     <button class="photo-lightbox-close" type="button" aria-label="Close photo viewer">×</button>
     <button class="photo-lightbox-previous" type="button" aria-label="Previous photo">‹</button>
+
     <figure>
-      <img alt="">
-      <figcaption aria-live="polite"></figcaption>
+      <div class="photo-lightbox-media">
+        <span class="photo-lightbox-loader" aria-hidden="true"></span>
+        <img alt="">
+      </div>
+      <figcaption>
+        <span class="photo-lightbox-description"></span>
+        <a class="photo-lightbox-source" href="#" target="_blank" rel="noopener">Open full size&nbsp; ↗</a>
+      </figcaption>
     </figure>
+
     <button class="photo-lightbox-next" type="button" aria-label="Next photo">›</button>
   </dialog>
 

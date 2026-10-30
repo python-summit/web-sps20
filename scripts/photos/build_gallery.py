@@ -1,9 +1,10 @@
 #!/usr/bin/env python3
-"""Build web-ready gallery images and a Lektor data bag.
+"""Build one configured year's web-ready photos and Lektor data bag.
 
-The source photos are never modified. Two metadata-free WebP variants are
-written to an ignored staging directory for later upload as GitHub release
-assets. The generated JSON manifest is committed with the website.
+Source photos are never modified. Each gallery is described by a small JSON
+file so new years and different day structures do not require code changes.
+Two metadata-free WebP variants are written to an ignored staging directory
+for upload as GitHub release assets.
 """
 
 from __future__ import annotations
@@ -20,10 +21,6 @@ from urllib.parse import quote
 from PIL import Image, ImageOps
 
 
-DAY_CONFIG = (
-    ("thursday", "Thursday", "Donnerstag", "photos-2026-thursday"),
-    ("friday", "Friday", "Freitag", "photos-2026-friday"),
-)
 SUPPORTED_SUFFIXES = {".jpg", ".jpeg", ".png", ".tif", ".tiff"}
 
 
@@ -31,6 +28,7 @@ SUPPORTED_SUFFIXES = {".jpg", ".jpeg", ".png", ".tif", ".tiff"}
 class BuildTask:
     source: Path
     output_directory: Path
+    year: int
     day_id: str
     day_title: str
     release_tag: str
@@ -47,28 +45,15 @@ class BuildTask:
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument(
-        "--source",
+        "--config",
         type=Path,
-        default=Path("Live"),
-        help="Directory containing Donnerstag and Freitag (default: Live)",
+        default=Path("scripts/photos/galleries/2026.json"),
+        help="Gallery configuration JSON",
     )
-    parser.add_argument(
-        "--output",
-        type=Path,
-        default=Path(".gallery-build"),
-        help="Ignored staging directory for release assets",
-    )
-    parser.add_argument(
-        "--manifest",
-        type=Path,
-        default=Path("sps20/databags/photos-2026.json"),
-        help="Lektor data bag to generate",
-    )
-    parser.add_argument(
-        "--repository",
-        default="python-summit/web-sps20",
-        help="GitHub repository used for release URLs",
-    )
+    parser.add_argument("--source", type=Path, help="Override source directory")
+    parser.add_argument("--output", type=Path, help="Override staging directory")
+    parser.add_argument("--manifest", type=Path, help="Override data bag path")
+    parser.add_argument("--repository", help="Override GitHub owner/repository")
     parser.add_argument("--thumb-size", type=int, default=640)
     parser.add_argument("--large-size", type=int, default=2400)
     parser.add_argument("--thumb-quality", type=int, default=72)
@@ -85,6 +70,24 @@ def parse_args() -> argparse.Namespace:
         help="Rebuild images even when generated files are newer",
     )
     return parser.parse_args()
+
+
+def load_config(path: Path) -> dict[str, Any]:
+    try:
+        config = json.loads(path.read_text(encoding="utf-8"))
+    except FileNotFoundError as error:
+        raise SystemExit(f"Missing gallery config: {path}") from error
+    except json.JSONDecodeError as error:
+        raise SystemExit(f"Invalid JSON in {path}: {error}") from error
+
+    required = ("year", "source", "days", "repository", "credit")
+    missing = [key for key in required if key not in config]
+    if missing:
+        raise SystemExit(f"Missing config keys: {', '.join(missing)}")
+    if not isinstance(config["days"], list) or not config["days"]:
+        raise SystemExit("Gallery config must contain at least one day.")
+
+    return config
 
 
 def release_url(repository: str, tag: str, filename: str) -> str:
@@ -149,18 +152,18 @@ def build_photo(task: BuildTask) -> dict[str, Any]:
             task.repository, task.release_tag, large_name
         ),
         "alt": (
-            f"Swiss Python Summit 2026 on {task.day_title}, "
+            f"Swiss Python Summit {task.year} on {task.day_title}, "
             f"photo {task.index} of {task.total}"
         ),
     }
 
 
-def discover_photos(directory: Path) -> list[Path]:
+def discover_photos(directory: Path, prefix: str) -> list[Path]:
     return sorted(
         path
         for path in directory.iterdir()
         if path.is_file()
-        and path.name.startswith("KSP_")
+        and path.name.startswith(prefix)
         and path.suffix.lower() in SUPPORTED_SUFFIXES
     )
 
@@ -171,9 +174,20 @@ def directory_size(directory: Path) -> int:
 
 def main() -> None:
     args = parse_args()
-    source_root = args.source.resolve()
-    output_root = args.output.resolve()
-    manifest_path = args.manifest.resolve()
+    config_path = args.config.resolve()
+    config = load_config(config_path)
+
+    year = int(config["year"])
+    source_root = (args.source or Path(config["source"])).resolve()
+    output_root = (
+        args.output or Path(config.get("output", f".gallery-build/{year}"))
+    ).resolve()
+    manifest_path = (
+        args.manifest
+        or Path(config.get("manifest", f"sps20/databags/photos-{year}.json"))
+    ).resolve()
+    repository = args.repository or str(config["repository"])
+    filename_prefix = str(config.get("filename_prefix", "KSP_"))
 
     if args.thumb_size <= 0 or args.large_size <= 0:
         raise SystemExit("Image sizes must be positive integers.")
@@ -182,24 +196,34 @@ def main() -> None:
     if not 1 <= args.thumb_quality <= 100 or not 1 <= args.large_quality <= 100:
         raise SystemExit("WebP quality must be between 1 and 100.")
 
+    credit = config["credit"]
+    if not isinstance(credit, dict) or not credit.get("label") or not credit.get("url"):
+        raise SystemExit("Credit must contain non-empty label and url values.")
+
     manifest: dict[str, Any] = {
-        "year": 2026,
-        "credit": {
-            "label": "Photo: kurzschluss photography gmbh",
-            "url": "https://www.instagram.com/kurzschluss_photo/",
-        },
+        "year": year,
+        "title": config.get("title", f"Swiss Python Summit {year}"),
+        "credit": credit,
         "days": [],
     }
 
     all_tasks: list[BuildTask] = []
     day_records: dict[str, dict[str, Any]] = {}
 
-    for day_id, day_title, source_name, release_tag in DAY_CONFIG:
+    for day in config["days"]:
+        try:
+            day_id = str(day["id"])
+            day_title = str(day["title"])
+            source_name = str(day["source"])
+        except (KeyError, TypeError) as error:
+            raise SystemExit("Each day requires id, title and source values.") from error
+
+        release_tag = str(day.get("release_tag", f"photos-{year}-{day_id}"))
         source_directory = source_root / source_name
         if not source_directory.is_dir():
             raise SystemExit(f"Missing photo directory: {source_directory}")
 
-        photos = discover_photos(source_directory)
+        photos = discover_photos(source_directory, filename_prefix)
         if not photos:
             raise SystemExit(f"No photos found in: {source_directory}")
 
@@ -219,10 +243,11 @@ def main() -> None:
                 BuildTask(
                     source=source,
                     output_directory=output_directory,
+                    year=year,
                     day_id=day_id,
                     day_title=day_title,
                     release_tag=release_tag,
-                    repository=args.repository,
+                    repository=repository,
                     index=index,
                     total=len(photos),
                     thumb_size=args.thumb_size,
@@ -239,19 +264,21 @@ def main() -> None:
     for task, record in zip(all_tasks, records, strict=True):
         day_records[task.day_id]["photos"].append(record)
 
+    manifest["total_photos"] = len(all_tasks)
     manifest_path.parent.mkdir(parents=True, exist_ok=True)
     manifest_path.write_text(
         json.dumps(manifest, indent=2, ensure_ascii=False) + "\n",
         encoding="utf-8",
     )
 
-    print(f"Generated {len(all_tasks)} gallery entries")
+    print(f"Generated gallery for {year}: {len(all_tasks)} photos")
     for day in manifest["days"]:
         output_directory = output_root / day["id"]
         size_mib = directory_size(output_directory) / (1024 * 1024)
         print(
             f"  {day['title']}: {len(day['photos'])} photos, "
-            f"{len(day['photos']) * 2} assets, {size_mib:.1f} MiB"
+            f"{len(day['photos']) * 2} assets, {size_mib:.1f} MiB, "
+            f"release {day['release_tag']}"
         )
     print(f"Manifest: {manifest_path}")
     print(f"Release assets: {output_root}")
