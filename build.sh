@@ -9,4 +9,4 @@ if ! command -v uv >/dev/null 2>&1; then
 fi
 
 uv sync --locked --no-dev
-uv run --locked --no-dev lektor --project sps20 build -f scss --output-path build
+uv run --no-dev lektor --project sps20 build -f scss --output-path build

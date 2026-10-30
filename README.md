@@ -13,7 +13,7 @@ See [www.python-summit.ch](https://www.python-summit.ch/)
 
 * Clone the repository or open in GitHub Codespace
 * Install [uv](https://docs.astral.sh/uv/getting-started/installation/)
-* Install dependencies with `make install` (or `uv sync --locked`)
+* Install dependencies with `make install` (or `uv sync`)
 * Run Lektor server with `make serve` for live preview of the website (on port 5000)
 
 uv manages the `.venv` automatically and uses Python 3.10 from `.python-version`,
