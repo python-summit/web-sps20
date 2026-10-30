@@ -1,0 +1,27 @@
+{
+  "year": 2026,
+  "title": "Swiss Python Summit 2026",
+  "source": "Live",
+  "output": ".gallery-build/2026",
+  "manifest": "sps20/databags/photos-2026.json",
+  "repository": "python-summit/web-sps20",
+  "filename_prefix": "KSP_",
+  "credit": {
+    "label": "Photo: kurzschuss photography gmbh",
+    "url": "https://www.instagram.com/kurzschuss_photo"
+  },
+  "days": [
+    {
+      "id": "thursday",
+      "title": "Thursday",
+      "source": "Donnerstag",
+      "release_tag": "photos-2026-thursday"
+    },
+    {
+      "id": "friday",
+      "title": "Friday",
+      "source": "Freitag",
+      "release_tag": "photos-2026-friday"
+    }
+  ]
+}

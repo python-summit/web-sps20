@@ -1,0 +1,19 @@
+[project]
+name = "web-sps20"
+version = "0.1.0"
+description = "Static website for the Swiss Python Summit"
+requires-python = ">=3.10"
+dependencies = [
+    "lektor",
+]
+
+[dependency-groups]
+recordings = [
+    "pandas",
+]
+photos = [
+    "pillow>=10",
+]
+
+[tool.uv]
+package = false
