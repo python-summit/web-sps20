@@ -32,7 +32,7 @@
                     <a href="{{ site.root|url }}" class="btn btn-link {{ site.root == this and 'active' or ''}}">Swiss Python Summit</a>
                     {% for page in site.root.children | sort(attribute="ordering") %}
                     {% if page.ordering > 0 %}
-                    <a href="{{ page|url }}" class="btn btn-link {{ page == this and 'active' or ''}}">{{ page.title}}</a>
+                    <a href="{{ page|url }}" class="btn btn-link {{ page == this and 'active' or ''}}">{{ page.menu_title or page.title }}</a>
                     {% endif %}
                     {% endfor %}
                 </section>

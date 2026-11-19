@@ -1,0 +1,15 @@
+_model: page
+---
+title: Photo archive
+---
+description: Photo galleries from the Swiss Python Summit.
+---
+ordering: 10
+---
+menu_title: Photos
+---
+_template: photos-index.html
+---
+body:
+
+Relive the talks, conversations and community moments from each edition of the Swiss Python Summit.
