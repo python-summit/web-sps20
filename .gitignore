@@ -82,9 +82,6 @@ target/
 # Jupyter Notebook
 .ipynb_checkpoints
 
-# pyenv
-.python-version
-
 # celery beat schedule file
 celerybeat-schedule
 
@@ -121,3 +118,8 @@ venv.bak/
 
 # Build output
 sps20/build
+
+# Local photo sources and generated release assets
+Live/
+.gallery-build/
+.DS_Store

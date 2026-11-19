@@ -1,9 +1,12 @@
 #!/bin/bash
 
-# This script is intended to run in netifly as a build command (site config -> build & deploy -> build settings -> build command)
-set -e
-python -m venv .venv_tmp
-. .venv_tmp/bin/activate
-pip install -r requirements.txt
-lektor --project sps20 build -f scss --output-path build
-rm -r .venv_tmp
+# This script is the Netlify build command.
+set -euo pipefail
+
+if ! command -v uv >/dev/null 2>&1; then
+    curl -LsSf https://astral.sh/uv/0.13.1/install.sh | env UV_UNMANAGED_INSTALL="$HOME/.local/bin" sh
+    export PATH="$HOME/.local/bin:$PATH"
+fi
+
+uv sync --locked --no-dev
+uv run --locked --no-dev lektor --project sps20 build -f scss --output-path build
